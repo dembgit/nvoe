@@ -1,0 +1,62 @@
+@import url("https://use.typekit.net/scn2gmy.css");
+
+:root {
+    --nvoe-black: #2c3437;
+    --nvoe-blue: #5d7a85;
+    --nvoe-yellow: #f2b90f;
+    --nvoe-white: #ffffff;
+    --nvoe-titel-font: dunbar-tall, sans-serif;
+    --nvoe-text-font: poppins, sans-serif;
+  }
+
+/* 
+----- Font styling -----
+
+ _-_-_-_ DUNBAR _-_-_-_
+
+font-family: dunbar-tall, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+--- DUNBAR Weight ---
+Light = 300
+Regular = 500
+Medium = 600
+Bold = 700
+---------------------
+
+
+_-_-_-_ Poppins _-_-_-_
+
+font-family: poppins, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+--- Poppins Weight ---
+Light = 300
+Regular = 400
+Medium = 500
+Bold = 700
+----------------------
+*/
+
+
+
+/* Media Tablet */
+@media screen and (min-width: 750px){
+    
+}
+
+/* Media Small Laptop */
+@media screen and (min-width: 1280px){
+    
+}
+
+/* Media Big Laptop */
+@media screen and (min-width: 1920px){
+    
+}
