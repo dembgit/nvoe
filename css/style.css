@@ -1,14 +1,5 @@
 @import url("https://use.typekit.net/scn2gmy.css");
 
-:root {
-    --nvoe-black: #2c3437;
-    --nvoe-blue: #5d7a85;
-    --nvoe-yellow: #f2b90f;
-    --nvoe-white: #ffffff;
-    --nvoe-titel-font: dunbar-tall, sans-serif;
-    --nvoe-text-font: poppins, sans-serif;
-  }
-
 /* 
 ----- Font styling -----
 
@@ -43,6 +34,21 @@ Medium = 500
 Bold = 700
 ----------------------
 */
+
+:root {
+    --nvoe-black: #2c3437;
+    --nvoe-blue: #5d7a85;
+    --nvoe-yellow: #f2b90f;
+    --nvoe-white: #ffffff;
+    --nvoe-titel-font: dunbar-tall, sans-serif;
+    --nvoe-text-font: poppins, sans-serif;
+  }
+
+body {
+    font-family: var(--nvoe-titel-font);
+    background-color: var(--nvoe-black);
+    color: var(--nvoe-white);
+}
 
 
 
