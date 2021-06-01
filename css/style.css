@@ -274,6 +274,10 @@ body {
   margin-right: auto;
 }
 
+.onlinequiz-information-img-desktop{
+  display: none;
+}
+
 .onlinequiz-information-step-to-beskrivelse-link, .onlinequiz-information-step-tre-beskrivelse-to-link{
   color: var(--nvoe-yellow);
   font-family: var(--nvoe-text-font);
@@ -316,10 +320,62 @@ body {
       margin-top: 2em;
     }
 
-    .quiz-tilmelding{
+    .quiz-tilmelding, .onlinequiz-tilmelding{
       margin-left: auto;
       margin-right: auto;
       width: fit-content;
+    }
+
+    .onlinequiz-intro-section{
+      background-image: none;
+    }
+  
+    .onlinequiz-desktop{
+      background-image: url(/images/quizintrowall.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-position-y: 100%;
+    }
+  
+    .onlinequiz-information{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .onlinequiz-information-img{
+      display: none;
+    }
+  
+    .onlinequiz-information-step-et, .onlinequiz-information-step-to, .onlinequiz-information-step-tre{
+      width: 20.125rem;
+      height: 10.188rem;
+      margin: 0.5rem;
+    }
+  
+    .onlinequiz-information-step-et-title, .onlinequiz-information-step-to-title, .onlinequiz-information-step-tre-title{
+      font-size: 1.75em;
+    }
+  
+    .onlinequiz-information-step-et-beskrivelse, .onlinequiz-information-step-to-beskrivelse, .onlinequiz-information-step-tre-beskrivelse, .onlinequiz-information-step-to-beskrivelse-link, .onlinequiz-information-step-to-beskrivelse-to, .onlinequiz-information-step-to-beskrivelse-tre, .onlinequiz-information-step-tre-beskrivelse-to, .onlinequiz-information-step-tre-beskrivelse-to-link{
+      font-size: 1em;
+    }
+  
+    .onlinequiz-information-img-desktop{
+      display: block;
+      width: 8.313rem;
+      height: 3rem;
+      margin-top: 8rem;
+    }
+  
+    .onlinequiz-intro-info{
+      font-size: 1.75em;
+      font-family: var(--nvoe-text-font);
+      font-weight: 700;
+      font-style: italic;
+      text-align: center;
+      margin-top: 3rem;
+      text-align: center;
     }
 }
 
@@ -334,7 +390,7 @@ body {
       background-position-y: 100%;
     }
     
-    .quiz-intro{
+    .quiz-intro, .onlinequiz-intro{
       font-size: 2.5em;
       padding: 11.5rem 2rem 1rem 2rem;
     }
@@ -345,7 +401,7 @@ body {
       padding: 1rem;
     }
     
-    .quiz-intro-date{
+    .quiz-intro-date, .onlinequiz-intro-date{
       font-size: 1.25em;
       margin-top: 2.813rem;
     }
@@ -371,7 +427,6 @@ body {
 
     /*Quiz formula styling for web*/
     .quiz-tilmelding{
-      font-size: 1.75em;
       align-items: center;
     }
 
@@ -379,19 +434,23 @@ body {
       font-size: 1.1em;
     }
 
-    .quiz-tilmelding-info-tekst{
+    .quiz-tilmelding-info-title, .onlinequiz-tilmelding-info-title{
+      font-size: 1.75em;
+    }
+
+    .quiz-tilmelding-info-tekst, .onlinequiz-tilmelding-info-tekst, .onlinequiz-tilmelding-info-tekst-to{
       font-size: 1em;
       text-align: center;
       width: auto;
     }
 
-    .quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail{
+    .quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail, .onlinequiz-tilmelding-navn, .onlinequiz-tilmelding-telefon, .onlinequiz-tilmelding-mail{
       display: flex;
       flex-direction: row;
       justify-content: center;
     }
 
-    .quiz-tilmelding-navn-input, .quiz-tilmelding-telefon-input, .quiz-tilmelding-mail-input{
+    .quiz-tilmelding-navn-input, .quiz-tilmelding-telefon-input, .quiz-tilmelding-mail-input, .onlinequiz-tilmelding-navn-input, .onlinequiz-tilmelding-telefon-input, .onlinequiz-tilmelding-mail-input{
       margin-top: 2rem;
       margin-left: 1.5rem;
       width: 21.688rem;
@@ -399,11 +458,12 @@ body {
       font-size: 0.75em;
     }
 
-    .quiz-tilmelding-navn-label, .quiz-tilmelding-telefon-label, .quiz-tilmelding-mail-label{
+    .quiz-tilmelding-navn-label, .quiz-tilmelding-telefon-label, .quiz-tilmelding-mail-label, .onlinequiz-tilmelding-navn-label, .onlinequiz-tilmelding-telefon-label, .onlinequiz-tilmelding-mail-label{
       width: 8rem;
+      font-size: 1.75em;
     }
     /*Styling send button*/
-  .quiz-tilmelding-submit{
+  .quiz-tilmelding-submit, .onlinequiz-tilmelding-submit{
     color:var(--nvoe-yellow);
     background-color: var(--nvoe-black);
     border-color: var(--nvoe-yellow);
@@ -416,6 +476,59 @@ body {
     display: block;
     margin: 0 auto;
     margin-top: 3.813rem;
+  }
+  
+  .onlinequiz-intro-section{
+    background-image: none;
+  }
+
+  .onlinequiz-desktop{
+    background-image: url(/images/quizintrowall.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position-y: 100%;
+  }
+
+  .onlinequiz-information{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .onlinequiz-information-img{
+    display: none;
+  }
+
+  .onlinequiz-information-step-et, .onlinequiz-information-step-to, .onlinequiz-information-step-tre{
+    width: 25.125rem;
+    height: 14.188rem;
+    margin: 5rem;
+  }
+
+  .onlinequiz-information-step-et-title, .onlinequiz-information-step-to-title, .onlinequiz-information-step-tre-title{
+    font-size: 1.75em;
+  }
+
+  .onlinequiz-information-step-et-beskrivelse, .onlinequiz-information-step-to-beskrivelse, .onlinequiz-information-step-tre-beskrivelse, .onlinequiz-information-step-to-beskrivelse-link, .onlinequiz-information-step-to-beskrivelse-to, .onlinequiz-information-step-to-beskrivelse-tre, .onlinequiz-information-step-tre-beskrivelse-to, .onlinequiz-information-step-tre-beskrivelse-to-link{
+    font-size: 1em;
+  }
+
+  .onlinequiz-information-img-desktop{
+    display: block;
+    width: 12.313rem;
+    height: 3rem;
+    margin-top: 15rem;
+    margin-left: -4rem;
+  }
+
+  .onlinequiz-intro-info{
+    font-size: 1.75em;
+    font-family: var(--nvoe-text-font);
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2rem;
+    text-align: center;
   }
     
 }
