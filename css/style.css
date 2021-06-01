@@ -286,6 +286,148 @@ body {
 }
 
 
+/* TO-GO Tilbud styling */
+
+.togo-intro-section {
+    background-image: url("/images/tavle.jpeg");
+    height: 110vh;
+    background-size: cover;
+    background-position-x: 40%;
+}
+
+.togo-intro {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.75em;
+    font-weight: bold;
+    padding-top: 4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.togo-intro-h3 {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.togo-beer-image {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.togo-intro-image {
+    display: block;
+    width: 83%;
+    margin: 0 auto;
+    margin-left: 2rem;
+}
+
+.togo-intro-bestilling-disclaimer {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.togo-intro-bestilling-disclaimer-yellow-color {
+    color: var(--nvoe-yellow)
+}
+
+.togo-intro-bestilling-disclaimer-description {
+    font-family: var(--nvoe-text-font);
+    font-size: 0.875em;
+    font-weight: italic;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.togo-bestilling-section {
+    background-color: var(--nvoe-blue);
+    width: 72%;
+    height: 30rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+    margin-top: 2.5rem;
+}
+
+.togo-bestilling-intro {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.togo-bestilling-antal-intro {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.togo-bestilling-antal-selection {
+    width: 2.5rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+.togo-bestilling-telefon {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.togo-bestilling-telefon-box {
+    width: 7rem;
+    height: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.togo-bestilling-dato {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.togo-bestilling-dato-box {
+    width: 7rem;
+    height: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.togo-bestilling-star-yellow-color {
+    color: var(--nvoe-yellow)
+}
+
+.togo-bestilling-button {
+    width: 5em;
+    height: 2em;
+    background-color: transparent;
+    border: solid 2px var(--nvoe-white);
+    border-radius: 3.125em;
+    font-family: 'Kalam';
+    font-size: 1.5em;
+    color: var(--nvoe-white);
+    margin-top: 2em;
+    margin-left: 4.8rem;
+    margin-bottom: 1.875em;
+}
+
+
 /* Media Tablet */
 
 @media screen and (min-width: 750px) {}
