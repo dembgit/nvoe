@@ -56,8 +56,7 @@ body {
 
 .udvalg-intro-section {
   background-image: url("/images/udvalgintrowall.jpg");
-  height: 80vh;
-  background-size: auto 60%; 
+  background-size: auto 55vh; 
   background-repeat: no-repeat;
   background-position-x: 40%;
 }
@@ -95,13 +94,70 @@ body {
 .udvalg-intro-description {
   margin: 1rem auto;
   width: 85%;
-  line-height: 1.5em;
+  line-height: 1.6em;
   text-align: center;
   font-family: var(--nvoe-text-font);
 }
 
-.udvlag-bryggerier-wrap {
+.udvalg-bryggerier-wrap {
   width: 72%;
+  margin: 0 auto;
+  background-image: url("/images/tavle.jpg");
+  background-size: cover;
+  background-position-x: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 4rem;
+}
+
+.udvalg-bryggerier-wrap img{
+  flex-grow: 1;
+  flex-basis: 35%;
+  padding: 7.5%;
+}
+
+.udvalg-togo-section {
+  width: 55%;
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 2rem;
+}
+
+.udvalg-togo-intro {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.75em;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.udvalg-togo-description {
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.udvalg-togo-price {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.udvalg-togo-link {
+  width: 8.125rem;
+  height: 2.8125rem;
+  background-color: transparent;
+  border: solid 2px var(--nvoe-white);
+  border-radius: 3.125rem;
+  font-family: 'Kalam';
+  font-size: 1.5rem;
+  color: var(--nvoe-white);
+  margin-top: 2em;
+  margin-bottom: 1.875em;
 }
 
 
