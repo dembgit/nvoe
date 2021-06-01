@@ -27,7 +27,9 @@
             </h3>
             <p class="booking-info-table-tekst">
                 Booking af bord foregår i halvanden times intervaller.
-                Vigtigt:
+            </p>
+            <p class="booking-info-table-tekst-kursiv">
+                Vigtigt: <br>
                 Grundet covid-19 kan man maks bestille bord til 6 personer af gangen.
                 Husk at medbringe gyldigt coronapas og værnemidler.
             </p>
@@ -41,7 +43,9 @@
             </h3>
             <p class="booking-info-event-tekst">
                 Du kan booke Nordvest Ølbar til dine private arrangementer, det kræver at I er over 20 mennesker. 
-                Vigtigt:
+            </p>
+            <p class="booking-info-event-tekst-to">
+                Vigtigt: <br>
                 Grundet covid-19 er barens maks kapacitet 18 mennesker, hvorfor privat arrangementer midlertidigt kræver kun 10 mennesker. 
             </p>
             <button class="booking-info-event-button">
@@ -59,49 +63,67 @@
         <div class="booking-table-form">
             <div class="booking-table-form-navn">
                 <label class="booking-table-form-navn-label">
-                    *Navn:
+                    <span class="booking-table-form-focus">* </span>Navn:
                 </label>
                 <input type="text" class="booking-table-form-navn-input">
             </div>
             <div class="booking-table-form-telefon">
                 <label class="booking-table-form-telefon-label">
-                    *Telefon:
+                    <span class="booking-table-form-focus">* </span>Telefon:
                 </label>
                 <input type="tel" class="booking-table-form-telefon-input">
             </div>
             <div class="booking-table-form-mail">
                 <label class="booking-table-form-mail-label">
-                    *Email:
+                    <span class="booking-table-form-focus">* </span>Email:
                 </label>
                 <input type="text" class="booking-table-form-mail-input">
             </div>
         </div>
         <div class="booking-table-amount">
             <h3 class="booking-table-amount-title">
-                *Antal gæster
+                <span class="booking-table-form-focus">* </span>Antal gæster
             </h3>
             <div class="booking-table-amount-pick">
-                <button class="booking-table-amount-one">
-                    1
-                </button>
-                <button class="booking-table-amount-two">
-                    2
-                </button>
-                <button class="booking-table-amount-three">
-                    3
-                </button>
-                <button class="booking-table-amount-four">
-                    4
-                </button>
-                <button class="booking-table-amount-five">
-                    5
-                </button>
-                <button class="booking-table-amount-six">
-                    6
-                </button>
-                <button class="booking-table-amount-seven">
-                    7
-                </button>
+                <div class="booking-table-amount-upper">
+                    <div class="booking-table-amount-pick-one">
+                        <button class="booking-table-amount-one-button">
+                            1
+                        </button>
+                    </div>
+                    <div class="booking-table-amount-pick-two">
+                        <button class="booking-table-amount-two-button">
+                            2
+                        </button>
+                    </div>
+                    <div class="booking-table-amount-pick-three">
+                        <button class="booking-table-amount-three-button">
+                            3
+                        </button>
+                    </div>
+                    <div class="booking-table-amount-pick-four">
+                        <button class="booking-table-amount-four-button">
+                            4
+                        </button>
+                    </div>    
+                </div>
+                <div class="booking-table-amount-lower">
+                    <div class="booking-table-amount-pick-five">
+                        <button class="booking-table-amount-five-button">
+                            5
+                        </button>
+                    </div>
+                    <div class="booking-table-amount-pick-six">
+                        <button class="booking-table-amount-six-button">
+                            6
+                        </button>
+                    </div>
+                    <div class="booking-table-amount-pick-seven">
+                        <button class="booking-table-amount-seven-button">
+                            7
+                        </button>
+                    </div>
+                </div>
             </div>
             <p class="booking-table-amount-tekst">
                 *hvis i er mere end 7, så kontakt baren for at bestille bord
@@ -126,38 +148,40 @@
                 * er påkrævet
             </p>
             <p class="booking-event-info-tekst">
-                *Ved booking af arrangement, vil du blive kontaktet for bekræftelse*
+                <span class="booking-event-info-tekst-focus">* </span>
+                Ved booking af arrangement, vil du blive kontaktet for bekræftelse
+                <span class="booking-event-info-tekst-focus">* </span>
             </p>
         </div>
         <div class="booking-event-form">
             <div class="booking-event-form-navn">
                 <label class="booking-event-form-navn-label">
-                    *Navn:
+                    <span class="booking-event-form-focus">* </span>Navn:
                 </label>
                 <input type="text" class="booking-event-form-navn-input">
             </div>
             <div class="booking-event-form-telefon">
                 <label class="booking-event-form-telefon-label">
-                    *Telefon:
+                    <span class="booking-event-form-focus">* </span>Telefon:
                 </label>
                 <input type="tel" class="booking-event-form-telefon-input">
             </div>
             <div class="booking-event-form-mail">
                 <label class="booking-event-form-mail-label">
-                    *Email:
+                    <span class="booking-event-form-focus">* </span>Email:
                 </label>
                 <input type="text" class="booking-event-form-mail-input" min="5" max="20">
             </div>
             <h3 class="booking-event-form-subtitle">
-                *Antal gæster
+                <span class="booking-event-form-focus">* </span>Antal gæster
             </h3>
-            <input type="range" class="booking-event-form-range">
+            <input type="text" class="booking-event-form-range">
         </div>
         <div class="booking-event-comment">
             <h3 class="booking-event-comment-title">
                 Eventuelle kommentarer
             </h3>
-            <input type="text" class="booking-event-comment-input">
+            <input type="number" class="booking-event-comment-input" placeholder="Skriv her...">
             <button class="booking-event-comment-button">
                 Book
             </button>
