@@ -69,6 +69,10 @@ body {
     padding-top: 2.3rem;
 }
 
+.front-intro-scrolldown {
+    display: none;
+}
+
 .front-intro-tilbud {
     height: 160px;
     width: 160px;
@@ -201,6 +205,17 @@ body {
     margin-bottom: 2.5rem;
 }
 
+.mapouter {
+    width: 270px;
+    height: 270px;
+    margin-left: 3.3rem;
+}
+
+.gmap_canvas {
+    width: 270px;
+    height: 270px;
+}
+
 .front-find-os-adresse-wrap {
     display: flex;
     margin-left: 0.8rem;
@@ -301,4 +316,167 @@ body {
 
 /* Media Big Laptop */
 
-@media screen and (min-width: 1920px) {}
+@media screen and (min-width: 1920px) {
+    /* Forside styling mediaqueries */
+    .front-intro-section {
+        background-image: url("/images/forsidewall.jpg");
+        height: 80vh;
+        background-size: cover;
+        background-position-x: 40%;
+    }
+    .front-intro-image {
+        width: 800px;
+        height: 800px;
+        display: block;
+        margin-left: 560px;
+        padding-top: 2.3rem;
+    }
+    .front-intro-scrolldown {
+        display: block;
+        background: none;
+        border: none;
+        position: relative;
+        margin: 0 auto;
+        margin-top: -7rem;
+    }
+    .front-intro-flex {
+        display: flex;
+    }
+    .front-intro-tilbud {
+        height: 250px;
+        width: 250px;
+        background-color: var(--nvoe-blue);
+        border-radius: 50%;
+        display: block;
+        margin-top: 22rem;
+        margin-right: 13rem;
+    }
+    .front-intro-tilbud-tekst {
+        font-size: 1.25em;
+        margin-top: 6rem;
+    }
+    .front-info-tilbud-button {
+        font-size: 1.5em;
+        margin-left: 3rem;
+    }
+    .front-info-section {
+        display: flex;
+    }
+    .front-info-event {
+        width: 30%;
+        height: 20rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-event-intro {
+        font-size: 1.75em;
+    }
+    .front-info-event-description {
+        font-size: 1.75em;
+        margin-top: 1rem;
+    }
+    .front-info-event-link {
+        margin-top: 3rem;
+    }
+    .front-info-aabningstider {
+        width: 30%;
+        height: 20rem;
+        line-height: 2em;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-aabningstider-description {
+        line-height: 1.5em;
+    }
+    .front-info-corona {
+        width: 30%;
+        height: 20rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-corona-intro {
+        font-size: 1.75em;
+    }
+    .front-info-corona-description {
+        font-size: 1em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .flex-map-some {
+        display: flex;
+    }
+    .front-find-os-intro {
+        font-size: 2.5em;
+        margin-left: 2.5rem;
+    }
+    .front-find-os-adresse-image {
+        width: 4rem;
+        height: 4rem;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .front-find-os-adresse-description {
+        font-family: var(--nvoe-text-font);
+        font-size: 1.75em;
+        font-weight: 0.8em;
+        padding-top: 2.7rem;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+    .mapouter {
+        width: 500px;
+        height: 500px;
+        margin-left: 5rem;
+    }
+    .gmap_canvas {
+        width: 470px;
+        height: 470px;
+    }
+    .front-some {
+        background-color: var(--nvoe-blue);
+        width: 70.2rem;
+        height: 30em;
+        margin-left: 8.6rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        margin-top: 7.3rem;
+    }
+    .front-some-billede-1 {
+        width: 280px;
+        height: 280px;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        margin-left: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-billede-2 {
+        width: 280px;
+        height: 280px;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-billede-3 {
+        width: 280px;
+        height: 280px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-instagram {
+        display: flex;
+        margin-left: 4.5rem;
+        padding-top: 2rem;
+    }
+    .front-some-facebook {
+        display: flex;
+        margin-left: 4.5rem;
+        padding-top: 1rem;
+    }
+}
