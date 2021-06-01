@@ -4,6 +4,20 @@
 /* 
 ----- Font styling -----
 
+ _-_-_-_ Kalam _-_-_-_
+
+font-family: 'Kalam', cursive;
+
+font-weight: 400;
+
+font-style: normal;
+
+--- Kalam Weight ---
+Light = 300
+Regular = 400
+Bold = 700
+---------------------
+
  _-_-_-_ DUNBAR _-_-_-_
 
 font-family: dunbar-tall, sans-serif;
@@ -51,6 +65,261 @@ body {
     color: var(--nvoe-white);
 }
 
+/* Booking Page Styling */
+
+.booking-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("/images/Booking_background.png");
+  background-size: auto 85vh;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
+.booking-info-title, .booking-info-subtitle, .booking-info-table-title, .booking-info-event-title, .booking-table-title, .booking-table-comment-title, .booking-event-info-title, .booking-event-comment-title  {
+  text-align: center;
+  font-family: dunbar-tall, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Booking Page Styling - Title */
+
+.booking-info-title {
+  margin-top: 5.9375em;
+  margin-bottom: 1em;
+  font-size: 1.75em;
+}
+
+.booking-info-subtitle {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+/* Booking Page Styling - Book Et Bord*/
+
+.booking-info-table, .booking-info-event {
+  background-color: var(--nvoe-blue);
+  width: 16.875em;
+  margin: 0 auto;
+  border-radius: 0.3125em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-info-event {
+  margin-top: 4.625em;
+}
+
+.booking-info-table-title, .booking-info-event-title {
+  margin-top: 2.375em;
+  margin-bottom: 1.5em;
+}
+
+.booking-info-table-tekst, .booking-info-table-tekst-kursiv, .booking-info-event-tekst, .booking-info-event-tekst-to {
+  text-align: center;
+  padding: 0 1.375em 0 1.375em;
+  line-height: 1.5em;
+}
+
+.booking-info-table-tekst-kursiv {
+  margin-top: 2.375em;
+  font-style: italic;
+}
+
+.booking-info-event-tekst-to {
+  margin-top: 2.375em;
+}
+
+.booking-info-table-button, .booking-info-event-button {
+  width: 8.125em;
+  height: 2.8125em;
+  background-color: transparent;
+  border: solid 2px var(--nvoe-white);
+  border-radius: 3.125em;
+  font-family: 'Kalam';
+  font-size: 1.5em;
+  color: var(--nvoe-white);
+  margin-top: 2em;
+  margin-bottom: 1.875em;
+}
+
+
+/* Booking Page Styling - Book Bord Form */
+
+.booking-table, .booking-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: solid 2px var(--nvoe-white);
+  width: 16.875em;
+  margin: 0 auto;
+  margin-top: 4.325em;
+}
+
+.booking-event {
+  margin-bottom: 4.75em;
+}
+
+.booking-event-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-table-title, .booking-event-info-title {
+  font-size: 1.25em;
+  margin-top: 3em;
+}
+
+
+.booking-table-subtitle, .booking-event-info-subtitle {
+  margin-top: 1em;
+  margin-bottom: 2.625em;
+  font-size: 0.8125em;
+  color: var(--nvoe-yellow);
+}
+
+.booking-table-form-navn, .booking-table-form-telefon, .booking-table-form-mail, .booking-event-form-navn, .booking-event-form-telefon, .booking-event-form-mail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.booking-table-form-navn-input, .booking-table-form-telefon-input, .booking-table-form-mail-input, .booking-event-form-navn-input, .booking-event-form-telefon-input, .booking-event-form-mail-input {
+  width: 12.5em;
+  height: 2em;
+}
+.booking-table-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-table-form-navn-label, .booking-table-form-telefon-label, .booking-table-form-mail-label, .booking-table-amount-title, .booking-event-form-navn-label, .booking-event-form-telefon-label, .booking-event-form-mail-label, .booking-event-form-subtitle {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 0.75em;
+}
+
+.booking-event-form {
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-event-form-subtitle {
+  text-align: center;
+}
+
+.booking-event-form-range {
+  display: block;
+  width: 3.125em;
+  height: 2em;
+  margin: 0 auto;
+}
+
+.booking-table-form-focus, .booking-event-form-focus, .booking-event-info-tekst-focus {
+  color: var(--nvoe-yellow);
+  font-weight: 700;
+}
+
+.booking-table-amount-tekst, .booking-event-info-tekst {
+  color: var(--nvoe-yellow);
+  margin-top: 1.125em;
+  font-size: 0.875em;
+  font-style: italic;
+  text-align: center;
+  width: 14.125em;
+  height: 4em;
+}
+
+.booking-event-info-tekst {
+  color: var(--nvoe-white);
+}
+
+.booking-table-amount-pick {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 13.75em;
+}  
+
+.booking-table-amount-upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 14.125em;
+  margin: 0 1.375em 1.25em 1.375em;
+}
+
+.booking-table-amount-lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 10em;
+}
+
+.booking-table-amount-pick-one, .booking-table-amount-pick-two, .booking-table-amount-pick-three, .booking-table-amount-pick-four, .booking-table-amount-pick-five, .booking-table-amount-pick-six, .booking-table-amount-pick-seven {
+  text-align: center;
+  margin: 0 0.625em;
+}
+
+.booking-table-amount-one-button, .booking-table-amount-two-button, .booking-table-amount-three-button, .booking-table-amount-four-button, .booking-table-amount-five-button, .booking-table-amount-six-button, .booking-table-amount-seven-button {
+  border: solid 2px var(--nvoe-white);
+  border-radius: 100%;
+  background-color: transparent;
+  color: var(--nvoe-white);
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.booking-table-comment, .booking-event-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-table-comment-title, .booking-event-comment-title {
+  margin-bottom: 1.5em;
+  font-size: 1.25em;
+  text-align: center;
+  width: 9em;
+}
+
+.booking-event-comment-title {
+  margin-top: 1.5em;
+}
+
+.booking-table-comment-input, .booking-event-comment-input {
+  height: 6.8125em;
+  width: 13.75em;
+}
+
+::placeholder {
+  padding-left: 0.5em;
+}
+
+.booking-table-comment-button, .booking-event-comment-button {
+  width: 8.125em;
+  height: 2.8125em;
+  font-size: 1.5em;
+  color: var(--nvoe-yellow);
+  background-color: transparent;
+  border: 2px solid var(--nvoe-yellow);
+  border-radius: 3.125em;
+  font-family: 'Kalam';
+  margin-top: 1.875em;
+  margin-bottom: 1.75em;
+}
 
 /* --- UDVALG --- */
 
@@ -113,9 +382,83 @@ body {
 /* Media Small Laptop */
 @media screen and (min-width: 1280px){
     
+.booking-info {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  height: 45em;
+  background-position-y: 100%;
+}
+
+.booking-info-title {
+  margin-top: 2em;
+}
+
+.booking-info-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.booking-info-table, .booking-info-event {
+  margin-top: 0;
+  width: 31.25em;
+  height: 22.6875em;
+}
+
+.booking-info-table-title, .booking-info-event-title {
+  font-size: 1.75em;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.booking-info-table-tekst, .booking-info-table-tekst-kursiv, .booking-info-event-tekst, .booking-info-event-tekst-to {
+  text-align: left;
+  width: 22.375em;
+  font-size: 1em;
+}
+
+.booking-info-table-tekst-kursiv, .booking-info-event-tekst-to {
+  margin-top: 1em;
+}
+
+.booking-info-table-button, .booking-info-event-button {
+  margin-top: 1em;
+}
+
+.booking-info-table-button {
+  margin-top: 2em;
+}
+
+.booking-table, .booking-event {
+  width: 45em;
+}
+
+.booking-table-form-navn, .booking-table-form-telefon, .booking-table-form-mail, .booking-event-form-navn, .booking-event-form-telefon, .booking-event-form-mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.booking-table-form-navn-label, .booking-table-form-telefon-label, .booking-table-form-mail-label, .booking-event-form-navn-label, .booking-event-form-telefon-label, .booking-event-form-mail-label {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  margin-bottom: 0;
+  height: 2em;
+}
+
+.booking-table-comment-input, .booking-event-comment-input {
+  width: 30.25em;
+  height: 10.4375em;
+}
+
 }
 
 /* Media Big Laptop */
 @media screen and (min-width: 1920px){
-    
+
+.booking-info {
+  background-position-y: 100%;
+}
+
 }
