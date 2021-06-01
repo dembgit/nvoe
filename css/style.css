@@ -98,13 +98,14 @@ body {
   text-align: center;
   font-family: var(--nvoe-text-font);
 }
-
-.udvalg-bryggerier-wrap {
+.udvalg-bryggerier {
   width: 72%;
   margin: 0 auto;
   background-image: url("/images/tavle.jpg");
   background-size: cover;
   background-position-x: 100%;
+}
+.udvalg-bryggerier-wrap {
   display: flex;
   flex-wrap: wrap;
   padding-top: 1rem;
@@ -114,8 +115,20 @@ body {
 
 .udvalg-bryggerier-wrap img{
   flex-grow: 1;
-  flex-basis: 35%;
+  width: 35%;
   padding: 7.5%;
+}
+
+.udvalg-bryggerier-intro {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .udvalg-togo-section {
@@ -124,6 +137,7 @@ body {
   margin: 0 auto;
   margin-bottom: 4rem;
   padding: 2rem;
+  padding-bottom: 0;
 }
 
 .udvalg-togo-intro {
@@ -148,8 +162,13 @@ body {
 }
 
 .udvalg-togo-link {
+  display: block;
+  text-decoration: none;
   width: 8.125rem;
   height: 2.8125rem;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2.8125rem;
   background-color: transparent;
   border: solid 2px var(--nvoe-white);
   border-radius: 3.125rem;
@@ -157,9 +176,11 @@ body {
   font-size: 1.5rem;
   color: var(--nvoe-white);
   margin-top: 2em;
-  margin-bottom: 1.875em;
 }
 
+.udvalg-togo-image {
+  width: 100%;
+}
 
 /* Media Tablet */
 @media screen and (min-width: 750px){
@@ -168,7 +189,50 @@ body {
 
 /* Media Small Laptop */
 @media screen and (min-width: 1280px){
+    .udvalg-desktop-wrap {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .udvalg-intro-section {
+      background-image: url("/images/udvalgintrowall.jpg");
+      background-size: 100% auto; 
+      background-repeat: no-repeat;
+      background-position-x: 0%;
+      height: 100vh;
+    }
+
+    .udvalg-intro-wrap {
+      margin: 0;
+      width: 25%;
+      height: auto;
+      background-color: var(--nvoe-blue);
+      border-radius: 5px;
+    }
+
+    .udvalg-intro-description-image {
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+      padding-top: 2rem;
+    }
+
+    .udvalg-bryggerier-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .udvalg-bryggerier {
+      margin: 0;
+    }
     
+    .udvalg-bryggerier-wrap img{
+      width: 10%;
+      padding: 2%;
+    }
+
 }
 
 /* Media Big Laptop */
