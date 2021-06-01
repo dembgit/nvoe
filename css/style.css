@@ -131,6 +131,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.udvalg-tilbud-outro {
+  display: none;
+}
+
 .udvalg-togo-section {
   width: 55%;
   background-color: var(--nvoe-blue);
@@ -193,6 +197,11 @@ body {
       display: flex;
       margin: 0 auto;
       justify-content: center;
+      height: 50vh;
+    }
+
+    .udvalg-intro {
+      padding: 3rem;
     }
 
     .udvalg-intro-section {
@@ -211,11 +220,12 @@ body {
       border-radius: 5px;
     }
 
+
     .udvalg-intro-description-image {
-      width: 50%;
+      width: 55%;
       display: block;
       margin: 0 auto;
-      padding-top: 2rem;
+      padding-top: 0rem;
     }
 
     .udvalg-bryggerier-wrap {
@@ -226,11 +236,58 @@ body {
     }
     .udvalg-bryggerier {
       margin: 0;
+      width: 60%;
     }
     
+    .udvalg-bryggerier-intro{
+      text-align: left;
+      margin-left: 2rem;
+    }
+
     .udvalg-bryggerier-wrap img{
       width: 10%;
       padding: 2%;
+    }
+
+    .udvalg-tilbud-outro {
+      display: block;
+      margin: 0 auto;
+      margin-top: 1rem;
+      font-size: 1.5em;
+      font-weight: 700;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      color: var(--nvoe-white);
+    }
+    .udvalg-togo-section {
+      margin-top: 4rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .udvalg-togo-intro {
+      margin-top: 3rem;
+    }
+    
+    .udvalg-togo-image {
+      width: 45%;
+    }
+
+    .udvalg-togo-order {
+      display: flex;
+      line-height: 2.8125rem;
+      justify-content: center;
+    }
+    
+    .udvalg-togo-price {
+      width: 50%;
+      margin-top: 2rem;
+    }
+
+    .udvalg-togo-link {
+      margin-top: 2rem;
     }
 
 }
