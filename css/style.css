@@ -119,11 +119,11 @@ body {
 }
 
 /*Styling formula for quiz*/
-.quiz-tilmelding{
+.quiz-tilmelding, .onlinequiz-tilmelding{
   margin-bottom: 0.813rem;
   margin-top: 2.125rem;
 }
-.quiz-tilmelding-info-title{
+.quiz-tilmelding-info-title, .onlinequiz-tilmelding-info-title{
   font-size: 1.25em;
   font-family: var(--nvoe-titel-font);
   font-weight: 700;
@@ -142,10 +142,14 @@ body {
   width: 18rem;
 }
 
-.quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail{
+.quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail, .onlinequiz-tilmelding-navn, .onlinequiz-tilmelding-telefon, .onlinequiz-tilmelding-mail{
   font-family: var(--nvoe-titel-font);
   font-size: 1em;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.188rem;
+  margin-right: 3.188rem;
 }
 
 /*Styling the asterix to appear yellow in the formula*/
@@ -153,25 +157,18 @@ body {
   color: var(--nvoe-yellow);
 }
 
-.quiz-tilmelding-telefon, .quiz-tilmelding-navn, .quiz-tilmelding-mail{
-  display: flex;
-  flex-direction: column;
-  margin-left: 3.188rem;
-  margin-right: 3.188rem;
-}
-
-.quiz-tilmelding-telefon-label, .quiz-tilmelding-navn-label, .quiz-tilmelding-mail-label{
+.quiz-tilmelding-telefon-label, .quiz-tilmelding-navn-label, .quiz-tilmelding-mail-label, .onlinequiz-tilmelding-navn-label, .onlinequiz-tilmelding-telefon-label, .onlinequiz-tilmelding-mail-label{
   margin-bottom: 0.813rem;
   margin-top: 2.125rem;
 }
 
-.quiz-tilmelding-navn-input, .quiz-tilmelding-telefon-input, .quiz-tilmelding-mail-input{
+.quiz-tilmelding-navn-input, .quiz-tilmelding-telefon-input, .quiz-tilmelding-mail-input, .onlinequiz-tilmelding-navn-input, .onlinequiz-tilmelding-telefon-input, .onlinequiz-tilmelding-mail-input{
   width: 16.813rem;
   height: 2rem;
 }
 
 /*Styling the placeholder font in the input fields*/
-.quiz-tilmelding-navn-input::placeholder, .quiz-tilmelding-telefon-input::placeholder, .quiz-tilmelding-mail-input::placeholder{
+.quiz-tilmelding-navn-input::placeholder, .quiz-tilmelding-telefon-input::placeholder, .quiz-tilmelding-mail-input::placeholder, .onlinequiz-tilmelding-navn-input::placeholder, .onlinequiz-tilmelding-telefon-input::placeholder, .onlinequiz-tilmelding-mail-input::placeholder{
   font-family: var(--nvoe-text-font);
   font-size: 1.0625em;
   font-weight: 400;
@@ -179,7 +176,7 @@ body {
 }
 
 /*Styling send button*/
-.quiz-tilmelding-submit{
+.quiz-tilmelding-submit, .onlinequiz-tilmelding-submit{
   color:var(--nvoe-yellow);
   background-color: var(--nvoe-black);
   border-color: var(--nvoe-yellow);
@@ -190,6 +187,110 @@ body {
   width: 8.125rem;
   height: 2.813rem;
   margin: 3.625rem 7.188rem;
+}
+
+/*Frederik*/
+
+/*Styling online quiz page - mobile*/
+.onlinequiz-intro-section{
+  background-image: url(/images/quizintrowall.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position-x: 60%;
+}
+
+.onlinequiz-intro, .onlinequiz-intro-date{
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+}
+
+.onlinequiz-intro{
+  font-size: 1.75em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.onlinequiz-intro-date{
+  font-size: 1em;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+.onlinequiz-intro-info{
+  font-size: 0.875em;
+  font-family: var(--nvoe-text-font);
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.onlinequiz-information-step-et, .onlinequiz-information-step-to, .onlinequiz-information-step-tre{
+  background-color: var(--nvoe-blue);
+  margin-left: 3.313rem;
+  margin-right: 3.313rem;
+  margin-top: 3.313rem;
+  padding: 3.688rem 1.813rem;
+}
+
+.onlinequiz-information-step-et-title, .onlinequiz-information-step-to-title, .onlinequiz-information-step-tre-title{
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.onlinequiz-information-step-et-beskrivelse, .onlinequiz-information-step-to-beskrivelse, .onlinequiz-information-step-tre-beskrivelse, .onlinequiz-information-step-to-beskrivelse-to, .onlinequiz-information-step-to-beskrivelse-tre, .onlinequiz-information-step-tre-beskrivelse-to{
+  font-family: var(--nvoe-text-font);
+  font-size: 0.875em;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.onlinequiz-information-step-et-button{
+  background: none;
+  color: var(--nvoe-white);
+  border-color: var(--nvoe-white);
+  border-radius: 3.125rem;
+  font-family: 'Kalam', cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  width: 8.125rem;
+  height: 2.813rem;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.688rem;
+}
+
+.onlinequiz-information-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.onlinequiz-information-step-to-beskrivelse-link, .onlinequiz-information-step-tre-beskrivelse-to-link{
+  color: var(--nvoe-yellow);
+  font-family: var(--nvoe-text-font);
+}
+
+.onlinequiz-tilmelding-info-tekst, .onlinequiz-tilmelding-info-tekst-to{
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+  padding: 2.125rem;
+  width: 18rem;
+}
+
+.onlinequiz-tilmelding-info-tekst-to{
+  margin-top: -4rem;
 }
 
 /* Media Tablet */
