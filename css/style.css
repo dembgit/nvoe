@@ -155,6 +155,7 @@ body {
 
 .front-info-aabningstider {
     background-color: var(--nvoe-blue);
+    text-transform: uppercase;
     width: 72%;
     height: 15rem;
     margin: 0 auto;
