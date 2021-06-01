@@ -201,7 +201,7 @@ body {
 @media screen and (min-width: 1920px){
   
   .event-intro {
-    font-size: 2.5em;
+    font-size: 2.5em; 
   }
   .event-intro-h3 {
     font-size: 1.75em;
