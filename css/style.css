@@ -312,7 +312,171 @@ body {
 
 /* Media Small Laptop */
 
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+    /* Forside styling mediaqueries */
+    .front-intro-section {
+        background-image: url("/images/forsidewall.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position-x: 40%;
+    }
+    .front-intro-image {
+        width: 550px;
+        height: 550px;
+        display: block;
+        margin-left: 364px;
+        padding-top: 5rem;
+    }
+    .front-intro-scrolldown {
+        display: block;
+        background: none;
+        border: none;
+        position: relative;
+        margin: 0 auto;
+    }
+    .front-intro-flex {
+        display: flex;
+    }
+    .front-intro-tilbud {
+        height: 200px;
+        width: 200px;
+        background-color: var(--nvoe-blue);
+        border-radius: 50%;
+        display: block;
+        margin-top: 17rem;
+        margin-right: 20rem;
+    }
+    .front-intro-tilbud-tekst {
+        font-size: 1.25em;
+        margin-top: 3rem;
+    }
+    .front-info-tilbud-button {
+        font-size: 1.5em;
+        margin-left: 3rem;
+        margin: 1.8rem;
+        margin-top: 1rem;
+    }
+    .front-info-section {
+        display: flex;
+        margin-top: 5rem;
+    }
+    .front-info-event {
+        width: 50%;
+        height: 25rem;
+        margin-left: 3rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-event-intro {
+        font-size: 1.75em;
+    }
+    .front-info-event-description {
+        font-size: 1.75em;
+        margin-top: 3rem;
+    }
+    .front-info-event-link {
+        margin-top: 5rem;
+    }
+    .front-info-aabningstider {
+        width: 50%;
+        height: 25rem;
+        line-height: 2em;
+        margin-left: 3rem;
+        margin-right: rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-aabningstider-description {
+        line-height: 2em;
+    }
+    .front-info-corona {
+        width: 50%;
+        height: 25rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-corona-intro {
+        font-size: 1.75em;
+    }
+    .front-info-corona-description {
+        font-size: 1em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .flex-map-some {
+        display: flex;
+    }
+    .front-find-os-intro {
+        font-size: 2.5em;
+        margin-left: 2.5rem;
+    }
+    .front-find-os-adresse-image {
+        width: 4rem;
+        height: 4rem;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+    .front-find-os-adresse-description {
+        font-family: var(--nvoe-text-font);
+        font-size: 1em;
+        font-weight: 0.8em;
+        padding-top: 2.7rem;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+    .mapouter {
+        width: 360px;
+        height: 360px;
+        margin-left: 3rem;
+    }
+    .gmap_canvas {
+        width: 360px;
+        height: 360px;
+    }
+    .front-some {
+        background-color: var(--nvoe-blue);
+        width: 48.5rem;
+        height: 22.6em;
+        margin-left: 3rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        margin-top: 7.5rem;
+    }
+    .front-some-billede-1 {
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        margin-left: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-billede-2 {
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-billede-3 {
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-instagram {
+        display: flex;
+        margin-left: 4.5rem;
+        padding-top: 2rem;
+    }
+    .front-some-facebook {
+        display: flex;
+        margin-left: 4.5rem;
+        padding-top: 1rem;
+    }
+}
 
 
 /* Media Big Laptop */
