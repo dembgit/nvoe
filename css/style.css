@@ -89,6 +89,7 @@ body {
 .quiz-intro{
   font-size: 1.75em;
   padding: 2rem 2rem 1rem 2rem;
+  text-transform: uppercase;
 }
 
 
@@ -109,6 +110,12 @@ body {
   font-style: italic;
   text-align: center;
   margin-top: 10rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.quiz-tilmelding-arrow{
+  display: none;
 }
 
 /*Styling formula for quiz*/
@@ -122,6 +129,7 @@ body {
   font-weight: 700;
   text-align: center;
   margin-top: 3.1875rem;
+  text-transform: uppercase;
 }
 
 .quiz-tilmelding-info-tekst{
@@ -131,6 +139,7 @@ body {
   text-align: center;
   margin: 2.125rem, 3.188rem, 4.688rem, 3.188rem;
   padding: 2.125rem;
+  width: 18rem;
 }
 
 .quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail{
@@ -190,10 +199,122 @@ body {
 
 /* Media Small Laptop */
 @media screen and (min-width: 1280px){
-    
+    /*Frederik - Quiz page styling web, small laptop*/
+    .quiz-intro-section{
+      height: 60vh;
+      background-size: cover;
+      background-position-y: 75%;
+    }
+
+    .quiz-tilmelding-arrow{
+      display: block;
+      background: none;
+      border: none;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 2em;
+    }
+
+    .quiz-tilmelding{
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+    }
 }
 
 /* Media Big Laptop */
 @media screen and (min-width: 1920px){
+
+    /*Frederik - Quiz page styling web*/
+    /*Styling top of page and background image*/
+    .quiz-intro-section{
+      height: 81.68859649122807vh;
+      background-size: cover;
+      background-position-y: 100%;
+    }
+    
+    .quiz-intro{
+      font-size: 2.5em;
+      padding: 11.5rem 2rem 1rem 2rem;
+    }
+    
+    
+    .quiz-intro-description-title{
+      font-size: 1.75em;
+      padding: 1rem;
+    }
+    
+    .quiz-intro-date{
+      font-size: 1.25em;
+      margin-top: 2.813rem;
+    }
+    
+    .quiz-intro-info{
+      font-size: 1em;
+      font-family: var(--nvoe-text-font);
+      font-weight: 700;
+      font-style: italic;
+      text-align: center;
+      margin-top: 18rem;
+      text-align: center;
+    }
+
+    .quiz-tilmelding-arrow{
+      display: block;
+      background: none;
+      border: none;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 1.25rem;
+    }
+
+    /*Quiz formula styling for web*/
+    .quiz-tilmelding{
+      font-size: 1.75em;
+      align-items: center;
+    }
+
+    .quiz-intro-info{
+      font-size: 1.1em;
+    }
+
+    .quiz-tilmelding-info-tekst{
+      font-size: 1em;
+      text-align: center;
+      width: auto;
+    }
+
+    .quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .quiz-tilmelding-navn-input, .quiz-tilmelding-telefon-input, .quiz-tilmelding-mail-input{
+      margin-top: 2rem;
+      margin-left: 1.5rem;
+      width: 21.688rem;
+      height: 2.5rem;
+      font-size: 0.75em;
+    }
+
+    .quiz-tilmelding-navn-label, .quiz-tilmelding-telefon-label, .quiz-tilmelding-mail-label{
+      width: 8rem;
+    }
+    /*Styling send button*/
+  .quiz-tilmelding-submit{
+    color:var(--nvoe-yellow);
+    background-color: var(--nvoe-black);
+    border-color: var(--nvoe-yellow);
+    border-radius: 3.125rem;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    font-size: 1.5em;
+    width: 10rem;
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3.813rem;
+  }
     
 }
