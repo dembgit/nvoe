@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/scn2gmy.css");
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 /* 
 ----- Font styling -----
@@ -50,6 +51,58 @@ body {
     color: var(--nvoe-white);
 }
 
+
+/* --- UDVALG --- */
+
+.udvalg-intro-section {
+  background-image: url("/images/udvalgintrowall.jpg");
+  height: 80vh;
+  background-size: auto 60%; 
+  background-repeat: no-repeat;
+  background-position-x: 40%;
+}
+
+.udvalg-intro {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.udvalg-intro-wrap {
+  margin: 0 auto;
+  width: 72%;
+  height: 64vh;
+  background-color: var(--nvoe-blue);
+  border-radius: 5px;
+}
+
+.udvalg-intro-description-image {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.udvalg-intro-description-title {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.udvalg-intro-description {
+  margin: 1rem auto;
+  width: 85%;
+  line-height: 1.5em;
+  text-align: center;
+  font-family: var(--nvoe-text-font);
+}
+
+.udvlag-bryggerier-wrap {
+  width: 72%;
+}
 
 
 /* Media Tablet */
