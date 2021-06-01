@@ -105,6 +105,77 @@ body {
 }
 
 
+
+
+/* --- Om baren --- */ 
+
+.ombaren-info {
+  background-image: url("/images/ombarentavle.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  
+}
+
+.ombaren-info-title {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ombaren-info-tekst {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1.75em;
+  text-align: center;
+}
+
+.ombaren-info-img {
+  width: 20rem;
+  margin: 0;
+  padding: 1.75em;
+}
+
+.ombaren-omos-title {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ombaren-omos-person-navn {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ombaren-omos-person-img {
+  width: 20rem;
+  margin: 0;
+  padding: 1.75em;
+  border-radius: 50%;
+}
+
+.ombaren-omos-person-tekst {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1.75em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
 /* Media Tablet */
 @media screen and (min-width: 750px){
     
