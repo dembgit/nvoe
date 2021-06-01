@@ -1,5 +1,21 @@
 @import url("https://use.typekit.net/scn2gmy.css");
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap%27');
 
+/* 
+----- Font styling -----
+
+ --- Kalam ---
+
+font-family: 'Kalam', cursive;
+
+font-weight: 400;
+
+font-style: normal;
+
+--- Kalam Weight ---
+Light = 300
+Regular = 400
+Bold = 700
 /* 
 ----- Font styling -----
 
@@ -50,7 +66,122 @@ body {
     color: var(--nvoe-white);
 }
 
+/*Frederik*/
 
+/*Styling quiz page - mobile*/
+
+/*Background Image top of the page*/
+.quiz-intro-section{
+  background-image: url(/images/quizintrowall.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position-x: 60%;
+}
+
+/*Saving lines and grabbing same font for all 3 classes*/
+.quiz-intro, .quiz-intro-description-title, .quiz-intro-date{
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  text-align: center;
+}
+
+/*Styling individual text lines top of page*/
+.quiz-intro{
+  font-size: 1.75em;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+
+.quiz-intro-description-title{
+  font-size: 1.25em;
+  padding: 1rem;
+}
+
+.quiz-intro-date{
+  font-size: 1em;
+  margin-top: 0.3rem;
+}
+
+.quiz-intro-info{
+  font-size: 0.875em;
+  font-family: var(--nvoe-text-font);
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+/*Styling formula for quiz*/
+.quiz-tilmelding{
+  margin-bottom: 0.813rem;
+  margin-top: 2.125rem;
+}
+.quiz-tilmelding-info-title{
+  font-size: 1.25em;
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 3.1875rem;
+}
+
+.quiz-tilmelding-info-tekst{
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  margin: 2.125rem, 3.188rem, 4.688rem, 3.188rem;
+  padding: 2.125rem;
+}
+
+.quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail{
+  font-family: var(--nvoe-titel-font);
+  font-size: 1em;
+  font-weight: 700;
+}
+
+/*Styling the asterix to appear yellow in the formula*/
+.star{
+  color: var(--nvoe-yellow);
+}
+
+.quiz-tilmelding-telefon, .quiz-tilmelding-navn, .quiz-tilmelding-mail{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.188rem;
+  margin-right: 3.188rem;
+}
+
+.quiz-tilmelding-telefon-label, .quiz-tilmelding-navn-label, .quiz-tilmelding-mail-label{
+  margin-bottom: 0.813rem;
+  margin-top: 2.125rem;
+}
+
+.quiz-tilmelding-navn-input, .quiz-tilmelding-telefon-input, .quiz-tilmelding-mail-input{
+  width: 16.813rem;
+  height: 2rem;
+}
+
+/*Styling the placeholder font in the input fields*/
+.quiz-tilmelding-navn-input::placeholder, .quiz-tilmelding-telefon-input::placeholder, .quiz-tilmelding-mail-input::placeholder{
+  font-family: var(--nvoe-text-font);
+  font-size: 1.0625em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*Styling send button*/
+.quiz-tilmelding-submit{
+  color:var(--nvoe-yellow);
+  background-color: var(--nvoe-black);
+  border-color: var(--nvoe-yellow);
+  border-radius: 3.125rem;
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+  font-size: 1.5em;
+  width: 8.125rem;
+  height: 2.813rem;
+  margin: 3.625rem 7.188rem;
+}
 
 /* Media Tablet */
 @media screen and (min-width: 750px){
