@@ -442,4 +442,108 @@ body {
 
 /* Media Big Laptop */
 
-@media screen and (min-width: 1920px) {}
+@media screen and (min-width: 1920px) {
+    .togo-intro-section {
+        height: 100vh;
+        background-position-x: 40%;
+    }
+    .togo-intro {
+        font-size: 2.5em;
+    }
+    .togo-intro-h3 {
+        font-size: 1.75em;
+        text-align: left;
+        margin-left: 18rem;
+        margin-top: 8rem;
+    }
+    .togo-beer-image {
+        width: 30%;
+        margin-left: 13rem;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .togo-intro-image {
+        display: block;
+        width: 30%;
+        margin-left: 75rem;
+        margin-top: -28rem;
+    }
+    .togo-intro-bestilling-disclaimer {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 6rem;
+    }
+    .togo-intro-bestilling-disclaimer-description {
+        font-size: 1em;
+    }
+    .togo-bestilling-section {
+        background-color: var(--nvoe-blue);
+        width: 40%;
+        height: 30rem;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+        margin-top: 2.5rem;
+    }
+    .togo-bestilling-intro {
+        font-size: 1.75em;
+        margin-bottom: 3rem;
+    }
+    .togo-bestilling-antal-intro {
+        font-family: var(--nvoe-titel-font);
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 2.5rem;
+        margin-left: 7rem;
+    }
+    .togo-bestilling-telefon {
+        font-family: var(--nvoe-titel-font);
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 2.5rem;
+        margin-left: 7rem;
+    }
+    .togo-bestilling-dato {
+        font-family: var(--nvoe-titel-font);
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 1.5rem;
+        margin-left: 7rem;
+    }
+    .togo-bestilling-antal {
+        display: flex;
+    }
+    .togo-bestilling-antal-selection {
+        width: 3rem;
+        height: 1.5rem;
+        margin-right: 23rem;
+        margin-top: 1.3rem;
+    }
+    .togo-bestilling-telefon {
+        display: flex;
+    }
+    .togo-bestilling-telefon-box {
+        width: 7rem;
+        height: 1.5rem;
+        text-align: center;
+        margin-top: -0.1rem;
+        margin-left: 6rem;
+    }
+    .togo-bestilling-dato {
+        display: flex;
+    }
+    .togo-bestilling-dato-box {
+        width: 7rem;
+        height: 1.5rem;
+        text-align: center;
+        margin-top: -0.1rem;
+        margin-left: 8.5rem;
+    }
+    .togo-bestilling-button {
+        margin-left: 19.5rem;
+    }
+}
