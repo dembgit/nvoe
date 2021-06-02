@@ -86,7 +86,7 @@ body {
   background-image: url("/images/udvalgintrowall.jpg");
   background-size: auto 55vh; 
   background-repeat: no-repeat;
-
+}
 /*Styling quiz page - mobile*/
 
 /*Background Image top of the page*/
@@ -314,8 +314,7 @@ body {
 
 .onlinequiz-tilmelding-info-tekst-to{
   margin-top: -4rem;
-=======
-events-styling
+}
 /* Events side */
 .event-intro-section {
   background-image: url("/images/eventswall.JPG");
@@ -341,7 +340,6 @@ events-styling
   text-align: center;
 }
 
-.event-types-intro {
 /* Booking Page Styling */
 
 .booking-info {
@@ -520,6 +518,7 @@ events-styling
   margin: 1rem auto;
   width: 85%;
   line-height: 1.6em;
+}
 
 .booking-event-info-tekst {
   color: var(--nvoe-white);
@@ -640,7 +639,7 @@ events-styling
 
 .udvalg-togo-image {
   width: 100%;
-
+}
 
 .booking-table-amount-one-button, .booking-table-amount-two-button, .booking-table-amount-three-button, .booking-table-amount-four-button, .booking-table-amount-five-button, .booking-table-amount-six-button, .booking-table-amount-seven-button {
   border: solid 2px var(--nvoe-white);
@@ -848,8 +847,6 @@ events-styling
   margin-bottom: 2rem;
 }
 
-.event-bodega h2 {
-  
 .udvalg-intro-wrap {
   margin: 0 auto;
   width: 72%;
@@ -922,8 +919,6 @@ events-styling
   border-radius: 5px;
   margin-bottom: 2rem;
 }
-
-.event-fernisering h2 {
 
 .ombaren-info-tekst {
   font-family: var(--nvoe-text-font);
@@ -2184,8 +2179,6 @@ ombaren-styling
     margin-top: 2rem;
     text-align: center;
   }
-=======
-events-styling
   
   .event-intro {
     font-size: 2.5em; 
@@ -2381,6 +2374,8 @@ ombaren-styling
 
 .booking-info {
   background-position-y: 100%;
+}
+
 }
 
 }
