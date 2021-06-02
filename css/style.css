@@ -96,11 +96,20 @@ header {
   font-size: 1.5em;
   font-weight: 700;
   text-decoration: none;
+  transition: 0.1s;
 }
 
 .header-nav-ul-li-a:hover {
   color: var(--nvoe-yellow);
 }
+
+.active-page {
+  color: var(--nvoe-yellow);
+}
+
+
+
+
 /* Forside styling */
 
 .front-body {
@@ -155,6 +164,12 @@ header {
   margin-top: 1em;
   margin-left: 2rem;
   margin-bottom: 1.875em;
+  transition: 0.1s;
+}
+
+.front-info-tilbud-button:hover{
+  border: solid 2px var(--nvoe-yellow);
+  color: var(--nvoe-yellow);
 }
 
 .front-intro-scrolldown {
@@ -492,12 +507,11 @@ header {
 
 
 /* --- UDVALG --- */
-
-.udvalg-intro-section {
-  background-image: url("/images/udvalgintrowall.jpg");
-  background-size: auto 55vh; 
-  background-repeat: no-repeat;
-  background-position-x: 40%;
+.udvalg-body {
+    background-image: url("/images/udvalgintrowall.jpg");
+    background-size: auto 55vh; 
+    background-repeat: no-repeat;
+    background-position-x: 40%;
 }
 
 .udvalg-intro {
@@ -1293,7 +1307,7 @@ header {
 
   /* Forside MEDIA 1280 */
     .front-body {
-    background-size: auto 100vh;
+    background-size: 100vw auto;
     }
 
     .front-intro-section {
@@ -1594,11 +1608,12 @@ header {
     padding: 3rem;
   }
 
-  .udvalg-intro-section {
-    background-image: url("/images/udvalgintrowall.jpg");
-    background-size: 100% auto; 
-    background-repeat: no-repeat;
+  .udvalg-body {
+    background-size: 100vw 100vh; 
     background-position-x: 0%;
+  }
+
+  .udvalg-intro-section {
     height: 100vh;
   }
 
@@ -1915,7 +1930,7 @@ header {
 @media screen and (min-width: 1920px) {
 
   .front-body {
-    background-size: auto 100vh;
+    background-size: 100vw 100vh;
   }
 
   /* Forside styling mediaqueries */
@@ -1947,7 +1962,7 @@ header {
     background-color: var(--nvoe-blue);
     border-radius: 50%;
     display: block;
-    margin-top: 22rem;
+    margin-top: 13rem;
     margin-right: 7.5rem;
 }
 .front-intro-tilbud-tekst {
