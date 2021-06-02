@@ -146,7 +146,10 @@ body {
   padding-top: 2.5rem;
 }
 
-.front-info-event-button {
+.front-info-event-link {
+  display: block;
+  text-align: center;
+  line-height: 2em;
   width: 5em;
   height: 2em;
   background-color: transparent;
@@ -155,8 +158,8 @@ body {
   font-family: 'Kalam';
   font-size: 1.5em;
   color: var(--nvoe-white);
+  margin: 0 auto;
   margin-top: 1.1em;
-  margin-left: 4.8rem;
   margin-bottom: 1.875em;
 }
 
@@ -444,11 +447,314 @@ body {
 }
 
 
+/* --- UDVALG --- */
+
+.udvalg-intro-section {
+  background-image: url("/images/udvalgintrowall.jpg");
+  background-size: auto 55vh; 
+  background-repeat: no-repeat;
+  background-position-x: 40%;
+}
+
+.udvalg-intro {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.udvalg-intro-wrap {
+  margin: 0 auto;
+  width: 72%;
+  height: 64vh;
+  background-color: var(--nvoe-blue);
+  border-radius: 5px;
+}
+
+.udvalg-intro-description-image {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.udvalg-intro-description-title {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.udvalg-intro-description {
+  margin: 1rem auto;
+  width: 85%;
+  line-height: 1.6em;
+  text-align: center;
+  font-family: var(--nvoe-text-font);
+}
+.udvalg-bryggerier {
+  width: 72%;
+  margin: 0 auto;
+  background-image: url("/images/tavle.jpg");
+  background-size: cover;
+  background-position-x: 100%;
+}
+.udvalg-bryggerier-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 4rem;
+}
+
+.udvalg-bryggerier-wrap img{
+  flex-grow: 1;
+  width: 35%;
+  padding: 7.5%;
+}
+
+.udvalg-bryggerier-intro {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.udvalg-tilbud-outro {
+  display: none;
+}
+
+.udvalg-togo-section {
+  width: 55%;
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+.udvalg-togo-intro {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.75em;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.udvalg-togo-description {
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.udvalg-togo-price {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.udvalg-togo-link {
+  display: block;
+  text-decoration: none;
+  width: 8.125rem;
+  height: 2.8125rem;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2.8125rem;
+  background-color: transparent;
+  border: solid 2px var(--nvoe-white);
+  border-radius: 3.125rem;
+  font-family: 'Kalam';
+  font-size: 1.5rem;
+  color: var(--nvoe-white);
+  margin-top: 2em;
+}
+
+.udvalg-togo-image {
+  width: 100%;
+}
+
+
 
 
 /* Media Small Laptop */
 
 @media screen and (min-width: 1280px) {
+
+  /* Forside MEDIA 1280 */
+    .front-intro-section {
+        background-image: url("/images/forsidewall.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position-x: 40%;
+    }
+    .front-intro-image {
+        width: 550px;
+        height: 550px;
+        display: block;
+        margin-left: 364px;
+        padding-top: 5rem;
+    }
+    .front-intro-scrolldown {
+        display: block;
+        background: none;
+        border: none;
+        position: relative;
+        margin: 0 auto;
+    }
+    .front-intro-flex {
+        display: flex;
+    }
+    .front-intro-tilbud {
+        display: block;
+        height: 200px;
+        width: 200px;
+        background-color: var(--nvoe-blue);
+        border-radius: 50%;
+        margin: 0;
+        margin-right: 5rem;
+        margin-top: 17rem;
+    }
+    .front-intro-tilbud-tekst {
+        font-size: 1.25em;
+        margin-top: 3rem;
+    }
+    .front-info-tilbud-button {
+        font-size: 1.5em;
+        margin-left: 3rem;
+        margin: 1.8rem;
+        margin-top: 1rem;
+    }
+    .front-info-section {
+        display: flex;
+        margin-top: 5rem;
+    }
+    .front-info-event {
+        width: 50%;
+        height: 25rem;
+        margin-left: 3rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-event-intro {
+        font-size: 1.75em;
+    }
+    .front-info-event-description {
+        font-size: 1.75em;
+        margin-top: 3rem;
+    }
+    .front-info-event-link {
+        margin-top: 5rem;
+    }
+    .front-info-aabningstider {
+        width: 50%;
+        height: 25rem;
+        line-height: 2em;
+        margin-left: 3rem;
+        margin-right: rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-aabningstider-description {
+        line-height: 2em;
+    }
+    .front-info-corona {
+        width: 50%;
+        height: 25rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-corona-intro {
+        font-size: 1.75em;
+    }
+    .front-info-corona-description {
+        font-size: 1em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .flex-map-some {
+        display: flex;
+    }
+    .front-find-os-intro {
+        font-size: 2.5em;
+        margin-left: 2.5rem;
+    }
+    .front-find-os-adresse-image {
+        width: 4rem;
+        height: 4rem;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+    .front-find-os-adresse-description {
+        font-family: var(--nvoe-text-font);
+        font-size: 1em;
+        font-weight: 0.8em;
+        padding-top: 2.7rem;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+    .mapouter {
+        width: 360px;
+        height: 360px;
+        margin-left: 3rem;
+    }
+    .gmap_canvas {
+        width: 360px;
+        height: 360px;
+    }
+    .front-some {
+        background-color: var(--nvoe-blue);
+        width: 48.5rem;
+        height: 22.6em;
+        margin-left: 3rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        margin-top: 7.5rem;
+    }
+    .front-some-billede-1 {
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        margin-left: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-billede-2 {
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-billede-3 {
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-instagram {
+        display: flex;
+        margin-left: 4.5rem;
+        padding-top: 2rem;
+    }
+    .front-some-facebook {
+        display: flex;
+        margin-left: 4.5rem;
+        padding-top: 1rem;
+    }
+
+  /* TOGO MEDIA 1280 */
+
   .togo-intro-section {
       height: 100vh;
       background-position-x: 40%;
@@ -483,7 +789,7 @@ body {
       text-transform: uppercase;
       font-size: 1.5em;
       text-align: center;
-      margin-top: 6rem;
+      margin-top: 3.5rem;
   }
 
   .togo-intro-bestilling-disclaimer-description {
@@ -571,12 +877,276 @@ body {
       margin-left: 12rem;
   }
 
+  /* UDVALG MEDIA 1280 */
+
+  .udvalg-desktop-wrap {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  .udvalg-intro {
+    padding: 3rem;
+  }
+
+  .udvalg-intro-section {
+    background-image: url("/images/udvalgintrowall.jpg");
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    height: 100vh;
+  }
+
+  .udvalg-intro-wrap {
+    margin: 0;
+    width: 25%;
+    height: auto;
+    background-color: var(--nvoe-blue);
+    border-radius: 5px;
+  }
+
+
+  .udvalg-intro-description-image {
+    width: 55%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 0rem;
+  }
+
+  .udvalg-bryggerier-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .udvalg-bryggerier {
+    margin: 0;
+    width: 60%;
+  }
+
+  .udvalg-bryggerier-intro{
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .udvalg-bryggerier-wrap img{
+    width: 10%;
+    padding: 2%;
+  }
+
+  .udvalg-tilbud-outro {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: var(--nvoe-white);
+  }
+  .udvalg-togo-section {
+    margin-top: 4rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .udvalg-togo-intro {
+    margin-top: 3rem;
+  }
+
+  .udvalg-togo-image {
+    width: 45%;
+  }
+
+  .udvalg-togo-order {
+    display: flex;
+    line-height: 2.8125rem;
+    justify-content: center;
+  }
+
+  .udvalg-togo-price {
+    width: 50%;
+    margin-top: 2rem;
+  }
+
+  .udvalg-togo-link {
+    margin-top: 2rem;
+  }
+
 }
 
 
 /* Media Big Laptop */
 
 @media screen and (min-width: 1920px) {
+
+  /* Forside styling mediaqueries */
+  .front-intro-section {
+    background-image: url("/images/forsidewall.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position-x: 40%;
+}
+.front-intro-image {
+    width: 800px;
+    height: 800px;
+    display: block;
+    margin-left: 560px;
+    padding-top: 2.3rem;
+}
+.front-intro-scrolldown {
+    display: block;
+    background: none;
+    border: none;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -7rem;
+}
+.front-intro-flex {
+    display: flex;
+}
+.front-intro-tilbud {
+    height: 250px;
+    width: 250px;
+    background-color: var(--nvoe-blue);
+    border-radius: 50%;
+    display: block;
+    margin-top: 22rem;
+    margin-right: 13rem;
+}
+.front-intro-tilbud-tekst {
+    font-size: 1.25em;
+    margin-top: 6rem;
+}
+.front-info-tilbud-button {
+    font-size: 1.5em;
+    margin-left: 3rem;
+}
+.front-info-section {
+    display: flex;
+}
+.front-info-event {
+    width: 30%;
+    height: 20rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+.front-info-event-intro {
+    font-size: 1.75em;
+}
+.front-info-event-description {
+    font-size: 1.75em;
+    margin-top: 1rem;
+}
+.front-info-event-link {
+    margin-top: 3rem;
+}
+.front-info-aabningstider {
+    width: 30%;
+    height: 20rem;
+    line-height: 2em;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+.front-info-aabningstider-description {
+    line-height: 1.5em;
+}
+.front-info-corona {
+    width: 30%;
+    height: 20rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+.front-info-corona-intro {
+    font-size: 1.75em;
+}
+.front-info-corona-description {
+    font-size: 1em;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.flex-map-some {
+    display: flex;
+}
+.front-find-os-intro {
+    font-size: 2.5em;
+    margin-left: 2.5rem;
+}
+.front-find-os-adresse-image {
+    width: 4rem;
+    height: 4rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.front-find-os-adresse-description {
+    font-family: var(--nvoe-text-font);
+    font-size: 1.75em;
+    font-weight: 0.8em;
+    padding-top: 2.7rem;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+.mapouter {
+    width: 500px;
+    height: 500px;
+    margin-left: 5rem;
+}
+.gmap_canvas {
+    width: 470px;
+    height: 470px;
+}
+.front-some {
+    background-color: var(--nvoe-blue);
+    width: 70.2rem;
+    height: 30em;
+    margin-left: 8.6rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    margin-top: 7.3rem;
+}
+.front-some-billede-1 {
+    width: 280px;
+    height: 280px;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2rem;
+}
+.front-some-billede-2 {
+    width: 280px;
+    height: 280px;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+}
+.front-some-billede-3 {
+    width: 280px;
+    height: 280px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.front-some-instagram {
+    display: flex;
+    margin-left: 4.5rem;
+    padding-top: 2rem;
+}
+.front-some-facebook {
+    display: flex;
+    margin-left: 4.5rem;
+    padding-top: 1rem;
+}
+
+
   .togo-intro-section {
       height: 100vh;
       background-position-x: 40%;
