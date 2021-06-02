@@ -689,6 +689,559 @@ body {
   text-align: center;
 }
 
+/*Styling quiz page - mobile*/
+
+/*Background Image top of the page*/
+.quiz-intro-section{
+  background-image: url(/images/quizintrowall.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position-x: 60%;
+}
+
+/*Saving lines and grabbing same font for all 3 classes*/
+.quiz-intro, .quiz-intro-description-title, .quiz-intro-date{
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  text-align: center;
+}
+
+/*Styling individual text lines top of page*/
+.quiz-intro{
+  font-size: 1.75em;
+  padding: 2rem 2rem 1rem 2rem;
+  text-transform: uppercase;
+}
+
+
+.quiz-intro-description-title{
+  font-size: 1.25em;
+  padding: 1rem;
+}
+
+.quiz-intro-date{
+  font-size: 1em;
+  margin-top: 0.3rem;
+}
+
+.quiz-intro-info{
+  font-size: 0.875em;
+  font-family: var(--nvoe-text-font);
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.quiz-tilmelding-arrow{
+  display: none;
+}
+
+/*Styling formula for quiz*/
+.quiz-tilmelding, .onlinequiz-tilmelding{
+  margin-bottom: 0.813rem;
+  margin-top: 2.125rem;
+}
+.quiz-tilmelding-info-title, .onlinequiz-tilmelding-info-title{
+  font-size: 1.25em;
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 3.1875rem;
+  text-transform: uppercase;
+}
+
+.quiz-tilmelding-info-tekst{
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  margin: 2.125rem, 3.188rem, 4.688rem, 3.188rem;
+  padding: 2.125rem;
+  width: 18rem;
+}
+
+.quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail, .onlinequiz-tilmelding-navn, .onlinequiz-tilmelding-telefon, .onlinequiz-tilmelding-mail{
+  font-family: var(--nvoe-titel-font);
+  font-size: 1em;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.188rem;
+  margin-right: 3.188rem;
+}
+
+/*Styling the asterix to appear yellow in the formula*/
+.star{
+  color: var(--nvoe-yellow);
+}
+
+.quiz-tilmelding-telefon-label, .quiz-tilmelding-navn-label, .quiz-tilmelding-mail-label, .onlinequiz-tilmelding-navn-label, .onlinequiz-tilmelding-telefon-label, .onlinequiz-tilmelding-mail-label{
+  margin-bottom: 0.813rem;
+  margin-top: 2.125rem;
+}
+
+.quiz-tilmelding-navn-input, .quiz-tilmelding-telefon-input, .quiz-tilmelding-mail-input, .onlinequiz-tilmelding-navn-input, .onlinequiz-tilmelding-telefon-input, .onlinequiz-tilmelding-mail-input{
+  width: 16.813rem;
+  height: 2rem;
+}
+
+/*Styling the placeholder font in the input fields*/
+.quiz-tilmelding-navn-input::placeholder, .quiz-tilmelding-telefon-input::placeholder, .quiz-tilmelding-mail-input::placeholder, .onlinequiz-tilmelding-navn-input::placeholder, .onlinequiz-tilmelding-telefon-input::placeholder, .onlinequiz-tilmelding-mail-input::placeholder{
+  font-family: var(--nvoe-text-font);
+  font-size: 1.0625em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*Styling send button*/
+.quiz-tilmelding-submit, .onlinequiz-tilmelding-submit{
+  color:var(--nvoe-yellow);
+  background-color: var(--nvoe-black);
+  border-color: var(--nvoe-yellow);
+  border-radius: 3.125rem;
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+  font-size: 1.5em;
+  width: 8.125rem;
+  height: 2.813rem;
+  margin: 3.625rem 7.188rem;
+}
+
+/*Frederik*/
+
+/*Styling online quiz page - mobile*/
+.onlinequiz-intro-section{
+  background-image: url(/images/quizintrowall.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position-x: 60%;
+}
+
+.onlinequiz-intro, .onlinequiz-intro-date{
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+}
+
+.onlinequiz-intro{
+  font-size: 1.75em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.onlinequiz-intro-date{
+  font-size: 1em;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+.onlinequiz-intro-info{
+  font-size: 0.875em;
+  font-family: var(--nvoe-text-font);
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.onlinequiz-information-step-et, .onlinequiz-information-step-to, .onlinequiz-information-step-tre{
+  background-color: var(--nvoe-blue);
+  margin-left: 3.313rem;
+  margin-right: 3.313rem;
+  margin-top: 3.313rem;
+  padding: 3.688rem 1.813rem;
+}
+
+.onlinequiz-information-step-et-title, .onlinequiz-information-step-to-title, .onlinequiz-information-step-tre-title{
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.onlinequiz-information-step-et-beskrivelse, .onlinequiz-information-step-to-beskrivelse, .onlinequiz-information-step-tre-beskrivelse, .onlinequiz-information-step-to-beskrivelse-to, .onlinequiz-information-step-to-beskrivelse-tre, .onlinequiz-information-step-tre-beskrivelse-to{
+  font-family: var(--nvoe-text-font);
+  font-size: 0.875em;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.onlinequiz-information-step-et-button{
+  background: none;
+  color: var(--nvoe-white);
+  border-color: var(--nvoe-white);
+  border-radius: 3.125rem;
+  font-family: 'Kalam', cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  width: 8.125rem;
+  height: 2.813rem;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.688rem;
+}
+
+.onlinequiz-information-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.onlinequiz-information-img-desktop{
+  display: none;
+}
+
+.onlinequiz-information-step-to-beskrivelse-link, .onlinequiz-information-step-tre-beskrivelse-to-link{
+  color: var(--nvoe-yellow);
+  font-family: var(--nvoe-text-font);
+}
+
+.onlinequiz-tilmelding-info-tekst, .onlinequiz-tilmelding-info-tekst-to{
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+  padding: 2.125rem;
+  width: 18rem;
+}
+
+.onlinequiz-tilmelding-info-tekst-to{
+  margin-top: -4rem;
+}
+
+
+
+
+/* --- Om baren --- */ 
+
+.ombaren-info {
+  background-image: url("/images/ombarentavle.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+
+}
+
+.ombaren-info-title {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ombaren-info-tekst {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1.75em;
+  text-align: center;
+}
+
+.ombaren-info-img {
+  width: 20rem;
+  margin: 0;
+  padding: 1.75em;
+}
+
+.ombaren-omos-title {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ombaren-omos-person-navn {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ombaren-omos-person-img {
+  width: 20rem;
+  margin: 0;
+  padding: 1.75em;
+  border-radius: 50%;
+}
+
+.ombaren-omos-person-tekst {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1.75em;
+  text-align: center;
+}
+
+
+
+/* --- Booking --- */
+
+.booking-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("/images/Booking_background.png");
+  background-size: auto 85vh;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
+.booking-info-title, .booking-info-subtitle, .booking-info-table-title, .booking-info-event-title, .booking-table-title, .booking-table-comment-title, .booking-event-info-title, .booking-event-comment-title  {
+  text-align: center;
+  font-family: dunbar-tall, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Booking Page Styling - Title */
+
+.booking-info-title {
+  margin-top: 5.9375em;
+  margin-bottom: 1em;
+  font-size: 1.75em;
+}
+
+.booking-info-subtitle {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+/* Booking Page Styling - Book Et Bord*/
+
+.booking-info-table, .booking-info-event {
+  background-color: var(--nvoe-blue);
+  width: 16.875em;
+  margin: 0 auto;
+  border-radius: 0.3125em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-info-event {
+  margin-top: 4.625em;
+}
+
+.booking-info-table-title, .booking-info-event-title {
+  margin-top: 2.375em;
+  margin-bottom: 1.5em;
+}
+
+.booking-info-table-tekst, .booking-info-table-tekst-kursiv, .booking-info-event-tekst, .booking-info-event-tekst-to {
+  text-align: center;
+  padding: 0 1.375em 0 1.375em;
+  line-height: 1.5em;
+}
+
+.booking-info-table-tekst-kursiv {
+  margin-top: 2.375em;
+  font-style: italic;
+}
+
+.booking-info-event-tekst-to {
+  margin-top: 2.375em;
+}
+
+.booking-info-table-button, .booking-info-event-button {
+  width: 8.125em;
+  height: 2.8125em;
+  background-color: transparent;
+  border: solid 2px var(--nvoe-white);
+  border-radius: 3.125em;
+  font-family: 'Kalam';
+  font-size: 1.5em;
+  color: var(--nvoe-white);
+  margin-top: 2em;
+  margin-bottom: 1.875em;
+}
+
+
+/* Booking Page Styling - Book Bord Form */
+
+.booking-table, .booking-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: solid 2px var(--nvoe-white);
+  width: 16.875em;
+  margin: 0 auto;
+  margin-top: 4.325em;
+}
+
+.booking-event {
+  margin-bottom: 4.75em;
+}
+
+.booking-event-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-table-title, .booking-event-info-title {
+  font-size: 1.25em;
+  margin-top: 3em;
+}
+
+
+.booking-table-subtitle, .booking-event-info-subtitle {
+  margin-top: 1em;
+  margin-bottom: 2.625em;
+  font-size: 0.8125em;
+  color: var(--nvoe-yellow);
+}
+
+.booking-table-form-navn, .booking-table-form-telefon, .booking-table-form-mail, .booking-event-form-navn, .booking-event-form-telefon, .booking-event-form-mail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.booking-table-form-navn-input, .booking-table-form-telefon-input, .booking-table-form-mail-input, .booking-event-form-navn-input, .booking-event-form-telefon-input, .booking-event-form-mail-input {
+  width: 12.5em;
+  height: 2em;
+}
+.booking-table-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-table-form-navn-label, .booking-table-form-telefon-label, .booking-table-form-mail-label, .booking-table-amount-title, .booking-event-form-navn-label, .booking-event-form-telefon-label, .booking-event-form-mail-label, .booking-event-form-subtitle {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 0.75em;
+}
+
+.booking-event-form {
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-event-form-subtitle {
+  text-align: center;
+}
+
+.booking-event-form-range {
+  display: block;
+  width: 3.125em;
+  height: 2em;
+  margin: 0 auto;
+}
+
+.booking-table-form-focus, .booking-event-form-focus, .booking-event-info-tekst-focus {
+  color: var(--nvoe-yellow);
+  font-weight: 700;
+}
+
+.booking-table-amount-tekst, .booking-event-info-tekst {
+  color: var(--nvoe-yellow);
+  margin-top: 1.125em;
+  font-size: 0.875em;
+  font-style: italic;
+  text-align: center;
+  width: 14.125em;
+  height: 4em;
+}
+
+.booking-event-info-tekst {
+  color: var(--nvoe-white);
+}
+
+.booking-table-amount-pick {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 13.75em;
+}  
+
+.booking-table-amount-upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 14.125em;
+  margin: 0 1.375em 1.25em 1.375em;
+}
+
+.booking-table-amount-lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 10em;
+}
+
+.booking-table-amount-pick-one, .booking-table-amount-pick-two, .booking-table-amount-pick-three, .booking-table-amount-pick-four, .booking-table-amount-pick-five, .booking-table-amount-pick-six, .booking-table-amount-pick-seven {
+  text-align: center;
+  margin: 0 0.625em;
+}
+
+.booking-table-amount-one-button, .booking-table-amount-two-button, .booking-table-amount-three-button, .booking-table-amount-four-button, .booking-table-amount-five-button, .booking-table-amount-six-button, .booking-table-amount-seven-button {
+  border: solid 2px var(--nvoe-white);
+  border-radius: 100%;
+  background-color: transparent;
+  color: var(--nvoe-white);
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.booking-table-comment, .booking-event-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-table-comment-title, .booking-event-comment-title {
+  margin-bottom: 1.5em;
+  font-size: 1.25em;
+  text-align: center;
+  width: 9em;
+}
+
+.booking-event-comment-title {
+  margin-top: 1.5em;
+}
+
+.booking-table-comment-input, .booking-event-comment-input {
+  height: 6.8125em;
+  width: 13.75em;
+}
+
+::placeholder {
+  padding-left: 0.5em;
+}
+
+.booking-table-comment-button, .booking-event-comment-button {
+  width: 8.125em;
+  height: 2.8125em;
+  font-size: 1.5em;
+  color: var(--nvoe-yellow);
+  background-color: transparent;
+  border: 2px solid var(--nvoe-yellow);
+  border-radius: 3.125em;
+  font-family: 'Kalam';
+  margin-top: 1.875em;
+  margin-bottom: 1.75em;
+}
+
+
 
 /* Media Small Laptop */
 
@@ -1117,7 +1670,198 @@ body {
     height: 60vh;
   }
 
+/* QUIZ MEDIA 1280 */
 
+  .quiz-intro-section{
+    height: 60vh;
+    background-size: cover;
+    background-position-y: 75%;
+  }
+
+  .quiz-tilmelding-arrow{
+    display: block;
+    background: none;
+    border: none;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+
+  .quiz-tilmelding, .onlinequiz-tilmelding{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+
+
+
+
+/* ONLINE QUIZ MEDIA 1280 */
+
+  .onlinequiz-intro-section{
+    background-image: none;
+  }
+  .onlinequiz-intro {
+    padding-top: 3rem;
+  }
+
+  .onlinequiz-desktop{
+    background-image: url(/images/quizintrowall.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position-y: 100%;
+  }
+
+  .onlinequiz-information{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .onlinequiz-information-img{
+    display: none;
+  }
+
+  .onlinequiz-information-step-et, .onlinequiz-information-step-to, .onlinequiz-information-step-tre{
+    width: 20.125rem;
+    height: 10.188rem;
+    margin: 0.5rem;
+  }
+
+  .onlinequiz-information-step-et-title, .onlinequiz-information-step-to-title, .onlinequiz-information-step-tre-title{
+    font-size: 1.75em;
+  }
+
+  .onlinequiz-information-step-et-beskrivelse, .onlinequiz-information-step-to-beskrivelse, .onlinequiz-information-step-tre-beskrivelse, .onlinequiz-information-step-to-beskrivelse-link, .onlinequiz-information-step-to-beskrivelse-to, .onlinequiz-information-step-to-beskrivelse-tre, .onlinequiz-information-step-tre-beskrivelse-to, .onlinequiz-information-step-tre-beskrivelse-to-link{
+    font-size: 1em;
+  }
+
+  .onlinequiz-information-img-desktop{
+    display: block;
+    width: 8.313rem;
+    height: 3rem;
+    margin-top: 8rem;
+  }
+
+  .onlinequiz-intro-info{
+    font-size: 1.75em;
+    font-family: var(--nvoe-text-font);
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+
+
+  /* OM BAREN MEDIA 1280 */
+
+  .ombaren-info-wrapper {
+    display: flex;
+  }
+
+  .ombaren-info {
+    background-image: url("/images/ombarentavle.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    }
+
+    .ombaren-info-tekst {
+      width: 40rem;
+    }
+
+    .ombaren-info-img {
+      width: 35rem;
+    }
+
+    .ombaren-omos-person-img {
+      display: block;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .ombaren-omos-person-tekst {
+      width: 15em;
+      display: block;
+      margin: 0 auto;
+    }
+
+
+
+
+    /* BOOKING MEDIA 1280 */
+
+    .booking-info {
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position-x: 0;
+      height: 45em;
+      background-position-y: 100%;
+    }
+    
+    .booking-info-title {
+      margin-top: 2em;
+    }
+    
+    .booking-info-container {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .booking-info-table, .booking-info-event {
+      margin-top: 0;
+      width: 31.25em;
+      height: 22.6875em;
+    }
+    
+    .booking-info-table-title, .booking-info-event-title {
+      font-size: 1.75em;
+      margin-top: 1.5em;
+      margin-bottom: 0.75em;
+    }
+    
+    .booking-info-table-tekst, .booking-info-table-tekst-kursiv, .booking-info-event-tekst, .booking-info-event-tekst-to {
+      text-align: left;
+      width: 22.375em;
+      font-size: 1em;
+    }
+    
+    .booking-info-table-tekst-kursiv, .booking-info-event-tekst-to {
+      margin-top: 1em;
+    }
+    
+    .booking-info-table-button, .booking-info-event-button {
+      margin-top: 1em;
+    }
+    
+    .booking-info-table-button {
+      margin-top: 2em;
+    }
+    
+    .booking-table, .booking-event {
+      width: 45em;
+    }
+    
+    .booking-table-form-navn, .booking-table-form-telefon, .booking-table-form-mail, .booking-event-form-navn, .booking-event-form-telefon, .booking-event-form-mail {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    .booking-table-form-navn-label, .booking-table-form-telefon-label, .booking-table-form-mail-label, .booking-event-form-navn-label, .booking-event-form-telefon-label, .booking-event-form-mail-label {
+      display: flex;
+      align-items: center;
+      margin-right: 1em;
+      margin-bottom: 0;
+      height: 2em;
+    }
+    
+    .booking-table-comment-input, .booking-event-comment-input {
+      width: 30.25em;
+      height: 10.4375em;
+    }
 }
 
 
@@ -1446,5 +2190,228 @@ body {
     margin: 0 auto;
     width: 30%;
     height: 35vh;
+  }
+
+
+
+
+  /* QUIZ MEDIA 1920 */
+
+/*Styling top of page and background image*/
+.quiz-intro-section{
+  height: 81.68859649122807vh;
+  background-size: cover;
+  background-position-y: 100%;
+}
+
+.quiz-intro, .onlinequiz-intro{
+  font-size: 2.5em;
+  padding: 11.5rem 2rem 1rem 2rem;
+}
+
+
+.quiz-intro-description-title{
+  font-size: 1.75em;
+  padding: 1rem;
+}
+
+.quiz-intro-date, .onlinequiz-intro-date{
+  font-size: 1.25em;
+  margin-top: 2.813rem;
+}
+
+.quiz-intro-info{
+  font-size: 1em;
+  font-family: var(--nvoe-text-font);
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-top: 18rem;
+  text-align: center;
+}
+
+.quiz-tilmelding-arrow{
+  display: block;
+  background: none;
+  border: none;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+}
+
+/*Quiz formula styling for web*/
+.quiz-tilmelding{
+  align-items: center;
+}
+
+.quiz-intro-info{
+  font-size: 1.1em;
+}
+
+.quiz-tilmelding-info-title, .onlinequiz-tilmelding-info-title{
+  font-size: 1.75em;
+}
+
+.quiz-tilmelding-info-tekst, .onlinequiz-tilmelding-info-tekst, .onlinequiz-tilmelding-info-tekst-to{
+  font-size: 1em;
+  text-align: center;
+  width: auto;
+}
+
+.quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail, .onlinequiz-tilmelding-navn, .onlinequiz-tilmelding-telefon, .onlinequiz-tilmelding-mail{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.quiz-tilmelding-navn-input, .quiz-tilmelding-telefon-input, .quiz-tilmelding-mail-input, .onlinequiz-tilmelding-navn-input, .onlinequiz-tilmelding-telefon-input, .onlinequiz-tilmelding-mail-input{
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  width: 21.688rem;
+  height: 2.5rem;
+  font-size: 0.75em;
+}
+
+.quiz-tilmelding-navn-label, .quiz-tilmelding-telefon-label, .quiz-tilmelding-mail-label, .onlinequiz-tilmelding-navn-label, .onlinequiz-tilmelding-telefon-label, .onlinequiz-tilmelding-mail-label{
+  width: 8rem;
+  font-size: 1.75em;
+}
+
+/*Styling send button*/
+.quiz-tilmelding-submit, .onlinequiz-tilmelding-submit{
+color:var(--nvoe-yellow);
+background-color: var(--nvoe-black);
+border-color: var(--nvoe-yellow);
+border-radius: 3.125rem;
+font-family: 'Kalam', cursive;
+font-weight: 400;
+font-size: 1.5em;
+width: 10rem;
+height: 5rem;
+display: block;
+margin: 0 auto;
+margin-top: 3.813rem;
+}
+
+
+
+
+/* ONLINE QUIZ MEDIA 1920 */
+
+.onlinequiz-intro-section{
+background-image: none;
+}
+
+.onlinequiz-intro {
+  padding-top: none;
+}
+
+.onlinequiz-desktop{
+background-image: url(/images/quizintrowall.jpg);
+height: 100vh;
+background-size: cover;
+background-position-y: 100%;
+}
+
+.onlinequiz-information{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.onlinequiz-information-img{
+display: none;
+}
+
+.onlinequiz-information-step-et, .onlinequiz-information-step-to, .onlinequiz-information-step-tre{
+width: 25.125rem;
+height: 14.188rem;
+margin: 5rem;
+}
+
+.onlinequiz-information-step-et-title, .onlinequiz-information-step-to-title, .onlinequiz-information-step-tre-title{
+font-size: 1.75em;
+}
+
+.onlinequiz-information-step-et-beskrivelse, .onlinequiz-information-step-to-beskrivelse, .onlinequiz-information-step-tre-beskrivelse, .onlinequiz-information-step-to-beskrivelse-link, .onlinequiz-information-step-to-beskrivelse-to, .onlinequiz-information-step-to-beskrivelse-tre, .onlinequiz-information-step-tre-beskrivelse-to, .onlinequiz-information-step-tre-beskrivelse-to-link{
+font-size: 1em;
+}
+
+.onlinequiz-information-img-desktop{
+display: block;
+width: 12.313rem;
+height: 3rem;
+margin-top: 15rem;
+margin-left: -4rem;
+}
+
+.onlinequiz-intro-info{
+font-size: 1.75em;
+font-family: var(--nvoe-text-font);
+font-weight: 700;
+font-style: italic;
+text-align: center;
+margin-top: 2rem;
+text-align: center;
+}
+
+
+
+
+/* OM BAREN 1920 MEDIA */
+
+.ombaren-info-wrapper {
+  display: flex;
+}
+
+.ombaren-info {
+  background-image: url("/images/ombarentavle.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  }
+
+  .ombaren-info-title {
+    font-size: 2.5rem;
+  }
+
+  .ombaren-info-tekst {
+    font-size: 1.5em;
+    text-align: left;
+    width: 45rem;
+    padding: 4rem;
+  }
+
+  .ombaren-info-img {
+    display: block;
+    margin: 0 auto;
+    width: 65rem;
+  }
+
+  .ombaren-omos-title {
+    font-size: 2.5em;
+  }
+
+  .ombaren-omos-person-img {
+    display: block;
+    margin: 0 auto;
+    width: 35rem;
+  }
+
+  .ombaren-omos-person-tekst {
+    font-size: 1.5em;
+    padding: 4rem; 
+    width: 20em;
+    text-align: center; 
+    display: block;
+    margin: 0 auto;
+  }
+
+
+
+
+  /*  BOOKING MEDIA 1920 */
+
+  .booking-info {
+    background-position-y: 100%;
   }
 }
