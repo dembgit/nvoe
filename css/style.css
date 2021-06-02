@@ -65,6 +65,31 @@ body {
     color: var(--nvoe-white);
 }
 
+events-styling
+/* Events side */
+.event-intro-section {
+  background-image: url("/images/eventswall.JPG");
+  height: 80vh;
+  background-size: cover;
+  background-position-x: 40%;
+}
+
+.event-intro {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.event-intro-h3 {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+}
+
+.event-types-intro {
 /* Booking Page Styling */
 
 .booking-info {
@@ -339,6 +364,42 @@ body {
   padding: 2rem;
 }
 
+events-styling
+.event-quiz {
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  width: 72%;
+  height: 58vh;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+.event-quiz h2 {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+.event-quiz-description {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  margin-left: 1.375em;
+  margin-right: 1.375em;
+  text-align: center;
+}
+
+.event-bodega {
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  width: 72%;
+  height: 50vh;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.event-bodega h2 {
+  
 .udvalg-intro-wrap {
   margin: 0 auto;
   width: 72%;
@@ -393,6 +454,27 @@ body {
   padding: 2rem;
 }
 
+events-styling
+.event-bodega-description {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  margin-left: 1.375em;
+  margin-right: 1.375em;
+  text-align: center;
+}
+
+.event-fernisering {
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  width: 72%;
+  height: 46vh;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.event-fernisering h2 {
+
 .ombaren-info-tekst {
   font-family: var(--nvoe-text-font);
   font-weight: 400;
@@ -423,6 +505,16 @@ body {
   padding: 2rem;
 }
 
+events-styling
+.event-fernisering-description {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  margin-left: 1.375em;
+  margin-right: 1.375em;
+  text-align: center;
+}
+
 .ombaren-omos-person-img {
   width: 20rem;
   margin: 0;
@@ -438,13 +530,6 @@ body {
   text-align: center;
 }
 
-
-
-
-
-
-
-
 /* Media Tablet */
 @media screen and (min-width: 750px){
     
@@ -452,6 +537,38 @@ body {
 
 /* Media Small Laptop */
 @media screen and (min-width: 1280px){
+events-styling
+    .event-intro {
+      font-size: 2.5rem;
+    }
+
+    .event-intro-h3 {
+      font-size: 1.7em;
+    }
+
+    .even-types-intro {
+      padding: 4rem;
+    }
+
+    .event-types-wrapper {
+      display: flex;
+      flex-direction: row;
+      padding: 2rem;
+    }
+
+    .event-quiz {
+      width: 30%;
+      height: 40vh;
+    }
+    .event-bodega {
+      width: 30%;
+      height: 40vh;
+    }
+    .event-fernisering {
+      width: 30%;
+      height: 40vh;
+    }
+
 ombaren-styling
   .ombaren-info-wrapper {
     display: flex;
@@ -557,6 +674,40 @@ ombaren-styling
 
 /* Media Big Laptop */
 @media screen and (min-width: 1920px){
+events-styling
+  
+  .event-intro {
+    font-size: 2.5em; 
+  }
+  .event-intro-h3 {
+    font-size: 1.75em;
+  }
+  .event-types-intro {
+    padding: 4rem;
+  }
+
+  .event-types-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .event-quiz {
+    margin: 0 auto;
+    width: 30%;
+    height: 35vh;
+  }
+
+  .event-bodega {
+    margin: 0 auto;
+    width: 30%;
+    height: 35vh;
+  }
+
+  .event-fernisering {
+    margin: 0 auto;
+    width: 30%;
+    height: 35vh;
+  }
+}
 
 ombaren-styling
   .ombaren-info-wrapper {
