@@ -1,7 +1,22 @@
 @import url("https://use.typekit.net/scn2gmy.css");
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 /* 
 ----- Font styling -----
+
+ _-_-_-_ Kalam _-_-_-_
+
+font-family: 'Kalam', cursive;
+
+font-weight: 400;
+
+font-style: normal;
+
+--- Kalam Weight ---
+Light = 300
+Regular = 400
+Bold = 700
+---------------------
 
  _-_-_-_ DUNBAR _-_-_-_
 
@@ -50,8 +65,473 @@ body {
     color: var(--nvoe-white);
 }
 
+events-styling
+/* Events side */
+.event-intro-section {
+  background-image: url("/images/eventswall.JPG");
+  height: 80vh;
+  background-size: cover;
+  background-position-x: 40%;
+}
+
+.event-intro {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.event-intro-h3 {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+}
+
+.event-types-intro {
+/* Booking Page Styling */
+
+.booking-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("/images/Booking_background.png");
+  background-size: auto 85vh;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
+.booking-info-title, .booking-info-subtitle, .booking-info-table-title, .booking-info-event-title, .booking-table-title, .booking-table-comment-title, .booking-event-info-title, .booking-event-comment-title  {
+  text-align: center;
+  font-family: dunbar-tall, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Booking Page Styling - Title */
+
+.booking-info-title {
+  margin-top: 5.9375em;
+  margin-bottom: 1em;
+  font-size: 1.75em;
+}
+
+.booking-info-subtitle {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+/* Booking Page Styling - Book Et Bord*/
+
+.booking-info-table, .booking-info-event {
+  background-color: var(--nvoe-blue);
+  width: 16.875em;
+  margin: 0 auto;
+  border-radius: 0.3125em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-info-event {
+  margin-top: 4.625em;
+}
+
+.booking-info-table-title, .booking-info-event-title {
+  margin-top: 2.375em;
+  margin-bottom: 1.5em;
+}
+
+.booking-info-table-tekst, .booking-info-table-tekst-kursiv, .booking-info-event-tekst, .booking-info-event-tekst-to {
+  text-align: center;
+  padding: 0 1.375em 0 1.375em;
+  line-height: 1.5em;
+}
+
+.booking-info-table-tekst-kursiv {
+  margin-top: 2.375em;
+  font-style: italic;
+}
+
+.booking-info-event-tekst-to {
+  margin-top: 2.375em;
+}
+
+.booking-info-table-button, .booking-info-event-button {
+  width: 8.125em;
+  height: 2.8125em;
+  background-color: transparent;
+  border: solid 2px var(--nvoe-white);
+  border-radius: 3.125em;
+  font-family: 'Kalam';
+  font-size: 1.5em;
+  color: var(--nvoe-white);
+  margin-top: 2em;
+  margin-bottom: 1.875em;
+}
+
+
+/* Booking Page Styling - Book Bord Form */
+
+.booking-table, .booking-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: solid 2px var(--nvoe-white);
+  width: 16.875em;
+  margin: 0 auto;
+  margin-top: 4.325em;
+}
+
+.booking-event {
+  margin-bottom: 4.75em;
+}
+
+.booking-event-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-table-title, .booking-event-info-title {
+  font-size: 1.25em;
+  margin-top: 3em;
+}
+
+
+.booking-table-subtitle, .booking-event-info-subtitle {
+  margin-top: 1em;
+  margin-bottom: 2.625em;
+  font-size: 0.8125em;
+  color: var(--nvoe-yellow);
+}
+
+.booking-table-form-navn, .booking-table-form-telefon, .booking-table-form-mail, .booking-event-form-navn, .booking-event-form-telefon, .booking-event-form-mail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.booking-table-form-navn-input, .booking-table-form-telefon-input, .booking-table-form-mail-input, .booking-event-form-navn-input, .booking-event-form-telefon-input, .booking-event-form-mail-input {
+  width: 12.5em;
+  height: 2em;
+}
+.booking-table-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-table-form-navn-label, .booking-table-form-telefon-label, .booking-table-form-mail-label, .booking-table-amount-title, .booking-event-form-navn-label, .booking-event-form-telefon-label, .booking-event-form-mail-label, .booking-event-form-subtitle {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 0.75em;
+}
+
+.booking-event-form {
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-event-form-subtitle {
+  text-align: center;
+}
+
+.booking-event-form-range {
+  display: block;
+  width: 3.125em;
+  height: 2em;
+  margin: 0 auto;
+}
+
+.booking-table-form-focus, .booking-event-form-focus, .booking-event-info-tekst-focus {
+  color: var(--nvoe-yellow);
+  font-weight: 700;
+}
+
+.booking-table-amount-tekst, .booking-event-info-tekst {
+  color: var(--nvoe-yellow);
+  margin-top: 1.125em;
+  font-size: 0.875em;
+  font-style: italic;
+  text-align: center;
+  width: 14.125em;
+  height: 4em;
+}
+
+.booking-event-info-tekst {
+  color: var(--nvoe-white);
+}
+
+.booking-table-amount-pick {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 13.75em;
+}  
+
+.booking-table-amount-upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 14.125em;
+  margin: 0 1.375em 1.25em 1.375em;
+}
+
+.booking-table-amount-lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 10em;
+}
+
+.booking-table-amount-pick-one, .booking-table-amount-pick-two, .booking-table-amount-pick-three, .booking-table-amount-pick-four, .booking-table-amount-pick-five, .booking-table-amount-pick-six, .booking-table-amount-pick-seven {
+  text-align: center;
+  margin: 0 0.625em;
+}
+
+.booking-table-amount-one-button, .booking-table-amount-two-button, .booking-table-amount-three-button, .booking-table-amount-four-button, .booking-table-amount-five-button, .booking-table-amount-six-button, .booking-table-amount-seven-button {
+  border: solid 2px var(--nvoe-white);
+  border-radius: 100%;
+  background-color: transparent;
+  color: var(--nvoe-white);
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.booking-table-comment, .booking-event-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-table-comment-title, .booking-event-comment-title {
+  margin-bottom: 1.5em;
+  font-size: 1.25em;
+  text-align: center;
+  width: 9em;
+}
+
+.booking-event-comment-title {
+  margin-top: 1.5em;
+}
+
+.booking-table-comment-input, .booking-event-comment-input {
+  height: 6.8125em;
+  width: 13.75em;
+}
+
+::placeholder {
+  padding-left: 0.5em;
+}
+
+.booking-table-comment-button, .booking-event-comment-button {
+  width: 8.125em;
+  height: 2.8125em;
+  font-size: 1.5em;
+  color: var(--nvoe-yellow);
+  background-color: transparent;
+  border: 2px solid var(--nvoe-yellow);
+  border-radius: 3.125em;
+  font-family: 'Kalam';
+  margin-top: 1.875em;
+  margin-bottom: 1.75em;
+}
+
+/* --- UDVALG --- */
+
+.udvalg-intro-section {
+  background-image: url("/images/udvalgintrowall.jpg");
+  height: 80vh;
+  background-size: auto 60%; 
+  background-repeat: no-repeat;
+  background-position-x: 40%;
+}
+
+.udvalg-intro {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+events-styling
+.event-quiz {
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  width: 72%;
+  height: 58vh;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+.event-quiz h2 {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+.event-quiz-description {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  margin-left: 1.375em;
+  margin-right: 1.375em;
+  text-align: center;
+}
+
+.event-bodega {
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  width: 72%;
+  height: 50vh;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.event-bodega h2 {
+  
+.udvalg-intro-wrap {
+  margin: 0 auto;
+  width: 72%;
+  height: 64vh;
+  background-color: var(--nvoe-blue);
+  border-radius: 5px;
+}
+
+.udvalg-intro-description-image {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.udvalg-intro-description-title {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.udvalg-intro-description {
+  margin: 1rem auto;
+  width: 85%;
+  line-height: 1.5em;
+  text-align: center;
+  font-family: var(--nvoe-text-font);
+}
+
+.udvlag-bryggerier-wrap {
+  width: 72%;
+}
+
+
+
+
+/* --- Om baren --- */ 
+
+.ombaren-info {
+  background-image: url("/images/ombarentavle.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  
+}
+
+.ombaren-info-title {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+events-styling
+.event-bodega-description {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  margin-left: 1.375em;
+  margin-right: 1.375em;
+  text-align: center;
+}
+
+.event-fernisering {
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  width: 72%;
+  height: 46vh;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.event-fernisering h2 {
+
+.ombaren-info-tekst {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1.75em;
+  text-align: center;
+}
+
+.ombaren-info-img {
+  width: 20rem;
+  margin: 0;
+  padding: 1.75em;
+}
 
 /* Forside styling */
+
+.ombaren-omos-title {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ombaren-omos-person-navn {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+events-styling
+.event-fernisering-description {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  margin-left: 1.375em;
+  margin-right: 1.375em;
+  text-align: center;
+}
+
+.ombaren-omos-person-img {
+  width: 20rem;
+  margin: 0;
+  padding: 1.75em;
+  border-radius: 50%;
+}
+
+.ombaren-omos-person-tekst {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1.75em;
+  text-align: center;
+}
+
 
 .front-intro-section {
     background-image: url("/images/forsidewall.jpg");
@@ -67,6 +547,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 2.3rem;
+}
+
+.front-intro-scrolldown {
+    display: none;
 }
 
 .front-intro-tilbud {
@@ -132,7 +616,7 @@ body {
     padding-top: 2.5rem;
 }
 
-.front-info-event-button {
+.front-info-event-link {
     width: 5em;
     height: 2em;
     background-color: transparent;
@@ -141,13 +625,17 @@ body {
     font-family: 'Kalam';
     font-size: 1.5em;
     color: var(--nvoe-white);
+    margin: 0 auto;
     margin-top: 1.1em;
-    margin-left: 4.8rem;
     margin-bottom: 1.875em;
+    display: block;
+    text-align: center;
+    line-height: 2.2em;
 }
 
 .front-info-aabningstider {
     background-color: var(--nvoe-blue);
+    text-transform: uppercase;
     width: 72%;
     height: 15rem;
     margin: 0 auto;
@@ -196,6 +684,17 @@ body {
     text-align: center;
     padding-top: 2.5rem;
     margin-bottom: 2.5rem;
+}
+
+.mapouter {
+    width: 270px;
+    height: 270px;
+    margin-left: 3.3rem;
+}
+
+.gmap_canvas {
+    width: 270px;
+    height: 270px;
 }
 
 .front-find-os-adresse-wrap {
@@ -436,6 +935,218 @@ body {
 
 
 /* Media Small Laptop */
+@media screen and (min-width: 1280px) {
+    /* Forside styling mediaqueries */
+    .front-intro-section {
+        background-image: url("/images/forsidewall.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position-x: 40%;
+    }
+    .front-intro-image {
+        width: 550px;
+        height: 550px;
+        display: block;
+        margin-left: 364px;
+        padding-top: 5rem;
+    }
+    .front-intro-scrolldown {
+        display: block;
+        background: none;
+        border: none;
+        position: relative;
+        margin: 0 auto;
+    }
+    .front-intro-flex {
+        display: flex;
+    }
+    .front-intro-tilbud {
+        height: 200px;
+        width: 200px;
+        background-color: var(--nvoe-blue);
+        border-radius: 50%;
+        display: block;
+        margin-top: 17rem;
+        margin-right: 20rem;
+    }
+    .front-intro-tilbud-tekst {
+        font-size: 1.25em;
+        margin-top: 3rem;
+    }
+    .front-info-tilbud-button {
+        font-size: 1.5em;
+        margin-left: 3rem;
+        margin: 1.8rem;
+        margin-top: 1rem;
+    }
+    .front-info-section {
+        display: flex;
+        margin-top: 5rem;
+    }
+    .front-info-event {
+        width: 50%;
+        height: 25rem;
+        margin-left: 3rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-event-intro {
+        font-size: 1.75em;
+    }
+    .front-info-event-description {
+        font-size: 1.75em;
+        margin-top: 3rem;
+    }
+    .front-info-event-link {
+        margin-top: 5rem;
+    }
+    .front-info-aabningstider {
+        width: 50%;
+        height: 25rem;
+        line-height: 2em;
+        margin-left: 3rem;
+        margin-right: rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-aabningstider-description {
+        line-height: 2em;
+    }
+    .front-info-corona {
+        width: 50%;
+        height: 25rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-corona-intro {
+        font-size: 1.75em;
+    }
+    .front-info-corona-description {
+        font-size: 1em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .flex-map-some {
+        display: flex;
+    }
+    .front-find-os-intro {
+        font-size: 2.5em;
+        margin-left: 2.5rem;
+    }
+    .front-find-os-adresse-image {
+        width: 4rem;
+        height: 4rem;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+    .front-find-os-adresse-description {
+        font-family: var(--nvoe-text-font);
+        font-size: 1em;
+        font-weight: 0.8em;
+        padding-top: 2.7rem;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+    .mapouter {
+        width: 360px;
+        height: 360px;
+        margin-left: 3rem;
+    }
+    .gmap_canvas {
+        width: 360px;
+        height: 360px;
+    }
+    .front-some {
+        background-color: var(--nvoe-blue);
+        width: 48.5rem;
+        height: 22.6em;
+        margin-left: 3rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        margin-top: 7.5rem;
+    }
+    .front-some-billede-1 {
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        margin-left: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-billede-2 {
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-billede-3 {
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-instagram {
+        display: flex;
+        margin-left: 4.5rem;
+        padding-top: 2rem;
+    }
+    .front-some-facebook {
+        display: flex;
+        margin-left: 4.5rem;
+        padding-top: 1rem;
+    }
+
+@media screen and (min-width: 1280px){
+events-styling
+    .event-intro {
+      font-size: 2.5rem;
+    }
+
+    .event-intro-h3 {
+      font-size: 1.7em;
+    }
+
+    .even-types-intro {
+      padding: 4rem;
+    }
+
+    .event-types-wrapper {
+      display: flex;
+      flex-direction: row;
+      padding: 2rem;
+    }
+
+    .event-quiz {
+      width: 30%;
+      height: 40vh;
+    }
+    .event-bodega {
+      width: 30%;
+      height: 40vh;
+    }
+    .event-fernisering {
+      width: 30%;
+      height: 40vh;
+    }
+
+ombaren-styling
+  .ombaren-info-wrapper {
+    display: flex;
+  }
+
+  .ombaren-info {
+    background-image: url("/images/ombarentavle.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    }
+
+    .ombaren-info-tekst {
+      width: 40rem;
+    }
 
 @media screen and (min-width: 1280px) {
     .togo-intro-section {
@@ -541,10 +1252,307 @@ body {
     .togo-bestilling-button {
         margin-left: 12rem;
     }
+
+    .ombaren-info-img {
+      width: 35rem;
+    }
+
+    .ombaren-omos-person-img {
+      display: block;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .ombaren-omos-person-tekst {
+      width: 15em;
+      display: block;
+      margin: 0 auto;
+    }
+    
+.booking-info {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  height: 45em;
+  background-position-y: 100%;
+}
+
+.booking-info-title {
+  margin-top: 2em;
+}
+
+.booking-info-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.booking-info-table, .booking-info-event {
+  margin-top: 0;
+  width: 31.25em;
+  height: 22.6875em;
+}
+
+.booking-info-table-title, .booking-info-event-title {
+  font-size: 1.75em;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.booking-info-table-tekst, .booking-info-table-tekst-kursiv, .booking-info-event-tekst, .booking-info-event-tekst-to {
+  text-align: left;
+  width: 22.375em;
+  font-size: 1em;
+}
+
+.booking-info-table-tekst-kursiv, .booking-info-event-tekst-to {
+  margin-top: 1em;
+}
+
+.booking-info-table-button, .booking-info-event-button {
+  margin-top: 1em;
+}
+
+.booking-info-table-button {
+  margin-top: 2em;
+}
+
+.booking-table, .booking-event {
+  width: 45em;
+}
+
+.booking-table-form-navn, .booking-table-form-telefon, .booking-table-form-mail, .booking-event-form-navn, .booking-event-form-telefon, .booking-event-form-mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.booking-table-form-navn-label, .booking-table-form-telefon-label, .booking-table-form-mail-label, .booking-event-form-navn-label, .booking-event-form-telefon-label, .booking-event-form-mail-label {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  margin-bottom: 0;
+  height: 2em;
+}
+
+.booking-table-comment-input, .booking-event-comment-input {
+  width: 30.25em;
+  height: 10.4375em;
+}
 }
 
 
 /* Media Big Laptop */
+@media screen and (min-width: 1920px) {
+    /* Forside styling mediaqueries */
+    .front-intro-section {
+        background-image: url("/images/forsidewall.jpg");
+        height: 80vh;
+        background-size: cover;
+        background-position-x: 40%;
+    }
+    .front-intro-image {
+        width: 800px;
+        height: 800px;
+        display: block;
+        margin-left: 560px;
+        padding-top: 2.3rem;
+    }
+    .front-intro-scrolldown {
+        display: block;
+        background: none;
+        border: none;
+        position: relative;
+        margin: 0 auto;
+        margin-top: -7rem;
+    }
+    .front-intro-flex {
+        display: flex;
+    }
+    .front-intro-tilbud {
+        height: 250px;
+        width: 250px;
+        background-color: var(--nvoe-blue);
+        border-radius: 50%;
+        display: block;
+        margin-top: 22rem;
+        margin-right: 13rem;
+    }
+    .front-intro-tilbud-tekst {
+        font-size: 1.25em;
+        margin-top: 6rem;
+    }
+    .front-info-tilbud-button {
+        font-size: 1.5em;
+        margin-left: 3rem;
+    }
+    .front-info-section {
+        display: flex;
+    }
+    .front-info-event {
+        width: 30%;
+        height: 20rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-event-intro {
+        font-size: 1.75em;
+    }
+    .front-info-event-description {
+        font-size: 1.75em;
+        margin-top: 1rem;
+    }
+    .front-info-event-link {
+        margin-top: 3rem;
+    }
+    .front-info-aabningstider {
+        width: 30%;
+        height: 20rem;
+        line-height: 2em;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-aabningstider-description {
+        line-height: 1.5em;
+    }
+    .front-info-corona {
+        width: 30%;
+        height: 20rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+    }
+    .front-info-corona-intro {
+        font-size: 1.75em;
+    }
+    .front-info-corona-description {
+        font-size: 1em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .flex-map-some {
+        display: flex;
+    }
+    .front-find-os-intro {
+        font-size: 2.5em;
+        margin-left: 2.5rem;
+    }
+    .front-find-os-adresse-image {
+        width: 4rem;
+        height: 4rem;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .front-find-os-adresse-description {
+        font-family: var(--nvoe-text-font);
+        font-size: 1.75em;
+        font-weight: 0.8em;
+        padding-top: 2.7rem;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+    .mapouter {
+        width: 500px;
+        height: 500px;
+        margin-left: 5rem;
+    }
+    .gmap_canvas {
+        width: 470px;
+        height: 470px;
+    }
+    .front-some {
+        background-color: var(--nvoe-blue);
+        width: 70.2rem;
+        height: 30em;
+        margin-left: 8.6rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        margin-top: 7.3rem;
+    }
+    .front-some-billede-1 {
+        width: 280px;
+        height: 280px;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        margin-left: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-billede-2 {
+        width: 280px;
+        height: 280px;
+        margin-top: 2rem;
+        margin-right: 4rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-billede-3 {
+        width: 280px;
+        height: 280px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .front-some-instagram {
+        display: flex;
+        margin-left: 4.5rem;
+        padding-top: 2rem;
+    }
+    .front-some-facebook {
+        display: flex;
+        margin-left: 4.5rem;
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1920px){
+events-styling
+  
+  .event-intro {
+    font-size: 2.5em; 
+  }
+  .event-intro-h3 {
+    font-size: 1.75em;
+  }
+  .event-types-intro {
+    padding: 4rem;
+  }
+
+  .event-types-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .event-quiz {
+    margin: 0 auto;
+    width: 30%;
+    height: 35vh;
+  }
+
+  .event-bodega {
+    margin: 0 auto;
+    width: 30%;
+    height: 35vh;
+  }
+
+  .event-fernisering {
+    margin: 0 auto;
+    width: 30%;
+    height: 35vh;
+  }
+}
+
+ombaren-styling
+  .ombaren-info-wrapper {
+    display: flex;
+  }
+
+  .ombaren-info {
+    background-image: url("/images/ombarentavle.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    }
 
 @media screen and (min-width: 1920px) {
     .togo-intro-section {
@@ -650,4 +1658,51 @@ body {
     .togo-bestilling-button {
         margin-left: 19.5rem;
     }
+}
+
+    .ombaren-info-title {
+      font-size: 2.5rem;
+    }
+
+    .ombaren-info-tekst {
+      font-size: 1.5em;
+      text-align: left;
+      width: 45rem;
+      padding: 4rem;
+    }
+
+    .ombaren-info-img {
+      display: block;
+      margin: 0 auto;
+      width: 65rem;
+    }
+
+    .ombaren-omos-title {
+      font-size: 2.5em;
+    }
+
+    .ombaren-omos-person-img {
+      display: block;
+      margin: 0 auto;
+      width: 35rem;
+    }
+
+    .ombaren-omos-person-tekst {
+      font-size: 1.5em;
+      padding: 4rem; 
+      width: 20em;
+      text-align: center; 
+      display: block;
+      margin: 0 auto;
+    }
+
+
+
+    
+}
+
+.booking-info {
+  background-position-y: 100%;
+}
+
 }
