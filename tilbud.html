@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,65 +11,73 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Nordvest Ølbar</title>
 </head>
+
 <body>
-    
+
     <section class="togo-intro-section">
         <h1 class="togo-intro">
-            TO GO'
+            To go'
         </h1>
         <h3 class="togo-intro-h3">
-            indkluderet i ugens ølkasse
+            Indkluderet i ugens ølkasse
         </h3>
         <div class="togo-intro-bryggerier">
             <div class="togo-intro-bryggerier-row1">
+                <img class="togo-beer-image" src="images/togo-tilbud.png" alt="">
 
             </div>
-            <div class="togo-intro-bryggerier-row2">
+            <img class="togo-intro-image" src="images/ølmedbenja.jpg" alt="">
 
-            </div>
-            <img class="togo-intro-image" src="" alt="">
+
+            <h2 class="togo-intro-bestilling-disclaimer">
+                Vigtigt<span class="togo-intro-bestilling-disclaimer-yellow-color">!</span>
+            </h2>
+            <p class="togo-intro-bestilling-disclaimer-description">Du henter øllene hos os mellem kl. 15 og 18</p>
         </div>
     </section>
 
     <section class="togo-bestilling-section">
-        <h2 class="togo-bestilling-disclaimer">
-            VIGTIGT!
-        </h2>
-        <p class="togo-bestilling-disclaimer-description">Du henter øllene hos os mellem kl. 15 og 18</p>
         <div class="togo-bestilling-wrap">
             <h2 class="togo-bestilling-intro">
                 Bestilling af TO GO'
             </h2>
             <div class="togo-bestilling-antal">
                 <h2 class="togo-bestilling-antal-intro">
-                    *Antal pakker
+                    <span class="togo-bestilling-star-yellow-color">*</span>Antal pakker
                 </h2>
                 <div class="togo-bestilling-antal-selection">
-
+                    <select class="togo-bestilling-antal-selection">
+                      <option label="1">1</option>
+                      <option label="2">2</option>
+                      <option label="3">3</option>
+                      <option label="4">4</option>
+                      <option label="5">5</option>
+                    </select>
                 </div>
             </div>
 
             <div class="togo-bestilling-telefon">
                 <h2 class="togo-bestilling-telefon-intro">
-                    *Telefon:
+                    <span class="togo-bestilling-star-yellow-color">*</span>Telefon:
                 </h2>
-                <div class="togo-bestilling-telefon-selection">
+                <input class="togo-bestilling-telefon-box" type="text" placeholder="+45 88888888" name="">
 
-                </div>
             </div>
 
             <div class="togo-bestilling-dato">
                 <h2 class="togo-bestilling-dato-intro">
-                    *Dato
+                    <span class="togo-bestilling-star-yellow-color">*</span>Dato
                 </h2>
+                <input class="togo-bestilling-dato-box" type="text" placeholder="Dag/Måned/År" name="">
                 <div class="togo-bestilling-dato-selection">
 
                 </div>
             </div>
-            <a class="togo-bestilling-link" href="">Bekræft</a>
+            <button class="togo-bestilling-button">Bekræft</button>
         </div>
     </section>
 
 </body>
 <script src="./js/main.js"></script>
+
 </html>
