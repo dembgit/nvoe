@@ -4,20 +4,6 @@
 /* 
 ----- Font styling -----
 
- _-_-_-_ Kalam _-_-_-_
-
-font-family: 'Kalam', cursive;
-
-font-weight: 400;
-
-font-style: normal;
-
---- Kalam Weight ---
-Light = 300
-Regular = 400
-Bold = 700
----------------------
-
  _-_-_-_ DUNBAR _-_-_-_
 
 font-family: dunbar-tall, sans-serif;
@@ -65,7 +51,270 @@ body {
     color: var(--nvoe-white);
 }
 
+
 /* Test */
+
+
+/* --- UDVALG --- */
+
+.udvalg-intro-section {
+  background-image: url("/images/udvalgintrowall.jpg");
+  background-size: auto 55vh; 
+  background-repeat: no-repeat;
+}
+/*Styling quiz page - mobile*/
+
+/*Background Image top of the page*/
+.quiz-intro-section{
+  background-image: url(/images/quizintrowall.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position-x: 60%;
+}
+
+/*Saving lines and grabbing same font for all 3 classes*/
+.quiz-intro, .quiz-intro-description-title, .quiz-intro-date{
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  text-align: center;
+}
+
+/*Styling individual text lines top of page*/
+.quiz-intro{
+  font-size: 1.75em;
+  padding: 2rem 2rem 1rem 2rem;
+  text-transform: uppercase;
+}
+
+
+.quiz-intro-description-title{
+  font-size: 1.25em;
+  padding: 1rem;
+}
+
+.quiz-intro-date{
+  font-size: 1em;
+  margin-top: 0.3rem;
+}
+
+.quiz-intro-info{
+  font-size: 0.875em;
+  font-family: var(--nvoe-text-font);
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.quiz-tilmelding-arrow{
+  display: none;
+}
+
+/*Styling formula for quiz*/
+.quiz-tilmelding, .onlinequiz-tilmelding{
+  margin-bottom: 0.813rem;
+  margin-top: 2.125rem;
+}
+.quiz-tilmelding-info-title, .onlinequiz-tilmelding-info-title{
+  font-size: 1.25em;
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 3.1875rem;
+  text-transform: uppercase;
+}
+
+.quiz-tilmelding-info-tekst{
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  margin: 2.125rem, 3.188rem, 4.688rem, 3.188rem;
+  padding: 2.125rem;
+  width: 18rem;
+}
+
+.quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail, .onlinequiz-tilmelding-navn, .onlinequiz-tilmelding-telefon, .onlinequiz-tilmelding-mail{
+  font-family: var(--nvoe-titel-font);
+  font-size: 1em;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.188rem;
+  margin-right: 3.188rem;
+}
+
+/*Styling the asterix to appear yellow in the formula*/
+.star{
+  color: var(--nvoe-yellow);
+}
+
+.quiz-tilmelding-telefon-label, .quiz-tilmelding-navn-label, .quiz-tilmelding-mail-label, .onlinequiz-tilmelding-navn-label, .onlinequiz-tilmelding-telefon-label, .onlinequiz-tilmelding-mail-label{
+  margin-bottom: 0.813rem;
+  margin-top: 2.125rem;
+}
+
+.quiz-tilmelding-navn-input, .quiz-tilmelding-telefon-input, .quiz-tilmelding-mail-input, .onlinequiz-tilmelding-navn-input, .onlinequiz-tilmelding-telefon-input, .onlinequiz-tilmelding-mail-input{
+  width: 16.813rem;
+  height: 2rem;
+}
+
+/*Styling the placeholder font in the input fields*/
+.quiz-tilmelding-navn-input::placeholder, .quiz-tilmelding-telefon-input::placeholder, .quiz-tilmelding-mail-input::placeholder, .onlinequiz-tilmelding-navn-input::placeholder, .onlinequiz-tilmelding-telefon-input::placeholder, .onlinequiz-tilmelding-mail-input::placeholder{
+  font-family: var(--nvoe-text-font);
+  font-size: 1.0625em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*Styling send button*/
+.quiz-tilmelding-submit, .onlinequiz-tilmelding-submit{
+  color:var(--nvoe-yellow);
+  background-color: var(--nvoe-black);
+  border-color: var(--nvoe-yellow);
+  border-radius: 3.125rem;
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+  font-size: 1.5em;
+  width: 8.125rem;
+  height: 2.813rem;
+  margin: 3.625rem 7.188rem;
+}
+
+/*Frederik*/
+
+/*Styling online quiz page - mobile*/
+.onlinequiz-intro-section{
+  background-image: url(/images/quizintrowall.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position-x: 60%;
+}
+
+.onlinequiz-intro, .onlinequiz-intro-date{
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+}
+
+.onlinequiz-intro{
+  font-size: 1.75em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.onlinequiz-intro-date{
+  font-size: 1em;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+.onlinequiz-intro-info{
+  font-size: 0.875em;
+  font-family: var(--nvoe-text-font);
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.onlinequiz-information-step-et, .onlinequiz-information-step-to, .onlinequiz-information-step-tre{
+  background-color: var(--nvoe-blue);
+  margin-left: 3.313rem;
+  margin-right: 3.313rem;
+  margin-top: 3.313rem;
+  padding: 3.688rem 1.813rem;
+}
+
+.onlinequiz-information-step-et-title, .onlinequiz-information-step-to-title, .onlinequiz-information-step-tre-title{
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.onlinequiz-information-step-et-beskrivelse, .onlinequiz-information-step-to-beskrivelse, .onlinequiz-information-step-tre-beskrivelse, .onlinequiz-information-step-to-beskrivelse-to, .onlinequiz-information-step-to-beskrivelse-tre, .onlinequiz-information-step-tre-beskrivelse-to{
+  font-family: var(--nvoe-text-font);
+  font-size: 0.875em;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.onlinequiz-information-step-et-button{
+  background: none;
+  color: var(--nvoe-white);
+  border-color: var(--nvoe-white);
+  border-radius: 3.125rem;
+  font-family: 'Kalam', cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  width: 8.125rem;
+  height: 2.813rem;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.688rem;
+}
+
+.onlinequiz-information-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.onlinequiz-information-img-desktop{
+  display: none;
+}
+
+.onlinequiz-information-step-to-beskrivelse-link, .onlinequiz-information-step-tre-beskrivelse-to-link{
+  color: var(--nvoe-yellow);
+  font-family: var(--nvoe-text-font);
+}
+
+.onlinequiz-tilmelding-info-tekst, .onlinequiz-tilmelding-info-tekst-to{
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+  padding: 2.125rem;
+  width: 18rem;
+}
+
+.onlinequiz-tilmelding-info-tekst-to{
+  margin-top: -4rem;
+}
+/* Events side */
+.event-intro-section {
+  background-image: url("/images/eventswall.JPG");
+  height: 80vh;
+  background-size: cover;
+
+  background-position-x: 40%;
+}
+
+.udvalg-intro {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+
+}
+
+.event-intro-h3 {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+}
+
 /* Booking Page Styling */
 
 .booking-info {
@@ -147,96 +396,32 @@ body {
   margin-bottom: 1.875em;
 }
 
-
-/* Booking Page Styling - Book Bord Form */
-
-.booking-table, .booking-event {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: solid 2px var(--nvoe-white);
-  width: 16.875em;
+.udvalg-intro-wrap {
   margin: 0 auto;
-  margin-top: 4.325em;
+  width: 72%;
+  height: 64vh;
+  background-color: var(--nvoe-blue);
+  border-radius: 5px;
 }
 
-.booking-event {
-  margin-bottom: 4.75em;
-}
-
-.booking-event-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.booking-table-title, .booking-event-info-title {
-  font-size: 1.25em;
-  margin-top: 3em;
-}
-
-
-.booking-table-subtitle, .booking-event-info-subtitle {
-  margin-top: 1em;
-  margin-bottom: 2.625em;
-  font-size: 0.8125em;
-  color: var(--nvoe-yellow);
-}
-
-.booking-table-form-navn, .booking-table-form-telefon, .booking-table-form-mail, .booking-event-form-navn, .booking-event-form-telefon, .booking-event-form-mail {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2em;
-}
-
-.booking-table-form-navn-input, .booking-table-form-telefon-input, .booking-table-form-mail-input, .booking-event-form-navn-input, .booking-event-form-telefon-input, .booking-event-form-mail-input {
-  width: 12.5em;
-  height: 2em;
-}
-.booking-table-amount {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.booking-table-form-navn-label, .booking-table-form-telefon-label, .booking-table-form-mail-label, .booking-table-amount-title, .booking-event-form-navn-label, .booking-event-form-telefon-label, .booking-event-form-mail-label, .booking-event-form-subtitle {
-  font-size: 1em;
-  font-weight: 700;
-  margin-bottom: 0.75em;
-}
-
-.booking-event-form {
-  align-items: center;
-  justify-content: center;
-}
-
-.booking-event-form-subtitle {
-  text-align: center;
-}
-
-.booking-event-form-range {
+.udvalg-intro-description-image {
+  width: 75%;
   display: block;
-  width: 3.125em;
-  height: 2em;
   margin: 0 auto;
+  padding-top: 2rem;
 }
 
-.booking-table-form-focus, .booking-event-form-focus, .booking-event-info-tekst-focus {
-  color: var(--nvoe-yellow);
+.udvalg-intro-description-title {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.25em;
   font-weight: 700;
+  text-align: center;
 }
 
-.booking-table-amount-tekst, .booking-event-info-tekst {
-  color: var(--nvoe-yellow);
-  margin-top: 1.125em;
-  font-size: 0.875em;
-  font-style: italic;
-  text-align: center;
-  width: 14.125em;
-  height: 4em;
+.udvalg-intro-description {
+  margin: 1rem auto;
+  width: 85%;
+  line-height: 1.6em;
 }
 
 .booking-event-info-tekst {
@@ -267,8 +452,96 @@ body {
 }
 
 .booking-table-amount-pick-one, .booking-table-amount-pick-two, .booking-table-amount-pick-three, .booking-table-amount-pick-four, .booking-table-amount-pick-five, .booking-table-amount-pick-six, .booking-table-amount-pick-seven {
+
   text-align: center;
-  margin: 0 0.625em;
+  font-family: var(--nvoe-text-font);
+}
+.udvalg-bryggerier {
+  width: 72%;
+  margin: 0 auto;
+  background-image: url("/images/tavle.jpg");
+  background-size: cover;
+  background-position-x: 100%;
+}
+.udvalg-bryggerier-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 4rem;
+}
+
+.udvalg-bryggerier-wrap img{
+  flex-grow: 1;
+  width: 35%;
+  padding: 7.5%;
+}
+
+.udvalg-bryggerier-intro {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.udvalg-tilbud-outro {
+  display: none;
+}
+
+.udvalg-togo-section {
+  width: 55%;
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+.udvalg-togo-intro {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.75em;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.udvalg-togo-description {
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.udvalg-togo-price {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.udvalg-togo-link {
+  display: block;
+  text-decoration: none;
+  width: 8.125rem;
+  height: 2.8125rem;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2.8125rem;
+  background-color: transparent;
+  border: solid 2px var(--nvoe-white);
+  border-radius: 3.125rem;
+  font-family: 'Kalam';
+  font-size: 1.5rem;
+  color: var(--nvoe-white);
+  margin-top: 2em;
+}
+
+.udvalg-togo-image {
+  width: 100%;
 }
 
 .booking-table-amount-one-button, .booking-table-amount-two-button, .booking-table-amount-three-button, .booking-table-amount-four-button, .booking-table-amount-five-button, .booking-table-amount-six-button, .booking-table-amount-seven-button {
@@ -282,22 +555,114 @@ body {
   font-weight: 700;
 }
 
-.booking-table-comment, .booking-event-comment {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Media Tablet */
+@media screen and (min-width: 750px){
+    
 }
 
-.booking-table-comment-title, .booking-event-comment-title {
-  margin-bottom: 1.5em;
-  font-size: 1.25em;
-  text-align: center;
-  width: 9em;
-}
+/* Media Small Laptop */
+@media screen and (min-width: 1280px){
+    .udvalg-desktop-wrap {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+      height: 50vh;
+    }
+
+    .udvalg-intro {
+      padding: 3rem;
+    }
+
+    .udvalg-intro-section {
+      background-image: url("/images/udvalgintrowall.jpg");
+      background-size: 100% auto; 
+      background-repeat: no-repeat;
+      background-position-x: 0%;
+      height: 100vh;
+    }
+
+    .udvalg-intro-wrap {
+      margin: 0;
+      width: 25%;
+      height: auto;
+      background-color: var(--nvoe-blue);
+      border-radius: 5px;
+    }
+
+
+    .udvalg-intro-description-image {
+      width: 55%;
+      display: block;
+      margin: 0 auto;
+      padding-top: 0rem;
+    }
+
+    .udvalg-bryggerier-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .udvalg-bryggerier {
+      margin: 0;
+      width: 60%;
+    }
+    
+    .udvalg-bryggerier-intro{
+      text-align: left;
+      margin-left: 2rem;
+    }
+
+    .udvalg-bryggerier-wrap img{
+      width: 10%;
+      padding: 2%;
+    }
+
+    .udvalg-tilbud-outro {
+      display: block;
+      margin: 0 auto;
+      margin-top: 1rem;
+      font-size: 1.5em;
+      font-weight: 700;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      color: var(--nvoe-white);
+    }
+    .udvalg-togo-section {
+      margin-top: 4rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .udvalg-togo-intro {
+      margin-top: 3rem;
+    }
+    
+    .udvalg-togo-image {
+      width: 45%;
+    }
+
+    .udvalg-togo-order {
+      display: flex;
+      line-height: 2.8125rem;
+      justify-content: center;
+    }
+    
+    .udvalg-togo-price {
+      width: 50%;
+      margin-top: 2rem;
+    }
+
+    .udvalg-togo-link {
+      margin-top: 2rem;
+    }
+
 
 .booking-event-comment-title {
   margin-top: 1.5em;
+
 }
 
 .booking-table-comment-input, .booking-event-comment-input {
@@ -322,92 +687,866 @@ body {
   margin-bottom: 1.75em;
 }
 
+/* --- UDVALG --- */
 
-/* Media Tablet */
-@media screen and (min-width: 750px){
-    
-}
-
-/* Media Small Laptop */
-@media screen and (min-width: 1280px){
-    
-.booking-info {
-  background-size: 100%;
+.udvalg-intro-section {
+  background-image: url("/images/udvalgintrowall.jpg");
+  height: 80vh;
+  background-size: auto 60%; 
   background-repeat: no-repeat;
-  background-position-x: 0;
-  height: 45em;
-  background-position-y: 100%;
+  background-position-x: 40%;
 }
 
-.booking-info-title {
-  margin-top: 2em;
-}
-
-.booking-info-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.booking-info-table, .booking-info-event {
-  margin-top: 0;
-  width: 31.25em;
-  height: 22.6875em;
-}
-
-.booking-info-table-title, .booking-info-event-title {
+.udvalg-intro {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
   font-size: 1.75em;
-  margin-top: 1.5em;
-  margin-bottom: 0.75em;
+  text-align: center;
+  padding: 2rem;
 }
 
-.booking-info-table-tekst, .booking-info-table-tekst-kursiv, .booking-info-event-tekst, .booking-info-event-tekst-to {
-  text-align: left;
-  width: 22.375em;
+.event-quiz {
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  width: 72%;
+  height: 58vh;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+.event-quiz h2 {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+.event-quiz-description {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
   font-size: 1em;
+  margin-left: 1.375em;
+  margin-right: 1.375em;
+  text-align: center;
 }
 
-.booking-info-table-tekst-kursiv, .booking-info-event-tekst-to {
-  margin-top: 1em;
+.event-bodega {
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  width: 72%;
+  height: 50vh;
+  border-radius: 5px;
+  margin-bottom: 2rem;
 }
 
-.booking-info-table-button, .booking-info-event-button {
-  margin-top: 1em;
+.udvalg-intro-wrap {
+  margin: 0 auto;
+  width: 72%;
+  height: 64vh;
+  background-color: var(--nvoe-blue);
+  border-radius: 5px;
 }
 
-.booking-info-table-button {
-  margin-top: 2em;
+.udvalg-intro-description-image {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
 }
 
-.booking-table, .booking-event {
-  width: 45em;
+.udvalg-intro-description-title {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
 }
 
-.booking-table-form-navn, .booking-table-form-telefon, .booking-table-form-mail, .booking-event-form-navn, .booking-event-form-telefon, .booking-event-form-mail {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.udvalg-intro-description {
+  margin: 1rem auto;
+  width: 85%;
+  line-height: 1.5em;
+  text-align: center;
+  font-family: var(--nvoe-text-font);
 }
 
-.booking-table-form-navn-label, .booking-table-form-telefon-label, .booking-table-form-mail-label, .booking-event-form-navn-label, .booking-event-form-telefon-label, .booking-event-form-mail-label {
-  display: flex;
-  align-items: center;
-  margin-right: 1em;
-  margin-bottom: 0;
-  height: 2em;
+.udvlag-bryggerier-wrap {
+  width: 72%;
 }
 
-.booking-table-comment-input, .booking-event-comment-input {
-  width: 30.25em;
-  height: 10.4375em;
+/* --- Om baren --- */ 
+
+.ombaren-info {
+  background-image: url("/images/ombarentavle.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  
 }
 
+.ombaren-info-title {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.event-bodega-description {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  margin-left: 1.375em;
+  margin-right: 1.375em;
+  text-align: center;
+}
+
+.event-fernisering {
+  background-color: var(--nvoe-blue);
+  margin: 0 auto;
+  width: 72%;
+  height: 46vh;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.ombaren-info-tekst {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1.75em;
+  text-align: center;
+}
+
+.ombaren-info-img {
+  width: 20rem;
+  margin: 0;
+  padding: 1.75em;
+}
+
+/* Forside styling */
+
+.ombaren-omos-title {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ombaren-omos-person-navn {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.event-fernisering-description {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  margin-left: 1.375em;
+  margin-right: 1.375em;
+  text-align: center;
+}
+
+.ombaren-omos-person-img {
+  width: 20rem;
+  margin: 0;
+  padding: 1.75em;
+  border-radius: 50%;
+}
+
+.ombaren-omos-person-tekst {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1.75em;
+  text-align: center;
+}
+
+
+.front-intro-section {
+    background-image: url("/images/forsidewall.jpg");
+    height: 40vh;
+    background-size: cover;
+    background-position-x: 40%;
+}
+
+.front-intro-image {
+    width: 270px;
+    height: 270px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.3rem;
+}
+
+.front-intro-scrolldown {
+    display: none;
+}
+
+.front-intro-tilbud {
+    height: 160px;
+    width: 160px;
+    background-color: var(--nvoe-blue);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: -3rem;
+    margin-left: 7rem;
+}
+
+.front-intro-tilbud-tekst {
+    font-family: var(--nvoe-text-font);
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.front-info-tilbud-button {
+    width: 6em;
+    height: 2em;
+    background-color: transparent;
+    border: solid 2px var(--nvoe-white);
+    border-radius: 3.125em;
+    font-family: 'Kalam';
+    font-size: 1em;
+    color: var(--nvoe-white);
+    margin-top: 1em;
+    margin-left: 2rem;
+    margin-bottom: 1.875em;
+}
+
+.front-info-section {
+    margin-top: 10rem;
+}
+
+.front-info-event {
+    background-color: var(--nvoe-blue);
+    width: 72%;
+    height: 15rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+
+.front-info-event-intro {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.front-info-event-description {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.front-info-event-link {
+    width: 5em;
+    height: 2em;
+    background-color: transparent;
+    border: solid 2px var(--nvoe-white);
+    border-radius: 3.125em;
+    font-family: 'Kalam';
+    font-size: 1.5em;
+    color: var(--nvoe-white);
+    margin: 0 auto;
+    margin-top: 1.1em;
+    margin-bottom: 1.875em;
+    display: block;
+    text-align: center;
+    line-height: 2.2em;
+}
+
+.front-info-aabningstider {
+    background-color: var(--nvoe-blue);
+    text-transform: uppercase;
+    width: 72%;
+    height: 15rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+
+.front-info-aabningstider-description {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.front-info-corona {
+    background-color: var(--nvoe-blue);
+    width: 72%;
+    height: 26.25rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.front-info-corona-intro {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.front-info-corona-description {
+    font-family: var(--nvoe-text-font);
+    font-size: 1em;
+    line-height: 1.6rem;
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.front-find-os-intro {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.mapouter {
+    width: 270px;
+    height: 270px;
+    margin-left: 3.3rem;
+}
+
+.gmap_canvas {
+    width: 270px;
+    height: 270px;
+}
+
+.front-find-os-adresse-wrap {
+    display: flex;
+    margin-left: 0.8rem;
+}
+
+.front-find-os-adresse-image {
+    width: 4rem;
+    height: 4rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.front-find-os-adresse-description {
+    font-family: var(--nvoe-text-font);
+    font-weight: 0.8em;
+    padding-top: 2.7rem;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+.front-some {
+    background-color: var(--nvoe-blue);
+    width: 72%;
+    height: 55em;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.front-some-instagram {
+    display: flex;
+    margin-left: 1.7rem;
+    padding-top: 2rem;
+}
+
+.front-some-instagram-icon {
+    width: 1.875em;
+    height: 1.875em;
+}
+
+.front-some-instagram-name {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    margin-left: 1rem;
+    padding-top: 0.2rem;
+}
+
+.front-some-facebook {
+    display: flex;
+    margin-left: 1.7rem;
+    padding-top: 1rem;
+}
+
+.front-some-facebook-icon {
+    width: 1.875em;
+    height: 1.875em;
+}
+
+.front-some-facebook-name {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    margin-left: 1rem;
+    padding-top: 0.2rem;
+}
+
+.front-some-posts {
+    margin-left: 1.9rem;
+}
+
+.front-some-billede-1 {
+    width: 13.25em;
+    height: 13.25em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.front-some-billede-2 {
+    width: 13.25em;
+    height: 13.25em;
+    margin-bottom: 2rem;
+}
+
+.front-some-billede-3 {
+    width: 13.25em;
+    height: 13.25em;
+}
+
+
+/* TO-GO Tilbud styling */
+
+.togo-intro-section {
+    background-image: url("/images/tavle.jpeg");
+    height: 110vh;
+    background-size: cover;
+    background-position-x: 40%;
+}
+
+.togo-intro {
+    font-family: var(--nvoe-titel-font);
+    text-transform: uppercase;
+    font-size: 1.75em;
+    font-weight: bold;
+    padding-top: 4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.togo-intro-h3 {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.togo-beer-image {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.togo-intro-image {
+    display: block;
+    width: 83%;
+    margin: 0 auto;
+    margin-left: 2rem;
+}
+
+.togo-intro-bestilling-disclaimer {
+    font-family: var(--nvoe-titel-font);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.togo-intro-bestilling-disclaimer-yellow-color {
+    color: var(--nvoe-yellow)
+}
+
+.togo-intro-bestilling-disclaimer-description {
+    font-family: var(--nvoe-text-font);
+    font-size: 0.875em;
+    font-weight: italic;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.togo-bestilling-section {
+    background-color: var(--nvoe-blue);
+    width: 72%;
+    height: 30rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+    margin-top: 2.5rem;
+}
+
+.togo-bestilling-intro {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.togo-bestilling-antal-intro {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.togo-bestilling-antal-selection {
+    width: 2.5rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
 }
 
 /* Media Big Laptop */
 @media screen and (min-width: 1920px){
+    
+    .quiz-intro, .onlinequiz-intro{
+      font-size: 2.5em;
+      padding: 11.5rem 2rem 1rem 2rem;
+    }
+    
+    
+    .quiz-intro-description-title{
+      font-size: 1.75em;
+      padding: 1rem;
+    }
+    
+    .quiz-intro-date, .onlinequiz-intro-date{
+      font-size: 1.25em;
+      margin-top: 2.813rem;
+    }
+    
+    .quiz-intro-info{
+      font-size: 1em;
+      font-family: var(--nvoe-text-font);
+      font-weight: 700;
+      font-style: italic;
+      text-align: center;
+      margin-top: 18rem;
+      text-align: center;
+    }
+
+    .quiz-tilmelding-arrow{
+      display: block;
+      background: none;
+      border: none;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 1.25rem;
+    }
+
+    /*Quiz formula styling for web*/
+    .quiz-tilmelding{
+      align-items: center;
+    }
+
+    .quiz-intro-info{
+      font-size: 1.1em;
+    }
+
+    .quiz-tilmelding-info-title, .onlinequiz-tilmelding-info-title{
+      font-size: 1.75em;
+    }
+
+    .quiz-tilmelding-info-tekst, .onlinequiz-tilmelding-info-tekst, .onlinequiz-tilmelding-info-tekst-to{
+      font-size: 1em;
+      text-align: center;
+      width: auto;
+    }
+
+    .quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail, .onlinequiz-tilmelding-navn, .onlinequiz-tilmelding-telefon, .onlinequiz-tilmelding-mail{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .quiz-tilmelding-navn-input, .quiz-tilmelding-telefon-input, .quiz-tilmelding-mail-input, .onlinequiz-tilmelding-navn-input, .onlinequiz-tilmelding-telefon-input, .onlinequiz-tilmelding-mail-input{
+      margin-top: 2rem;
+      margin-left: 1.5rem;
+      width: 21.688rem;
+      height: 2.5rem;
+      font-size: 0.75em;
+    }
+
+    .quiz-tilmelding-navn-label, .quiz-tilmelding-telefon-label, .quiz-tilmelding-mail-label, .onlinequiz-tilmelding-navn-label, .onlinequiz-tilmelding-telefon-label, .onlinequiz-tilmelding-mail-label{
+      width: 8rem;
+      font-size: 1.75em;
+    }
+    /*Styling send button*/
+  .quiz-tilmelding-submit, .onlinequiz-tilmelding-submit{
+    color:var(--nvoe-yellow);
+    background-color: var(--nvoe-black);
+    border-color: var(--nvoe-yellow);
+    border-radius: 3.125rem;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    font-size: 1.5em;
+    width: 10rem;
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3.813rem;
+  }
+  
+  .onlinequiz-intro-section{
+    background-image: none;
+  }
+
+  .onlinequiz-desktop{
+    background-image: url(/images/quizintrowall.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position-y: 100%;
+  }
+
+  .onlinequiz-information{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .onlinequiz-information-img{
+    display: none;
+  }
+
+  .onlinequiz-information-step-et, .onlinequiz-information-step-to, .onlinequiz-information-step-tre{
+    width: 25.125rem;
+    height: 14.188rem;
+    margin: 5rem;
+  }
+
+  .onlinequiz-information-step-et-title, .onlinequiz-information-step-to-title, .onlinequiz-information-step-tre-title{
+    font-size: 1.75em;
+  }
+
+  .onlinequiz-information-step-et-beskrivelse, .onlinequiz-information-step-to-beskrivelse, .onlinequiz-information-step-tre-beskrivelse, .onlinequiz-information-step-to-beskrivelse-link, .onlinequiz-information-step-to-beskrivelse-to, .onlinequiz-information-step-to-beskrivelse-tre, .onlinequiz-information-step-tre-beskrivelse-to, .onlinequiz-information-step-tre-beskrivelse-to-link{
+    font-size: 1em;
+  }
+
+  .onlinequiz-information-img-desktop{
+    display: block;
+    width: 12.313rem;
+    height: 3rem;
+    margin-top: 15rem;
+    margin-left: -4rem;
+  }
+
+  .onlinequiz-intro-info{
+    font-size: 1.75em;
+    font-family: var(--nvoe-text-font);
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .event-intro {
+    font-size: 2.5em; 
+  }
+  .event-intro-h3 {
+    font-size: 1.75em;
+  }
+  .event-types-intro {
+    padding: 4rem;
+  }
+
+  .event-types-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .event-quiz {
+    margin: 0 auto;
+    width: 30%;
+    height: 35vh;
+  }
+
+  .event-bodega {
+    margin: 0 auto;
+    width: 30%;
+    height: 35vh;
+  }
+
+  .event-fernisering {
+    margin: 0 auto;
+    width: 30%;
+    height: 35vh;
+  }
+}
+
+ombaren-styling
+  .ombaren-info-wrapper {
+    display: flex;
+  }
+
+  .ombaren-info {
+    background-image: url("/images/ombarentavle.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    }
+
+@media screen and (min-width: 1920px) {
+    .togo-intro-section {
+        height: 100vh;
+        background-position-x: 40%;
+    }
+    .togo-intro {
+        font-size: 2.5em;
+    }
+    .togo-intro-h3 {
+        font-size: 1.75em;
+        text-align: left;
+        margin-left: 18rem;
+        margin-top: 8rem;
+    }
+    .togo-beer-image {
+        width: 30%;
+        margin-left: 13rem;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .togo-intro-image {
+        display: block;
+        width: 30%;
+        margin-left: 75rem;
+        margin-top: -28rem;
+    }
+    .togo-intro-bestilling-disclaimer {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 6rem;
+    }
+    .togo-intro-bestilling-disclaimer-description {
+        font-size: 1em;
+    }
+    .togo-bestilling-section {
+        background-color: var(--nvoe-blue);
+        width: 40%;
+        height: 30rem;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+        margin-top: 2.5rem;
+    }
+    .togo-bestilling-intro {
+        font-size: 1.75em;
+        margin-bottom: 3rem;
+    }
+    .togo-bestilling-antal-intro {
+        font-family: var(--nvoe-titel-font);
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 2.5rem;
+        margin-left: 7rem;
+    }
+    .togo-bestilling-telefon {
+        font-family: var(--nvoe-titel-font);
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 2.5rem;
+        margin-left: 7rem;
+    }
+    .togo-bestilling-dato {
+        font-family: var(--nvoe-titel-font);
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 1.5rem;
+        margin-left: 7rem;
+    }
+    .togo-bestilling-antal {
+        display: flex;
+    }
+    .togo-bestilling-antal-selection {
+        width: 3rem;
+        height: 1.5rem;
+        margin-right: 23rem;
+        margin-top: 1.3rem;
+    }
+    .togo-bestilling-telefon {
+        display: flex;
+    }
+    .togo-bestilling-telefon-box {
+        width: 7rem;
+        height: 1.5rem;
+        text-align: center;
+        margin-top: -0.1rem;
+        margin-left: 6rem;
+    }
+    .togo-bestilling-dato {
+        display: flex;
+    }
+    .togo-bestilling-dato-box {
+        width: 7rem;
+        height: 1.5rem;
+        text-align: center;
+        margin-top: -0.1rem;
+        margin-left: 8.5rem;
+    }
+    .togo-bestilling-button {
+        margin-left: 19.5rem;
+    }
+}
+
+    .ombaren-info-title {
+      font-size: 2.5rem;
+    }
+
+    .ombaren-info-tekst {
+      font-size: 1.5em;
+      text-align: left;
+      width: 45rem;
+      padding: 4rem;
+    }
+
+    .ombaren-info-img {
+      display: block;
+      margin: 0 auto;
+      width: 65rem;
+    }
+
+    .ombaren-omos-title {
+      font-size: 2.5em;
+    }
+
+    .ombaren-omos-person-img {
+      display: block;
+      margin: 0 auto;
+      width: 35rem;
+    }
+
+    .ombaren-omos-person-tekst {
+      font-size: 1.5em;
+      padding: 4rem; 
+      width: 20em;
+      text-align: center; 
+      display: block;
+      margin: 0 auto;
+    }
+
+
+
+
+    
+}
 
 .booking-info {
   background-position-y: 100%;
-}
-
 }
