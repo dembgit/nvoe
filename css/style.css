@@ -881,9 +881,6 @@ events-styling
   width: 72%;
 }
 
-
-
-
 /* --- Om baren --- */ 
 
 .ombaren-info {
@@ -901,7 +898,6 @@ events-styling
   padding: 2rem;
 }
 
-events-styling
 .event-bodega-description {
   font-family: var(--nvoe-text-font);
   font-weight: 400;
