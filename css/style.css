@@ -65,13 +65,53 @@ body {
     color: var(--nvoe-white);
 }
 
+
+/* HEADER OG NAV */
+
+header {
+  display: flex;
+}
+
+.header-image {
+  width: 10%;
+}
+
+.header-nav {
+  padding-right: 10%;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.header-nav-ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.header-nav-ul-li-a {
+  color: var(--nvoe-white);
+  font-family: 'Kalam', cursive;
+  font-style: normal;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header-nav-ul-li-a:hover {
+  color: var(--nvoe-yellow);
+}
 /* Forside styling */
 
-.front-intro-section {
+.front-body {
   background-image: url("/images/forsidewall.jpg");
-  height: 40vh;
   background-size: cover;
   background-position-x: 40%;
+  background-repeat: no-repeat;
+}
+
+.front-intro-section {
+  height: 40vh;
 }
 
 .front-intro-image {
@@ -115,6 +155,10 @@ body {
   margin-top: 1em;
   margin-left: 2rem;
   margin-bottom: 1.875em;
+}
+
+.front-intro-scrolldown {
+  display: none;
 }
 
 .front-info-section {
@@ -1248,11 +1292,12 @@ body {
 @media screen and (min-width: 1280px) {
 
   /* Forside MEDIA 1280 */
+    .front-body {
+    background-size: auto 100vh;
+    }
+
     .front-intro-section {
-        background-image: url("/images/forsidewall.jpg");
         height: 100vh;
-        background-size: cover;
-        background-position-x: 40%;
     }
     .front-intro-image {
         width: 550px;
@@ -1869,19 +1914,21 @@ body {
 
 @media screen and (min-width: 1920px) {
 
+  .front-body {
+    background-size: auto 100vh;
+  }
+
   /* Forside styling mediaqueries */
   .front-intro-section {
-    background-image: url("/images/forsidewall.jpg");
     height: 100vh;
-    background-size: cover;
-    background-position-x: 40%;
 }
 .front-intro-image {
-    width: 800px;
-    height: 800px;
+    width: 35%;
+    height: 35%;
     display: block;
-    margin-left: 560px;
-    padding-top: 2.3rem;
+    margin: 0 auto;
+    padding-top: 0rem;
+    padding-left: 22.5rem;
 }
 .front-intro-scrolldown {
     display: block;
@@ -1895,13 +1942,13 @@ body {
     display: flex;
 }
 .front-intro-tilbud {
-    height: 250px;
-    width: 250px;
+    height: 15rem;
+    width: 15rem;
     background-color: var(--nvoe-blue);
     border-radius: 50%;
     display: block;
     margin-top: 22rem;
-    margin-right: 13rem;
+    margin-right: 7.5rem;
 }
 .front-intro-tilbud-tekst {
     font-size: 1.25em;
