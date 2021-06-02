@@ -374,6 +374,77 @@ body {
 }
 
 
+
+
+/* --- Om baren --- */ 
+
+.ombaren-info {
+  background-image: url("/images/ombarentavle.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  
+}
+
+.ombaren-info-title {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ombaren-info-tekst {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1.75em;
+  text-align: center;
+}
+
+.ombaren-info-img {
+  width: 20rem;
+  margin: 0;
+  padding: 1.75em;
+}
+
+.ombaren-omos-title {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ombaren-omos-person-navn {
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.ombaren-omos-person-img {
+  width: 20rem;
+  margin: 0;
+  padding: 1.75em;
+  border-radius: 50%;
+}
+
+.ombaren-omos-person-tekst {
+  font-family: var(--nvoe-text-font);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1.75em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
 /* Media Tablet */
 @media screen and (min-width: 750px){
     
@@ -381,6 +452,36 @@ body {
 
 /* Media Small Laptop */
 @media screen and (min-width: 1280px){
+ombaren-styling
+  .ombaren-info-wrapper {
+    display: flex;
+  }
+
+  .ombaren-info {
+    background-image: url("/images/ombarentavle.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    }
+
+    .ombaren-info-tekst {
+      width: 40rem;
+    }
+
+    .ombaren-info-img {
+      width: 35rem;
+    }
+
+    .ombaren-omos-person-img {
+      display: block;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .ombaren-omos-person-tekst {
+      width: 15em;
+      display: block;
+      margin: 0 auto;
+    }
     
 .booking-info {
   background-size: 100%;
@@ -456,6 +557,58 @@ body {
 
 /* Media Big Laptop */
 @media screen and (min-width: 1920px){
+
+ombaren-styling
+  .ombaren-info-wrapper {
+    display: flex;
+  }
+
+  .ombaren-info {
+    background-image: url("/images/ombarentavle.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    }
+
+    .ombaren-info-title {
+      font-size: 2.5rem;
+    }
+
+    .ombaren-info-tekst {
+      font-size: 1.5em;
+      text-align: left;
+      width: 45rem;
+      padding: 4rem;
+    }
+
+    .ombaren-info-img {
+      display: block;
+      margin: 0 auto;
+      width: 65rem;
+    }
+
+    .ombaren-omos-title {
+      font-size: 2.5em;
+    }
+
+    .ombaren-omos-person-img {
+      display: block;
+      margin: 0 auto;
+      width: 35rem;
+    }
+
+    .ombaren-omos-person-tekst {
+      font-size: 1.5em;
+      padding: 4rem; 
+      width: 20em;
+      text-align: center; 
+      display: block;
+      margin: 0 auto;
+    }
+
+
+
+    
+}
 
 .booking-info {
   background-position-y: 100%;
