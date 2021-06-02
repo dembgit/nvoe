@@ -1,0 +1,286 @@
+@import url("https://use.typekit.net/scn2gmy.css");
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+/* 
+----- Font styling -----
+
+ _-_-_-_ DUNBAR _-_-_-_
+
+font-family: dunbar-tall, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+--- DUNBAR Weight ---
+Light = 300
+Regular = 500
+Medium = 600
+Bold = 700
+---------------------
+
+
+_-_-_-_ Poppins _-_-_-_
+
+font-family: poppins, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+--- Poppins Weight ---
+Light = 300
+Regular = 400
+Medium = 500
+Bold = 700
+----------------------
+*/
+
+:root {
+    --nvoe-black: #2c3437;
+    --nvoe-blue: #5d7a85;
+    --nvoe-yellow: #f2b90f;
+    --nvoe-white: #ffffff;
+    --nvoe-titel-font: dunbar-tall, sans-serif;
+    --nvoe-text-font: poppins, sans-serif;
+  }
+
+body {
+    font-family: var(--nvoe-titel-font);
+    background-color: var(--nvoe-black);
+    color: var(--nvoe-white);
+}
+
+/* Forside */
+
+.front-intro-section {
+    background-image: url("/images/forsidewall.jpg");
+    height: 40vh;
+    background-size: cover;
+    background-position-x: 40%;
+}
+    
+.front-intro-image {
+    width: 270px;
+    height: 270px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.3rem;
+}
+
+.front-intro-tilbud {
+    height: 160px;
+    width: 160px;
+    background-color: var(--nvoe-blue);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: -3rem;
+    margin-left: 7rem;
+}
+
+.front-intro-tilbud-tekst {
+    font-family: var(--nvoe-text-font);
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.front-info-tilbud-button {
+    width: 6em;
+    height: 2em;
+    background-color: transparent;
+    border: solid 2px var(--nvoe-white);
+    border-radius: 3.125em;
+    font-family: 'Kalam';
+    font-size: 1em;
+    color: var(--nvoe-white);
+    margin-top: 1em;
+    margin-left: 2rem;
+    margin-bottom: 1.875em;
+}
+
+.front-info-section {
+    margin-top: 10rem;
+}
+
+.front-info-event {
+    background-color: var(--nvoe-blue);
+    width: 72%;
+    height: 15rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+
+.front-info-event-intro {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.front-info-event-description {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.front-info-event-button {
+    width: 5em;
+    height: 2em;
+    background-color: transparent;
+    border: solid 2px var(--nvoe-white);
+    border-radius: 3.125em;
+    font-family: 'Kalam';
+    font-size: 1.5em;
+    color: var(--nvoe-white);
+    margin-top: 1.1em;
+    margin-left: 4.8rem;
+    margin-bottom: 1.875em;
+}
+
+.front-info-aabningstider {
+    background-color: var(--nvoe-blue);
+    width: 72%;
+    height: 15rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+
+.front-info-aabningstider-description {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.front-info-corona {
+    background-color: var(--nvoe-blue);
+    width: 72%;
+    height: 26.25rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.front-info-corona-intro {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.front-info-corona-description {
+    font-family: var(--nvoe-text-font);
+    font-size: 1em;
+    line-height: 1.6rem;
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.front-find-os-intro {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.front-find-os-adresse-wrap {
+    display: flex;
+    margin-left: 0.8rem;
+}
+
+.front-find-os-adresse-image {
+    width: 4rem;
+    height: 4rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.front-find-os-adresse-description {
+    font-family: var(--nvoe-text-font);
+    font-weight: 0.8em;
+    padding-top: 2.7rem;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+.front-some {
+    background-color: var(--nvoe-blue);
+    width: 72%;
+    height: 55em;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.front-some-instagram {
+    display: flex;
+    margin-left: 1.7rem;
+    padding-top: 2rem;
+}
+
+.front-some-instagram-icon {
+    width: 1.875em;
+    height: 1.875em;
+}
+
+.front-some-instagram-name {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    margin-left: 1rem;
+    padding-top: 0.2rem;
+}
+
+.front-some-facebook {
+    display: flex;
+    margin-left: 1.7rem;
+    padding-top: 1rem;
+}
+
+.front-some-facebook-icon {
+    width: 1.875em;
+    height: 1.875em;
+}
+
+.front-some-facebook-name {
+    font-family: var(--nvoe-titel-font);
+    font-size: 1.25em;
+    margin-left: 1rem;
+    padding-top: 0.2rem;
+}
+
+.front-some-posts {
+    margin-left: 1.9rem;
+}
+
+.front-some-billede-1 {
+    width: 13.25em;
+    height: 13.25em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.front-some-billede-2 {
+    width: 13.25em;
+    height: 13.25em;
+    margin-bottom: 2rem;
+}
+
+.front-some-billede-3 {
+    width: 13.25em;
+    height: 13.25em;
+}
