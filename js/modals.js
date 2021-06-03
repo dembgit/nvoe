@@ -1,4 +1,5 @@
 var frontSection = document.querySelector(".front-info-section");
+var quizSection = document.querySelector(".quiz-tilmelding");
 var tableSection = document.querySelector(".booking-table");
 var eventSection = document.querySelector(".booking-event");
 
@@ -26,6 +27,20 @@ function tilbud(){
 function closeTilbud(){
     document.querySelector('.tilbud-modal-mobile').style.display = 'none';
 }
+
+/* Quiz */
+function sendQuiz(){
+    document.querySelector('.quiz-modal-mobile').style.display = 'flex';  
+};
+
+function closeQuiz(){
+    document.querySelector('.quiz-modal-mobile').style.display = 'none';
+}
+
+function scrollQuiz() {
+    quizSection.scrollIntoView({behavior: "smooth"})
+}
+
 
 /* Booking */
 
