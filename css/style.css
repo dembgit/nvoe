@@ -444,7 +444,7 @@ footer {
 
 .front-find-os-adresse-description {
   font-family: var(--nvoe-text-font);
-  font-weight: 0.8em;
+  font-weight: 600;
   padding-top: 2.7rem;
   margin-top: 1rem;
   margin-bottom: 6rem;
@@ -461,7 +461,10 @@ footer {
   width: 100%;
   height: 100%;
 }
-
+.googlemaps {
+  margin: 0;
+  border: 0;
+}
 
 .front-some {
   background-color: var(--nvoe-blue);
@@ -660,7 +663,7 @@ footer {
 .togo-intro-bestilling-disclaimer-description {
   font-family: var(--nvoe-text-font);
   font-size: 0.875em;
-  font-weight: italic;
+  font-style: italic;
   text-align: center;
   margin-top: 1rem;
 }
@@ -1176,7 +1179,7 @@ footer {
   font-size: 1em;
   font-weight: 400;
   text-align: center;
-  margin: 2.125rem, 3.188rem, 4.688rem, 3.188rem;
+  margin: 2.125rem 3.188rem 4.688rem 3.188rem;
   padding: 2.125rem;
   width: 18rem;
 }
@@ -2170,7 +2173,7 @@ header {
         height: 25rem;
         line-height: 2em;
         margin-left: 3rem;
-        margin-right: rem;
+        margin-right: 3rem;
         border-radius: 5px;
         margin-bottom: 4rem;
     }
@@ -2210,7 +2213,7 @@ header {
     .front-find-os-adresse-description {
         font-family: var(--nvoe-text-font);
         font-size: 1em;
-        font-weight: 0.8em;
+        font-weight: 600;
         padding-top: 2.7rem;
         margin-top: 1rem;
         margin-bottom: 6rem;
@@ -2989,7 +2992,7 @@ header {
 .front-find-os-adresse-description {
     font-family: var(--nvoe-text-font);
     font-size: 1.75em;
-    font-weight: 0.8em;
+    font-weight: 600;
     padding-top: 2.7rem;
     margin-top: 1rem;
     margin-bottom: 6rem;
@@ -3367,7 +3370,7 @@ background-image: none;
 }
 
 .onlinequiz-intro {
-  padding-top: none;
+  padding-top: 0;
 }
 
 .onlinequiz-desktop{
