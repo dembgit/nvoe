@@ -14,3 +14,11 @@ function menuClose() {
     navexit.style.display = "none"
     navcontent.style.display = "none"
 }
+
+
+
+var tilmeldSection = document.querySelector(".onlinequiz-tilmelding");
+
+function scrollTilmelding() {
+    tilmeldSection.scrollIntoView(alignToTop)
+}

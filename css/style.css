@@ -914,7 +914,7 @@ footer {
 /*Styling individual text lines top of page*/
 .quiz-intro{
   font-size: 1.75em;
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 5rem 2rem 1rem 2rem;
   text-transform: uppercase;
 }
 
@@ -935,7 +935,7 @@ footer {
   font-weight: 700;
   font-style: italic;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 7.5rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -1037,6 +1037,7 @@ footer {
   text-align: center;
   width: 24rem;
   margin: 0 auto;
+  padding-top: 5rem;
 }
 
 .onlinequiz-intro-date{
@@ -1963,6 +1964,7 @@ header {
     background-size: cover;
     background-position-y: 75%;
     padding-top: 9rem;
+    padding-bottom: 1rem;
   }
 
   .quiz-tilmelding-arrow{
@@ -1991,7 +1993,7 @@ header {
     height: 40vh;
   }
   .onlinequiz-intro {
-    padding-top: 9rem;
+    padding-top: 11rem;
   }
 
   .onlinequiz-desktop{
@@ -2005,6 +2007,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 2rem;
   }
 
   .onlinequiz-information-img{
