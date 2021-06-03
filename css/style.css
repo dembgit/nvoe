@@ -1272,6 +1272,12 @@ footer {
   margin-bottom: 1.875em;
 }
 
+.booking-info-table-button:hover, .booking-info-event-button:hover {
+  border: solid 2px var(--nvoe-yellow);
+  color: var(--nvoe-yellow);
+  cursor: pointer;
+}
+
 
 /* Booking Page Styling - Book Bord Form */
 
@@ -1407,6 +1413,12 @@ footer {
   font-weight: 700;
 }
 
+.booking-table-amount-one-button:hover, .booking-table-amount-two-button:hover, .booking-table-amount-three-button:hover, .booking-table-amount-four-button:hover, .booking-table-amount-five-button:hover, .booking-table-amount-six-button:hover, .booking-table-amount-seven-button:hover {
+  border: solid 2px var(--nvoe-yellow);
+  color: var(--nvoe-yellow);
+  cursor: pointer;
+}
+
 .booking-table-comment, .booking-event-comment {
   display: flex;
   flex-direction: column;
@@ -1447,7 +1459,62 @@ footer {
   margin-bottom: 1.75em;
 }
 
+.booking-table-comment-button:hover, .booking-event-comment-button:hover {
+  background-color: var(--nvoe-yellow);
+  color: var(--nvoe-black);
+  cursor: pointer;
+}
 
+
+
+
+/* MODAL STYLING */
+.booking-modal-mobile {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.booking-modal-mobile-content {
+  width: 90%;
+  height: 33.0625em;
+  background-color: var(--nvoe-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-modal-mobile-content-title {
+  text-align: center;
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.booking-modal-mobile-content-button {
+  width: 8.125em;
+  height: 2.8125em;
+  font-size: 1.5em;
+  color: var(--nvoe-white);
+  background-color: transparent;
+  border: 2px solid var(--nvoe-white);
+  border-radius: 3.125em;
+  font-family: 'Kalam';
+}
+
+.booking-modal-mobile-content-button:hover {
+  color: var(--nvoe-yellow);
+  border: 2px solid var(--nvoe-yellow);
+  cursor: pointer;
+}
 
 /* Media Small Laptop */
 
@@ -1519,6 +1586,12 @@ header {
 #nav-underpage {
   margin: 0 auto;
   margin-top: 1rem;
+}
+
+/* MODAL 1280*/
+
+.booking-modal-mobile-content {
+  width: 40%;
 }
 
   /* Forside MEDIA 1280 */
@@ -2175,7 +2248,11 @@ header {
     margin-top: 3.5rem;
   }
 
+  /* MODAL 1280*/
 
+.booking-modal-mobile-content {
+  width: 30%;
+}
 
 
   /* FORSIDE MEDIA 1920 */
@@ -2753,7 +2830,6 @@ text-align: center;
     display: block;
     margin: 0 auto;
   }
-
 
 
 
