@@ -2,6 +2,8 @@ var frontSection = document.querySelector(".front-info-section");
 var tableSection = document.querySelector(".booking-table");
 var eventSection = document.querySelector(".booking-event");
 
+/* Front */
+
 function togo(){
     document.querySelector('.front-modal-togo-section').style.display = 'flex';  
 };
@@ -10,9 +12,22 @@ function back(){
     document.querySelector('.front-modal-togo-section').style.display = 'none';
 }
 
+
 function scrollFront() {
     frontSection.scrollIntoView({behavior: "smooth"})
 }
+
+/* Tilbud */
+
+function tilbud(){
+    document.querySelector('.tilbud-modal-mobile').style.display = 'flex';  
+};
+
+function closeTilbud(){
+    document.querySelector('.tilbud-modal-mobile').style.display = 'none';
+}
+
+/* Booking */
 
 function scrollTable() {
     tableSection.scrollIntoView({behavior: "smooth"})

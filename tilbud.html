@@ -99,9 +99,26 @@
 
                 </div>
             </div>
-            <button class="togo-bestilling-button">Bekræft</button>
+            <button class="togo-bestilling-button" onclick="tilbud()">Bekræft</button>
         </div>
     </section>
+
+    <!-- MODALS -->
+
+    <div class="tilbud-modal-mobile">
+        <div class="tilbud-modal-mobile-content">
+            <h3 class="tilbud-modal-mobile-content-title">
+                Din bestilling er blevet modtaget
+                og kan hentes på baren mellem
+                kl. 15 og 18.
+            </h3>
+            <img src="./images/BookingSMALL.png" class="tilbud-modal-mobile-content-img">
+            <button onclick="closeTilbud()" class="tilbud-modal-mobile-content-button">
+                Ok
+            </button>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-contact">
             <div class="footer-contact-wrap">
@@ -164,5 +181,6 @@
     </footer>
 </body>
 <script src="./js/main.js"></script>
+<script src="./js/modals.js"></script>
 
 </html>
