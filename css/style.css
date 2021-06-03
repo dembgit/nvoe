@@ -162,7 +162,6 @@ footer {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  width: 100vw;
   margin-bottom: 1.625em;
 }
 
@@ -1438,6 +1437,14 @@ footer {
 
 @media screen and (min-width: 1280px) {
 
+  /* Footer */
+
+  footer {
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+
   /* HEADER MEDIA 1280 */
 
 header {
@@ -2113,6 +2120,7 @@ header {
 /* Media Big Laptop */
 
 @media screen and (min-width: 1920px) {
+  
 
   /* HEADER MEDIA 1920 */
 
