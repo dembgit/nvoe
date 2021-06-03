@@ -1,5 +1,6 @@
 var frontSection = document.querySelector(".front-info-section");
 var quizSection = document.querySelector(".quiz-tilmelding");
+var onlineQuizSection = document.querySelector(".onlinequiz-tilmelding");
 var tableSection = document.querySelector(".booking-table");
 var eventSection = document.querySelector(".booking-event");
 
@@ -39,6 +40,25 @@ function closeQuiz(){
 
 function scrollQuiz() {
     quizSection.scrollIntoView({behavior: "smooth"})
+}
+
+/* Online Quiz */
+
+function startOnlineQuiz(){
+    document.querySelector('.online-quiz-modal-mobile').style.display = 'flex';  
+};
+
+function nextOnlineQuiz(){
+    document.querySelector('.online-quiz-modal-mobile').style.display = 'none';
+    document.querySelector('.online-quiz-modal-mobile-next').style.display = 'flex';  
+};
+
+function closeOnlineQuiz(){
+    document.querySelector('.online-quiz-modal-mobile-next').style.display = 'none';
+}
+
+function scrollOnlineQuiz() {
+    onlineQuizSection.scrollIntoView({behavior: "smooth"})
 }
 
 

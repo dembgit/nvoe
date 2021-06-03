@@ -1168,6 +1168,10 @@ footer {
   margin-top: 3.688rem;
 }
 
+.onlinequiz-information-step-et-button:hover {
+  cursor: pointer;
+}
+
 .onlinequiz-information-img{
   display: block;
   margin-left: auto;
@@ -1669,6 +1673,130 @@ footer {
   cursor: pointer;
 }
 
+/* MODAL - Online Quiz */
+
+.online-quiz-modal-mobile {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.online-quiz-modal-mobile-content {
+  width: 90%;
+  height: 60%;
+  background-color: var(--nvoe-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.online-quiz-modal-mobile-content-title {
+  text-align: center;
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.25em;
+  font-weight: 700;
+  padding: 0 1em;
+}
+
+.online-quiz-modal-mobile-content-p, .online-quiz-modal-mobile-content-p-cont {
+  text-align: center;
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  padding: 1em;
+  width: 18.75em;
+}
+
+.online-quiz-modal-mobile-content-p-yellow {
+  color: var(--nvoe-yellow);
+}
+
+.online-quiz-modal-mobile-content-button {
+  width: 8.125em;
+  height: 2.8125em;
+  font-size: 1.5em;
+  color: var(--nvoe-white);
+  background-color: transparent;
+  border: 2px solid var(--nvoe-white);
+  border-radius: 3.125em;
+  font-family: 'Kalam';
+}
+
+.online-quiz-modal-mobile-content-button:hover {
+  color: var(--nvoe-yellow);
+  border: 2px solid var(--nvoe-yellow);
+  cursor: pointer;
+}
+
+.online-quiz-modal-mobile-next {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.online-quiz-modal-mobile-next-content {
+  width: 90%;
+  height: 60%;
+  background-color: var(--nvoe-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.online-quiz-modal-mobile-next-content-title {
+  text-align: center;
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.25em;
+  font-weight: 700;
+  padding: 0 1em;
+}
+
+.online-quiz-modal-mobile-next-content-p, .online-quiz-modal-mobile-next-content-p-cont {
+  text-align: center;
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  padding: 1em;
+  width: 18.75em;
+}
+
+.online-quiz-modal-mobile-next-content-p-yellow {
+  color: var(--nvoe-yellow);
+}
+
+.online-quiz-modal-mobile-next-content-button {
+  width: 8.125em;
+  height: 2.8125em;
+  font-size: 1.5em;
+  color: var(--nvoe-white);
+  background-color: transparent;
+  border: 2px solid var(--nvoe-white);
+  border-radius: 3.125em;
+  font-family: 'Kalam';
+}
+
+.online-quiz-modal-mobile-next-content-button:hover {
+  color: var(--nvoe-yellow);
+  border: 2px solid var(--nvoe-yellow);
+  cursor: pointer;
+}
+
 /* MODAL Booking */
 
 .booking-modal-mobile {
@@ -1835,6 +1963,10 @@ header {
 }
 
 .tilbud-modal-mobile-content {
+  width: 60%;
+}
+
+.online-quiz-modal-mobile-content, .online-quiz-modal-mobile-next-content {
   width: 60%;
 }
 
