@@ -129,6 +129,21 @@ padding: 0rem;
   margin-top: 3rem;
 }
 
+.header-nav-ul-li-selection {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-underpage {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  font-size: 1em;
+}
+
+.header-nav-ul-li-image {
+  display: none;
+}
+
 .header-nav-ul-li-a {
   color: var(--nvoe-white);
   font-family: 'Kalam', cursive;
@@ -886,7 +901,7 @@ footer {
   background-image: url(/images/quizintrowall.jpg);
   height: 50vh;
   background-size: cover;
-  background-position-x: 60%;
+  background-position-x: 30%;
 }
 
 /*Saving lines and grabbing same font for all 3 classes*/
@@ -1020,7 +1035,7 @@ footer {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  width: 20rem;
+  width: 24rem;
   margin: 0 auto;
 }
 
@@ -1441,7 +1456,7 @@ footer {
 
   footer {
     flex-direction: row;
-    width: 100vw;
+    max-width: 100vw;
     justify-content: space-evenly;
   }
 
@@ -1491,6 +1506,18 @@ header {
 
 .header-nav-ul-li {
   margin-top: 2.5rem;
+}
+
+.header-nav-ul-li-image {
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.75rem;
+  width: 0.3rem;
+}
+
+#nav-underpage {
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 
   /* Forside MEDIA 1280 */
@@ -1662,6 +1689,7 @@ header {
   /* TOGO MEDIA 1280 */
 
   .togo-intro-section {
+    padding-top: 3.5rem;
       height: 100vh;
       background-position-x: 40%;
   }
@@ -1785,6 +1813,10 @@ header {
 
   /* UDVALG MEDIA 1280 */
 
+  .udvalg-intro-section {
+    padding-top: 3rem;
+  }
+
   .udvalg-desktop-wrap {
     display: flex;
     margin: 0 auto;
@@ -1794,6 +1826,7 @@ header {
 
   .udvalg-intro {
     padding: 3rem;
+    font-size: 2.4em;
   }
 
   .udvalg-body {
@@ -1887,6 +1920,10 @@ header {
 
   /* EVENTS MEDIA 1280 */
 
+  .event-intro-section {
+    padding-top: 4rem;
+  }
+
   .event-intro {
     font-size: 2.5rem;
   }
@@ -1920,10 +1957,12 @@ header {
 
 /* QUIZ MEDIA 1280 */
 
+
   .quiz-intro-section{
     height: 60vh;
     background-size: cover;
     background-position-y: 75%;
+    padding-top: 9rem;
   }
 
   .quiz-tilmelding-arrow{
@@ -1949,16 +1988,17 @@ header {
 
   .onlinequiz-intro-section{
     background-image: none;
+    height: 40vh;
   }
   .onlinequiz-intro {
-    padding-top: 3rem;
+    padding-top: 9rem;
   }
 
   .onlinequiz-desktop{
     background-image: url(/images/quizintrowall.jpg);
+    background-size: auto 100vh;
     height: 100vh;
-    background-size: cover;
-    background-position-y: 100%;
+    background-position-y: 75%;
   }
 
   .onlinequiz-information{
@@ -1973,7 +2013,7 @@ header {
 
   .onlinequiz-information-step-et, .onlinequiz-information-step-to, .onlinequiz-information-step-tre{
     width: 20.125rem;
-    height: 10.188rem;
+    height: 12rem;
     margin: 0.5rem;
   }
 
@@ -1993,7 +2033,7 @@ header {
   }
 
   .onlinequiz-intro-info{
-    font-size: 1.75em;
+    font-size: 1.25em;
     font-family: var(--nvoe-text-font);
     font-weight: 700;
     font-style: italic;
@@ -2008,10 +2048,12 @@ header {
 
   .ombaren-info-title {
     padding-top: 7.5rem;
+    font-size: 2.4em;
   }
 
   .ombaren-info-wrapper {
     display: flex;
+    padding-bottom: 1rem;
   }
 
   .ombaren-info {
@@ -2022,6 +2064,7 @@ header {
 
     .ombaren-info-tekst {
       width: 40rem;
+      margin-top: 3.5rem;
     }
 
     .ombaren-info-img {
@@ -2054,7 +2097,8 @@ header {
     }
     
     .booking-info-title {
-      margin-top: 2em;
+      margin-top: 1rem;
+      font-size: 2.4em;
     }
     
     .booking-info-container {
@@ -2429,6 +2473,10 @@ header {
 
   /* UDVALG MEDIA 1920 */
 
+  .udvalg-intro-section {
+    padding-top: 6rem;
+  }
+  
   .udvalg-togo-section {
     width: 45%;
   }
@@ -2449,6 +2497,10 @@ header {
 
   /* EVENT MEDIA 1920 */
 
+  .event-intro-section {
+    padding-top: 6rem;
+  }
+
   .event-intro {
     font-size: 2.5em;
   }
@@ -2466,19 +2518,19 @@ header {
   .event-quiz {
     margin: 0 auto;
     width: 30%;
-    height: 35vh;
+    height: 40vh;
   }
 
   .event-bodega {
     margin: 0 auto;
     width: 30%;
-    height: 35vh;
+    height: 40vh;
   }
 
   .event-fernisering {
     margin: 0 auto;
     width: 30%;
-    height: 35vh;
+    height: 40vh;
   }
 
 
@@ -2488,16 +2540,19 @@ header {
 
 /*Styling top of page and background image*/
 .quiz-intro-section{
-  height: 81.68859649122807vh;
-  background-size: cover;
+  height: 85vh;
+  background-size: auto 100vw;
   background-position-y: 100%;
 }
 
 .quiz-intro, .onlinequiz-intro{
   font-size: 2.5em;
-  padding: 11.5rem 2rem 1rem 2rem;
+  padding: 11rem 2rem 1rem 2rem;
 }
 
+.onlinequiz-intro {
+  width: 40%;
+}
 
 .quiz-intro-description-title{
   font-size: 1.75em;
@@ -2651,6 +2706,7 @@ text-align: center;
 
 .ombaren-info-wrapper {
   display: flex;
+  padding-bottom: 1rem;
 }
 
 .ombaren-info {
@@ -2673,7 +2729,7 @@ text-align: center;
   .ombaren-info-img {
     display: block;
     margin: 0 auto;
-    width: 65rem;
+    width: 50rem;
   }
 
   .ombaren-omos-title {
@@ -2702,5 +2758,9 @@ text-align: center;
 
   .booking-info {
     background-position-y: 100%;
+  }
+
+  .booking-info-title {
+    padding-top: 3rem;
   }
 }

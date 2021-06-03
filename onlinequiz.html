@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Nordvest Ølbar</title>
 </head>
+
 <body>
     <header>
         <button class="header-mobile-menu-button" onclick="menu()">
@@ -21,10 +23,16 @@
                 <img class="header-nav-exit-image" src="/images/x.svg" alt="">
             </button>
             <ul class="header-nav-ul">
-                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a active-page" href="index.html">Forside</a>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="index.html">Forside</a>
                 </li>
                 <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="udvalg.html">Udvalg</a></li>
-                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="events.html">Events</a></li>
+                <li class="header-nav-ul-li">
+                    <div class="header-nav-ul-li-selection">
+                        <a class="header-nav-ul-li-a" href="events.html">Events</a>
+                        <img class="header-nav-ul-li-image" src="/images/dots.svg" alt="">
+                        <a class="header-nav-ul-li-a active-page" id="nav-underpage" href="onlinequiz.html">Online Quiz</a>
+                    </div>
+                </li>
                 <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="ob.html">Om Baren</a></li>
                 <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="booking.html">Booking</a></li>
             </ul>
@@ -33,7 +41,8 @@
     <div class="onlinequiz-desktop">
         <section class="onlinequiz-intro-section">
             <h1 class="onlinequiz-intro">Online Quiz Tilmelding</h1>
-            <p class="onlinequiz-intro-info">I forbindelse med Corona holder vi en online quiz, hvor vi tilbyder øl ud af huset.</p>
+            <p class="onlinequiz-intro-info">I forbindelse med Corona holder vi en online quiz, hvor vi tilbyder øl ud
+                af huset.</p>
             <h3 class="onlinequiz-intro-date">Mandag d. 7/6-2021</h3>
         </section>
         <section class="onlinequiz-information">
@@ -42,7 +51,7 @@
                     1. Du tilmelder dig
                 </h2>
                 <p class="onlinequiz-information-step-et-beskrivelse">
-                    Tilmeld dig ved at klikke her!      
+                    Tilmeld dig ved at klikke her!
                 </p>
                 <button class="onlinequiz-information-step-et-button">
                     Tilmeld
@@ -182,4 +191,5 @@
     </footer>
 </body>
 <script src="./js/main.js"></script>
+
 </html>
