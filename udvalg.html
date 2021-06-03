@@ -12,7 +12,27 @@
     <title>Nordvest Ølbar</title>
 </head>
 
-<body>
+<body class="udvalg-body">
+    <header>
+        <button class="header-mobile-menu-button" onclick="menu()">
+            <img class="header-mobile-menu-image" src="/images/menu_white_36dp.svg" alt="">
+        </button>
+        <img class="header-image" src="/images/nv.logo.white.png" alt="logo">
+        <nav class="header-nav">
+            <button onclick="menuClose()" class="header-nav-exit">
+                <img class="header-nav-exit-image" src="/images/x.svg" alt="">
+            </button>
+            <ul class="header-nav-ul">
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="index.html">Forside</a>
+                </li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a active-page" href="udvalg.html">Udvalg</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="events.html">Events</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="ob.html">Om Baren</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <section class="udvalg-intro-section">
         <h1 class="udvalg-intro">UDVALG</h1>
         <div class="udvalg-desktop-wrap">
@@ -53,12 +73,71 @@
                 med hjem. Det er både oplagt til gæster eller til hvis du vil forkæle dig selv lidt. </p>
             <div class="udvalg-togo-order">
                 <h3 class="udvalg-togo-price">5 øl for 200kr.</h3>
-                <a class="udvalg-togo-link" href="">Bestil</a>
+                <a class="udvalg-togo-link" href="tilbud.html">Bestil</a>
             </div>
         </div>
         <img class="udvalg-togo-image" src="images/oeldaaser.png" alt="">
     </section>
-
+    <footer>
+        <div class="footer-contact">
+            <div class="footer-contact-wrap">
+                <div class="footer-contact-wrap-left"></div>
+                <h3 class="footer-contact-wrap-title">
+                    Kontakt Information
+                </h3>
+                <div class="footer-contact-wrap-right"></div>
+            </div>
+            <div class="footer-contact-text">
+                <p class="footer-contact-text-address">
+                    Sporemagervej 2,
+                    2400 KBH Nordvest
+                </p>
+                <p class="footer-contact-text-mail">
+                    info@nordvestoelbar.dk
+                </p>
+            </div>
+        </div>
+        <div class="footer-some">
+            <div class="footer-some-wrap">
+                <div class="footer-some-wrap-left"></div>
+                <h3 class="footer-some-wrap-title">
+                    Sociale Medier
+                </h3>
+                <div class="footer-some-wrap-right"></div>
+            </div>
+            <div class="footer-some-links">
+                <a href="https://www.facebook.com/nordvestolbar" class="footer-some-links-fb">
+                    <img src="./images/facebook.png" class="footer-some-links-fb-icon">
+                </a>
+                <a href="https://www.instagram.com/nordvest_olbar/" class="footer-some-links-ig">
+                    <img src="./images/instagram.png" class="footer-some-links-ig-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-time">
+            <div class="footer-time-wrap">
+                <div class="footer-time-wrap-left"></div>
+                <h3 class="footer-time-wrap-title">
+                    Åbningstider
+                </h3>
+                <div class="footer-time-wrap-right"></div>
+            </div>
+            <div class="footer-time-text">
+                <p class="footer-time-text-one">
+                    Mandag: <br>
+                    Lukket
+                </p>
+                <p class="footer-time-text-two">
+                    Tirsdag - Lørdag: <br>
+                    15:00 - 23:00
+                </p>
+                <p class="footer-time-text-three">
+                    Søndag: <br>
+                    Lukket
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 <script src="./js/main.js"></script>

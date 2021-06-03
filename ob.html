@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,24 +11,55 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Nordvest Ølbar</title>
 </head>
+
 <body>
     <header>
-
+        <button class="header-mobile-menu-button" onclick="menu()">
+            <img class="header-mobile-menu-image" src="/images/menu_white_36dp.svg" alt="">
+        </button>
+        <img class="header-image" src="/images/nv.logo.white.png" alt="logo">
+        <nav class="header-nav">
+            <button onclick="menuClose()" class="header-nav-exit">
+                <img class="header-nav-exit-image" src="/images/x.svg" alt="">
+            </button>
+            <ul class="header-nav-ul">
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="index.html">Forside</a>
+                </li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="udvalg.html">Udvalg</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="events.html">Events</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a active-page" href="ob.html">Om Baren</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="ombaren">
         <div class="ombaren-info">
             <h2 class="ombaren-info-title">
                 Om baren
             </h2>
-            <p class="ombaren-info-tekst">
-                Tilbage I 2016 købte vi den forhenværende, brune bodega Bisidderkroen på Sporemagervej i Nordvest. 
-                Visionen med Nordvest Ølbar har fra starten været, at bidrage til at gøre Nordvest-kvarteret til et samlingspunkt.
-                Baren er et familieforetagende og vi altid til at finde smilende bag disken.
-                Vi har fra begyndelsen dannet samarbejde med danske og international mikrobryggerier, og der er lagt stort fokus på, at det skal være en ny smagsoplevelse, hver gang man besøger Nordvest Ølbar.
-                Det er vigtigt for os at baren værner om lokalsamfundet, hvorfor man vil, kunne finde billeder fra lokale kunstere på væggene.
-                Vores uforbeholdne kærlighed til quizzer har ført til vores månedlige almene quiz.
-            </p>
-            <img src="#" class="ombaren-info-img">
+            <div class="ombaren-info-wrapper">
+                <p class="ombaren-info-tekst">
+                    Tilbage I 2016 købte vi den forhenværende, brune bodega Bisidderkroen på Sporemagervej i Nordvest.
+                    <br>
+                    Visionen med Nordvest Ølbar har fra starten været, at bidrage til at gøre Nordvest-kvarteret til et
+                    samlingspunkt.
+                    <br>
+                    <br>
+                    Baren er et familieforetagende og vi altid til at finde smilende bag disken.
+                    <br>
+                    <br>
+                    Vi har fra begyndelsen dannet samarbejde med danske og international mikrobryggerier, og der er lagt
+                    stort fokus på, at det skal være en ny smagsoplevelse, hver gang man besøger Nordvest Ølbar.
+                    <br>
+                    <br>
+                    Det er vigtigt for os at baren værner om lokalsamfundet, hvorfor man vil, kunne finde billeder fra
+                    lokale kunstere på væggene.
+                    <br>
+                    <br>
+                    Vores uforbeholdne kærlighed til quizzer har ført til vores månedlige almene quiz.
+                </p>
+                <img src="images/Barenbillede.jpg" class="ombaren-info-img">
+            </div>
         </div>
         <div class="ombaren-omos">
             <h2 class="ombaren-omos-title">
@@ -37,13 +69,75 @@
                 <h3 class="ombaren-omos-person-navn">
                     Benjamin
                 </h3>
-                <img src="#" class="ombaren-omos-person-img">
+                <img src="/images/benjaminbar.jpg" class="ombaren-omos-person-img">
                 <p class="ombaren-omos-person-tekst">
-                    Benjamin er 29 år, og driver primært driften nede på baren. Han er altid smilende og glad, og klar til at tage i mod nye kunder.
+                    Benjamin er 29 år, og driver primært driften nede på baren. Han er altid smilende og glad, og klar
+                    til at tage i mod nye kunder.
                 </p>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer-contact">
+            <div class="footer-contact-wrap">
+                <div class="footer-contact-wrap-left"></div>
+                <h3 class="footer-contact-wrap-title">
+                    Kontakt Information
+                </h3>
+                <div class="footer-contact-wrap-right"></div>
+            </div>
+            <div class="footer-contact-text">
+                <p class="footer-contact-text-address">
+                    Sporemagervej 2,
+                    2400 KBH Nordvest
+                </p>
+                <p class="footer-contact-text-mail">
+                    info@nordvestoelbar.dk
+                </p>
+            </div>
+        </div>
+        <div class="footer-some">
+            <div class="footer-some-wrap">
+                <div class="footer-some-wrap-left"></div>
+                <h3 class="footer-some-wrap-title">
+                    Sociale Medier
+                </h3>
+                <div class="footer-some-wrap-right"></div>
+            </div>
+            <div class="footer-some-links">
+                <a href="https://www.facebook.com/nordvestolbar" class="footer-some-links-fb">
+                    <img src="./images/facebook.png" class="footer-some-links-fb-icon">
+                </a>
+                <a href="https://www.instagram.com/nordvest_olbar/" class="footer-some-links-ig">
+                    <img src="./images/instagram.png" class="footer-some-links-ig-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-time">
+            <div class="footer-time-wrap">
+                <div class="footer-time-wrap-left"></div>
+                <h3 class="footer-time-wrap-title">
+                    Åbningstider
+                </h3>
+                <div class="footer-time-wrap-right"></div>
+            </div>
+            <div class="footer-time-text">
+                <p class="footer-time-text-one">
+                    Mandag: <br>
+                    Lukket
+                </p>
+                <p class="footer-time-text-two">
+                    Tirsdag - Lørdag: <br>
+                    15:00 - 23:00
+                </p>
+                <p class="footer-time-text-three">
+                    Søndag: <br>
+                    Lukket
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="./js/main.js"></script>
+
 </html>

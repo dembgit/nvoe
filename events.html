@@ -12,6 +12,26 @@
 </head>
 <body>
     
+    <header>
+        <button class="header-mobile-menu-button" onclick="menu()">
+            <img class="header-mobile-menu-image" src="/images/menu_white_36dp.svg" alt="">
+        </button>
+        <img class="header-image" src="/images/nv.logo.white.png" alt="logo">
+        <nav class="header-nav">
+            <button onclick="menuClose()" class="header-nav-exit">
+                <img class="header-nav-exit-image" src="/images/x.svg" alt="">
+            </button>
+            <ul class="header-nav-ul">
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="index.html">Forside</a>
+                </li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="udvalg.html">Udvalg</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a active-page" href="events.html">Events</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="ob.html">Om Baren</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <section class="event-intro-section">
         <h1 class="event-intro">Events</h1>
         <h3 class="event-intro-h3">Kom til vores opkommende events</h3>
@@ -24,22 +44,102 @@
         <h2 class="event-types-intro">
             Vi holder normalt 3 forskellige typer events på baren!
         </h2>
+    <div class="event-types-wrapper">
         <div class="event-quiz">
             <h2 class="event-quiz-intro">Quizzen</h2>
-            <p class="event-quiz-description"></p>
+            <p class="event-quiz-description">
+                <b>Fysisk Quiz</b>
+                <br>
+                <br>
+                Nordvest Ølbar holder quiz den første tirdag I måneden. Vores quizmaster Ben disker altid op med en masse svære og sjove spørgsmål.
+                <br>
+                <br>
+                Vi har plads til 10 hold af 2-6 spillere. 
+                Derfor anbefaler vi at du er hurtigt ude hvis du gerne vil være med.
+                <br>
+                <br>
+                <br>
+                <b>Online Quiz</b>
+                <br>
+                <br>
+                Grundet lockdown er der mulighed for online quiz. Dette foregår ved bestilling af To Go' tilbud, hvori et zoomlink til månedens quiz er indkluderet.</p>
         </div>
         <div class="event-bodega">
             <h2 class="event-bodega-intro">Bodegatalk</h2>
-            <p class="event-bodega-description"></p>
+            <p class="event-bodega-description">Nordvest Ølbar ligger et par gange om året hus til BodegaTalk. Parnelet består af forskellige politikere, fra henholdsvis, Social Demokraterne, SF, Venstre, Radikale Venstre, Liberal Alliance osv.
+                <br>
+                <br>
+                Dagsorden er skiftende og alt fra maskeringsforbuddet og omskæring af drengebørn er blevet debateret. Der er dog altid god stemning og folk har altid mulighed for at stille spørgsmål til parnelet.</p>
         </div>
         <div class="event-fernisering">
             <h2 class="event-fernisering-intro">Fernisering</h2>
-            <p class="event-fernisering-description"></p>
+            <p class="event-fernisering-description">Lokale kunstnere får skiftevis mulighed for at holde udstilling hos Nordvest Ølbar. Derfor holder vi løbende fernisering for at hylde kunstneren, det er da også en god undskyldning for at drikke en kold øl.
+                <br>
+                <br>
+                Vi holder fernisering et par gange om året, så hold øje på vores Facebook side, for at finde ud af hvornår vi holder det næste gang.</p>
         </div>
+    </div>
     </section>
 
     <footer>
-
+        <div class="footer-contact">
+            <div class="footer-contact-wrap">
+                <div class="footer-contact-wrap-left"></div>
+                <h3 class="footer-contact-wrap-title">
+                    Kontakt Information
+                </h3>
+                <div class="footer-contact-wrap-right"></div>
+            </div>
+            <div class="footer-contact-text">
+                <p class="footer-contact-text-address">
+                    Sporemagervej 2,
+                    2400 KBH Nordvest
+                </p>
+                <p class="footer-contact-text-mail">
+                    info@nordvestoelbar.dk
+                </p>
+            </div>
+        </div>
+        <div class="footer-some">
+            <div class="footer-some-wrap">
+                <div class="footer-some-wrap-left"></div>
+                <h3 class="footer-some-wrap-title">
+                    Sociale Medier
+                </h3>
+                <div class="footer-some-wrap-right"></div>
+            </div>
+            <div class="footer-some-links">
+                <a href="https://www.facebook.com/nordvestolbar" class="footer-some-links-fb">
+                    <img src="./images/facebook.png" class="footer-some-links-fb-icon">
+                </a>
+                <a href="https://www.instagram.com/nordvest_olbar/" class="footer-some-links-ig">
+                    <img src="./images/instagram.png" class="footer-some-links-ig-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-time">
+            <div class="footer-time-wrap">
+                <div class="footer-time-wrap-left"></div>
+                <h3 class="footer-time-wrap-title">
+                    Åbningstider
+                </h3>
+                <div class="footer-time-wrap-right"></div>
+            </div>
+            <div class="footer-time-text">
+                <p class="footer-time-text-one">
+                    Mandag: <br>
+                    Lukket
+                </p>
+                <p class="footer-time-text-two">
+                    Tirsdag - Lørdag: <br>
+                    15:00 - 23:00
+                </p>
+                <p class="footer-time-text-three">
+                    Søndag: <br>
+                    Lukket
+                </p>
+            </div>
+        </div>
     </footer>
 
 </body>

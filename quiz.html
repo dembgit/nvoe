@@ -12,8 +12,43 @@
 </head>
 <body>
     <header>
-
+        <button class="header-mobile-menu-button" onclick="menu()">
+            <img class="header-mobile-menu-image" src="/images/menu_white_36dp.svg" alt="">
+        </button>
+        <img class="header-image" src="/images/nv.logo.white.png" alt="logo">
+        <nav class="header-nav">
+            <button onclick="menuClose()" class="header-nav-exit">
+                <img class="header-nav-exit-image" src="/images/x.svg" alt="">
+            </button>
+            <ul class="header-nav-ul">
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="index.html">Forside</a>
+                </li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="udvalg.html">Udvalg</a></li>
+                <li class="header-nav-ul-li">
+                    <div class="header-nav-ul-li-selection">
+                    <a class="header-nav-ul-li-a" href="events.html">Events</a>
+                    <img class="header-nav-ul-li-image" src="/images/dots.svg" alt="">
+                    <a class="header-nav-ul-li-a active-page" id="nav-underpage" href="quiz.html">Quiz</a>
+                    </div>
+                </li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="ob.html">Om Baren</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Top of page information -->
+    <section class="quiz-intro-section">
+        <h1 class="quiz-intro">Quiz Tilmelding</h1>
+        <h2 class="quiz-intro-description-title">Nordvest Ølbar Quizzen#24</h2>
+        <h3 class="quiz-intro-date">Tirsdag d. 6/7-2021</h3>
+        <p class="quiz-intro-info">Vi holder fysisk quiz den første tirsdag i måneden, hvor alle er velkomne - du kan deltage her!</p>
+        <button class="quiz-tilmelding-arrow">
+            <img src="./images/arrow-button.png">
+        </button>
+    </section>
+
+    <!-- Formula for signing up for the quiz -->
     <section class="quiz-tilmelding">
         <div class="quiz-tilmelding-info">
             <h2 class="quiz-tilmelding-info-title">
@@ -25,28 +60,85 @@
         </div>
         <div class="quiz-tilmelding-navn">
             <label class="quiz-tilmelding-navn-label">
-                *Navn:
+                <span class="star">*</span>Navn:
             </label>
-            <input type="text" class="quiz-tilmelding-navn-input">
+            <input type="text" class="quiz-tilmelding-navn-input" placeholder="Morten Mortensen">
         </div>
         <div class="quiz-tilmelding-telefon">
             <label class="quiz-tilmelding-telefon-label">
-                *Telefon:
+                <span class="star">*</span>Telefon:
             </label>
-            <input type="tel" class="quiz-tilmelding-telefon-input">
+            <input type="tel" class="quiz-tilmelding-telefon-input" placeholder="+45 88888888">
         </div>
         <div class="quiz-tilmelding-mail">
             <label class="quiz-tilmelding-mail-label">
-                *Email:
+                <span class="star">*</span>Email:
             </label>
-            <input type="text" class="quiz-tilmelding-mail-input">
+            <input type="text" class="quiz-tilmelding-mail-input" placeholder="CoolEmail@email.dk">
         </div>
         <button class="quiz-tilmelding-submit">
             Send
         </button>
     </section>
     <footer>
-        
+        <div class="footer-contact">
+            <div class="footer-contact-wrap">
+                <div class="footer-contact-wrap-left"></div>
+                <h3 class="footer-contact-wrap-title">
+                    Kontakt Information
+                </h3>
+                <div class="footer-contact-wrap-right"></div>
+            </div>
+            <div class="footer-contact-text">
+                <p class="footer-contact-text-address">
+                    Sporemagervej 2,
+                    2400 KBH Nordvest
+                </p>
+                <p class="footer-contact-text-mail">
+                    info@nordvestoelbar.dk
+                </p>
+            </div>
+        </div>
+        <div class="footer-some">
+            <div class="footer-some-wrap">
+                <div class="footer-some-wrap-left"></div>
+                <h3 class="footer-some-wrap-title">
+                    Sociale Medier
+                </h3>
+                <div class="footer-some-wrap-right"></div>
+            </div>
+            <div class="footer-some-links">
+                <a href="https://www.facebook.com/nordvestolbar" class="footer-some-links-fb">
+                    <img src="./images/facebook.png" class="footer-some-links-fb-icon">
+                </a>
+                <a href="https://www.instagram.com/nordvest_olbar/" class="footer-some-links-ig">
+                    <img src="./images/instagram.png" class="footer-some-links-ig-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-time">
+            <div class="footer-time-wrap">
+                <div class="footer-time-wrap-left"></div>
+                <h3 class="footer-time-wrap-title">
+                    Åbningstider
+                </h3>
+                <div class="footer-time-wrap-right"></div>
+            </div>
+            <div class="footer-time-text">
+                <p class="footer-time-text-one">
+                    Mandag: <br>
+                    Lukket
+                </p>
+                <p class="footer-time-text-two">
+                    Tirsdag - Lørdag: <br>
+                    15:00 - 23:00
+                </p>
+                <p class="footer-time-text-three">
+                    Søndag: <br>
+                    Lukket
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="./js/main.js"></script>

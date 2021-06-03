@@ -12,7 +12,23 @@
 </head>
 <body>
     <header>
-
+        <button class="header-mobile-menu-button" onclick="menu()">
+            <img class="header-mobile-menu-image" src="/images/menu_white_36dp.svg" alt="">
+        </button>
+        <img class="header-image" src="/images/nv.logo.white.png" alt="logo">
+        <nav class="header-nav">
+            <button onclick="menuClose()" class="header-nav-exit">
+                <img class="header-nav-exit-image" src="/images/x.svg" alt="">
+            </button>
+            <ul class="header-nav-ul">
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="index.html">Forside</a>
+                </li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="udvalg.html">Udvalg</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="events.html">Events</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="ob.html">Om Baren</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a active-page" href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="booking-info">
         <h1 class="booking-info-title">
@@ -21,32 +37,38 @@
         <h2 class="booking-info-subtitle">
             Hvad skal du booke?
         </h2>
-        <div class="booking-info-table">
-            <h3 class="booking-info-table-title">
-                Book et bord
-            </h3>
-            <p class="booking-info-table-tekst">
-                Booking af bord foregår i halvanden times intervaller.
-                Vigtigt:
-                Grundet covid-19 kan man maks bestille bord til 6 personer af gangen.
-                Husk at medbringe gyldigt coronapas og værnemidler.
-            </p>
-            <button class="booking-info-table-button">
-                Book
-            </button>
-        </div>
-        <div class="booking-info-event">
-            <h3 class="booking-info-event-title">
-                Privat arrangement
-            </h3>
-            <p class="booking-info-event-tekst">
-                Du kan booke Nordvest Ølbar til dine private arrangementer, det kræver at I er over 20 mennesker. 
-                Vigtigt:
-                Grundet covid-19 er barens maks kapacitet 18 mennesker, hvorfor privat arrangementer midlertidigt kræver kun 10 mennesker. 
-            </p>
-            <button class="booking-info-event-button">
-                Book
-            </button>
+        <div class="booking-info-container">
+            <div class="booking-info-table">
+                <h3 class="booking-info-table-title">
+                    Book et bord
+                </h3>
+                <p class="booking-info-table-tekst">
+                    Booking af bord foregår i halvanden times intervaller.
+                </p>
+                <p class="booking-info-table-tekst-kursiv">
+                    Vigtigt: <br>
+                    Grundet covid-19 kan man maks bestille bord til 6 personer af gangen.
+                    Husk at medbringe gyldigt coronapas og værnemidler.
+                </p>
+                <button class="booking-info-table-button">
+                    Book
+                </button>
+            </div>
+            <div class="booking-info-event">
+                <h3 class="booking-info-event-title">
+                    Privat arrangement
+                </h3>
+                <p class="booking-info-event-tekst">
+                    Du kan booke Nordvest Ølbar til dine private arrangementer, det kræver at I er over 20 mennesker. 
+                </p>
+                <p class="booking-info-event-tekst-to">
+                    Vigtigt: <br>
+                    Grundet covid-19 er barens maks kapacitet 18 mennesker, hvorfor privat arrangementer midlertidigt kræver kun 10 mennesker. 
+                </p>
+                <button class="booking-info-event-button">
+                    Book
+                </button>
+            </div>
         </div>
     </section>
     <section class="booking-table">
@@ -59,49 +81,67 @@
         <div class="booking-table-form">
             <div class="booking-table-form-navn">
                 <label class="booking-table-form-navn-label">
-                    *Navn:
+                    <span class="booking-table-form-focus">* </span>Navn:
                 </label>
                 <input type="text" class="booking-table-form-navn-input">
             </div>
             <div class="booking-table-form-telefon">
                 <label class="booking-table-form-telefon-label">
-                    *Telefon:
+                    <span class="booking-table-form-focus">* </span>Telefon:
                 </label>
                 <input type="tel" class="booking-table-form-telefon-input">
             </div>
             <div class="booking-table-form-mail">
                 <label class="booking-table-form-mail-label">
-                    *Email:
+                    <span class="booking-table-form-focus">* </span>Email:
                 </label>
                 <input type="text" class="booking-table-form-mail-input">
             </div>
         </div>
         <div class="booking-table-amount">
             <h3 class="booking-table-amount-title">
-                *Antal gæster
+                <span class="booking-table-form-focus">* </span>Antal gæster
             </h3>
             <div class="booking-table-amount-pick">
-                <button class="booking-table-amount-one">
-                    1
-                </button>
-                <button class="booking-table-amount-two">
-                    2
-                </button>
-                <button class="booking-table-amount-three">
-                    3
-                </button>
-                <button class="booking-table-amount-four">
-                    4
-                </button>
-                <button class="booking-table-amount-five">
-                    5
-                </button>
-                <button class="booking-table-amount-six">
-                    6
-                </button>
-                <button class="booking-table-amount-seven">
-                    7
-                </button>
+                <div class="booking-table-amount-upper">
+                    <div class="booking-table-amount-pick-one">
+                        <button class="booking-table-amount-one-button">
+                            1
+                        </button>
+                    </div>
+                    <div class="booking-table-amount-pick-two">
+                        <button class="booking-table-amount-two-button">
+                            2
+                        </button>
+                    </div>
+                    <div class="booking-table-amount-pick-three">
+                        <button class="booking-table-amount-three-button">
+                            3
+                        </button>
+                    </div>
+                    <div class="booking-table-amount-pick-four">
+                        <button class="booking-table-amount-four-button">
+                            4
+                        </button>
+                    </div>    
+                </div>
+                <div class="booking-table-amount-lower">
+                    <div class="booking-table-amount-pick-five">
+                        <button class="booking-table-amount-five-button">
+                            5
+                        </button>
+                    </div>
+                    <div class="booking-table-amount-pick-six">
+                        <button class="booking-table-amount-six-button">
+                            6
+                        </button>
+                    </div>
+                    <div class="booking-table-amount-pick-seven">
+                        <button class="booking-table-amount-seven-button">
+                            7
+                        </button>
+                    </div>
+                </div>
             </div>
             <p class="booking-table-amount-tekst">
                 *hvis i er mere end 7, så kontakt baren for at bestille bord
@@ -126,45 +166,115 @@
                 * er påkrævet
             </p>
             <p class="booking-event-info-tekst">
-                *Ved booking af arrangement, vil du blive kontaktet for bekræftelse*
+                <span class="booking-event-info-tekst-focus">* </span>
+                Ved booking af arrangement, vil du blive kontaktet for bekræftelse
+                <span class="booking-event-info-tekst-focus">* </span>
             </p>
         </div>
         <div class="booking-event-form">
             <div class="booking-event-form-navn">
                 <label class="booking-event-form-navn-label">
-                    *Navn:
+                    <span class="booking-event-form-focus">* </span>Navn:
                 </label>
                 <input type="text" class="booking-event-form-navn-input">
             </div>
             <div class="booking-event-form-telefon">
                 <label class="booking-event-form-telefon-label">
-                    *Telefon:
+                    <span class="booking-event-form-focus">* </span>Telefon:
                 </label>
                 <input type="tel" class="booking-event-form-telefon-input">
             </div>
             <div class="booking-event-form-mail">
                 <label class="booking-event-form-mail-label">
-                    *Email:
+                    <span class="booking-event-form-focus">* </span>Email:
                 </label>
                 <input type="text" class="booking-event-form-mail-input" min="5" max="20">
             </div>
             <h3 class="booking-event-form-subtitle">
-                *Antal gæster
+                <span class="booking-event-form-focus">* </span>Antal gæster
             </h3>
-            <input type="range" class="booking-event-form-range">
+            <input type="text" class="booking-event-form-range">
         </div>
         <div class="booking-event-comment">
             <h3 class="booking-event-comment-title">
                 Eventuelle kommentarer
             </h3>
-            <input type="text" class="booking-event-comment-input">
+            <input type="number" class="booking-event-comment-input" placeholder="Skriv her...">
             <button class="booking-event-comment-button">
                 Book
             </button>
         </div>
     </section>
+    <!--
+    <iframe class="booking-popup">
+        <h3 class="booking-popup-title">
+            Din reservation er modtaget
+        </h3>
+        <img src="#" class="booking-popup-img">
+        <button class="booking-popup-button">
+            Ok
+        </button>
+    </iframe>
+    -->
     <footer>
-
+        <div class="footer-contact">
+            <div class="footer-contact-wrap">
+                <div class="footer-contact-wrap-left"></div>
+                <h3 class="footer-contact-wrap-title">
+                    Kontakt Information
+                </h3>
+                <div class="footer-contact-wrap-right"></div>
+            </div>
+            <div class="footer-contact-text">
+                <p class="footer-contact-text-address">
+                    Sporemagervej 2,
+                    2400 KBH Nordvest
+                </p>
+                <p class="footer-contact-text-mail">
+                    info@nordvestoelbar.dk
+                </p>
+            </div>
+        </div>
+        <div class="footer-some">
+            <div class="footer-some-wrap">
+                <div class="footer-some-wrap-left"></div>
+                <h3 class="footer-some-wrap-title">
+                    Sociale Medier
+                </h3>
+                <div class="footer-some-wrap-right"></div>
+            </div>
+            <div class="footer-some-links">
+                <a href="https://www.facebook.com/nordvestolbar" class="footer-some-links-fb">
+                    <img src="./images/facebook.png" class="footer-some-links-fb-icon">
+                </a>
+                <a href="https://www.instagram.com/nordvest_olbar/" class="footer-some-links-ig">
+                    <img src="./images/instagram.png" class="footer-some-links-ig-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-time">
+            <div class="footer-time-wrap">
+                <div class="footer-time-wrap-left"></div>
+                <h3 class="footer-time-wrap-title">
+                    Åbningstider
+                </h3>
+                <div class="footer-time-wrap-right"></div>
+            </div>
+            <div class="footer-time-text">
+                <p class="footer-time-text-one">
+                    Mandag: <br>
+                    Lukket
+                </p>
+                <p class="footer-time-text-two">
+                    Tirsdag - Lørdag: <br>
+                    15:00 - 23:00
+                </p>
+                <p class="footer-time-text-three">
+                    Søndag: <br>
+                    Lukket
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="./js/main.js"></script>

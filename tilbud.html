@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,65 +11,158 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Nordvest Ølbar</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <button class="header-mobile-menu-button" onclick="menu()">
+            <img class="header-mobile-menu-image" src="/images/menu_white_36dp.svg" alt="">
+        </button>
+        <img class="header-image" src="/images/nv.logo.white.png" alt="logo">
+        <nav class="header-nav">
+            <button onclick="menuClose()" class="header-nav-exit">
+                <img class="header-nav-exit-image" src="/images/x.svg" alt="">
+            </button>
+            <ul class="header-nav-ul">
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="index.html">Forside</a>
+                </li>
+                <li class="header-nav-ul-li">
+                    <div class="header-nav-ul-li-selection">
+                        <a class="header-nav-ul-li-a" href="udvalg.html">Udvalg</a>
+                        <img class="header-nav-ul-li-image" src="/images/dots.svg" alt="">
+                        <a class="header-nav-ul-li-a active-page" id="nav-underpage" href="tilbud.html">TO GO'</a>
+                    </div>
+                </li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="events.html">Events</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="ob.html">Om Baren</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <section class="togo-intro-section">
         <h1 class="togo-intro">
-            TO GO'
+            To go'
         </h1>
         <h3 class="togo-intro-h3">
-            indkluderet i ugens ølkasse
+            Indkluderet i ugens ølkasse
         </h3>
         <div class="togo-intro-bryggerier">
             <div class="togo-intro-bryggerier-row1">
+                <img class="togo-beer-image" src="images/togo-tilbud.png" alt="">
 
             </div>
-            <div class="togo-intro-bryggerier-row2">
+            <img class="togo-intro-image" src="images/ølmedbenja.jpg" alt="">
 
-            </div>
-            <img class="togo-intro-image" src="" alt="">
+
+            <h2 class="togo-intro-bestilling-disclaimer">
+                Vigtigt<span class="togo-intro-bestilling-disclaimer-yellow-color">!</span>
+            </h2>
+            <p class="togo-intro-bestilling-disclaimer-description">Du henter øllene hos os mellem kl. 15 og 18</p>
         </div>
     </section>
 
     <section class="togo-bestilling-section">
-        <h2 class="togo-bestilling-disclaimer">
-            VIGTIGT!
-        </h2>
-        <p class="togo-bestilling-disclaimer-description">Du henter øllene hos os mellem kl. 15 og 18</p>
         <div class="togo-bestilling-wrap">
             <h2 class="togo-bestilling-intro">
                 Bestilling af TO GO'
             </h2>
             <div class="togo-bestilling-antal">
                 <h2 class="togo-bestilling-antal-intro">
-                    *Antal pakker
+                    <span class="togo-bestilling-star-yellow-color">*</span>Antal pakker
                 </h2>
                 <div class="togo-bestilling-antal-selection">
-
+                    <select class="togo-bestilling-antal-selection">
+                      <option label="1">1</option>
+                      <option label="2">2</option>
+                      <option label="3">3</option>
+                      <option label="4">4</option>
+                      <option label="5">5</option>
+                    </select>
                 </div>
             </div>
 
             <div class="togo-bestilling-telefon">
                 <h2 class="togo-bestilling-telefon-intro">
-                    *Telefon:
+                    <span class="togo-bestilling-star-yellow-color">*</span>Telefon:
                 </h2>
-                <div class="togo-bestilling-telefon-selection">
+                <input class="togo-bestilling-telefon-box" type="text" placeholder="+45 88888888" name="">
 
-                </div>
             </div>
 
             <div class="togo-bestilling-dato">
                 <h2 class="togo-bestilling-dato-intro">
-                    *Dato
+                    <span class="togo-bestilling-star-yellow-color">*</span>Dato
                 </h2>
+                <input class="togo-bestilling-dato-box" type="text" placeholder="Dag/Måned/År" name="">
                 <div class="togo-bestilling-dato-selection">
 
                 </div>
             </div>
-            <a class="togo-bestilling-link" href="">Bekræft</a>
+            <button class="togo-bestilling-button">Bekræft</button>
         </div>
     </section>
-
+    <footer>
+        <div class="footer-contact">
+            <div class="footer-contact-wrap">
+                <div class="footer-contact-wrap-left"></div>
+                <h3 class="footer-contact-wrap-title">
+                    Kontakt Information
+                </h3>
+                <div class="footer-contact-wrap-right"></div>
+            </div>
+            <div class="footer-contact-text">
+                <p class="footer-contact-text-address">
+                    Sporemagervej 2,
+                    2400 KBH Nordvest
+                </p>
+                <p class="footer-contact-text-mail">
+                    info@nordvestoelbar.dk
+                </p>
+            </div>
+        </div>
+        <div class="footer-some">
+            <div class="footer-some-wrap">
+                <div class="footer-some-wrap-left"></div>
+                <h3 class="footer-some-wrap-title">
+                    Sociale Medier
+                </h3>
+                <div class="footer-some-wrap-right"></div>
+            </div>
+            <div class="footer-some-links">
+                <a href="https://www.facebook.com/nordvestolbar" class="footer-some-links-fb">
+                    <img src="./images/facebook.png" class="footer-some-links-fb-icon">
+                </a>
+                <a href="https://www.instagram.com/nordvest_olbar/" class="footer-some-links-ig">
+                    <img src="./images/instagram.png" class="footer-some-links-ig-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-time">
+            <div class="footer-time-wrap">
+                <div class="footer-time-wrap-left"></div>
+                <h3 class="footer-time-wrap-title">
+                    Åbningstider
+                </h3>
+                <div class="footer-time-wrap-right"></div>
+            </div>
+            <div class="footer-time-text">
+                <p class="footer-time-text-one">
+                    Mandag: <br>
+                    Lukket
+                </p>
+                <p class="footer-time-text-two">
+                    Tirsdag - Lørdag: <br>
+                    15:00 - 23:00
+                </p>
+                <p class="footer-time-text-three">
+                    Søndag: <br>
+                    Lukket
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="./js/main.js"></script>
+
 </html>

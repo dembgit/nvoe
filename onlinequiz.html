@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,90 +11,185 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Nordvest Ølbar</title>
 </head>
+
 <body>
     <header>
-
-    </header>
-    <section class="onlinequiz-information">
-        <div class="onlinequiz-information-step-et">
-            <h2 class="onlinequiz-information-step-et-title">
-                1. Du tilmelder dig
-            </h2>
-            <p class="onlinequiz-information-step-et-beskrivelse">
-                Tilmeld dig ved at klikke her!      
-            </p>
-            <button class="onlinequiz-information-step-et-button">
-                Tilmeld
+        <button class="header-mobile-menu-button" onclick="menu()">
+            <img class="header-mobile-menu-image" src="/images/menu_white_36dp.svg" alt="">
+        </button>
+        <img class="header-image" src="/images/nv.logo.white.png" alt="logo">
+        <nav class="header-nav">
+            <button onclick="menuClose()" class="header-nav-exit">
+                <img class="header-nav-exit-image" src="/images/x.svg" alt="">
             </button>
-        </div>
-        <img src="#" class="onlinequiz-information-img">
-        <div class="onlinequiz-information-step-to">
-            <h2 class="onlinequiz-information-step-to-title">
-                2. Du henter øl
-            </h2>
-            <p class="onlinequiz-information-step-to-beskrivelse">
-                Øllene kan afhentes, hver dag mellem kl. 15 - 18 på
-                <a href="#" class="onlinequiz-information-step-to-beskrivelse-link">
-                    Sporemagervej 2, NV KBH, 2400
-                </a>
-            </p>
-            <p class="onlinequiz-information-step-to-beskrivelse-to">
-                Den samlede pris, for deltagelse er 200kr. som skal betales ved afhentning.
-            </p>
-            <p class="onlinequiz-information-step-to-beskrivelse-tre">
-                Vi accepterer: Kort, Mobilepay og Kontant.
-            </p>
-        </div>
-        <img src="#" class="onlinequiz-information-img">
-        <div class="onlinequiz-information-step-tre">
-            <h2 class="onlinequiz-information-step-tre-title">
-                3. Du logger på Zoom
-            </h2>
-            <p class="onlinequiz-information-step-tre-beskrivelse">
-                Du finder et link til zoom, i din To Go' pakke.
-            </p>
-            <p class="onlinequiz-information-step-tre-beskrivelse-to">
-                I tilfælde af at du mister linket tag kontakt til
-                <a href="#" class="onlinequiz-information-step-tre-beskrivelse-to-link">
-                    baren
-                </a>
-            </p>
-        </div>
-    </section>
+            <ul class="header-nav-ul">
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="index.html">Forside</a>
+                </li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="udvalg.html">Udvalg</a></li>
+                <li class="header-nav-ul-li">
+                    <div class="header-nav-ul-li-selection">
+                        <a class="header-nav-ul-li-a" href="events.html">Events</a>
+                        <img class="header-nav-ul-li-image" src="/images/dots.svg" alt="">
+                        <a class="header-nav-ul-li-a active-page" id="nav-underpage" href="onlinequiz.html">Online Quiz</a>
+                    </div>
+                </li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="ob.html">Om Baren</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="onlinequiz-desktop">
+        <section class="onlinequiz-intro-section">
+            <h1 class="onlinequiz-intro">Online Quiz Tilmelding</h1>
+            <p class="onlinequiz-intro-info">I forbindelse med Corona holder vi en online quiz, hvor vi tilbyder øl ud
+                af huset.</p>
+            <h3 class="onlinequiz-intro-date">Mandag d. 7/6-2021</h3>
+        </section>
+        <section class="onlinequiz-information">
+            <div class="onlinequiz-information-step-et">
+                <h2 class="onlinequiz-information-step-et-title">
+                    1. Du tilmelder dig
+                </h2>
+                <p class="onlinequiz-information-step-et-beskrivelse">
+                    Tilmeld dig ved at klikke her!
+                </p>
+                <button class="onlinequiz-information-step-et-button">
+                    Tilmeld
+                </button>
+            </div>
+            <img src="./images/Component 43 – 1.png" alt="arrow horizontal" class="onlinequiz-information-img-desktop">
+            <img src="./images/arrow.png" alt="arrow" class="onlinequiz-information-img">
+            <div class="onlinequiz-information-step-to">
+                <h2 class="onlinequiz-information-step-to-title">
+                    2. Du henter øl
+                </h2>
+                <p class="onlinequiz-information-step-to-beskrivelse">
+                    Øllene kan afhentes, hver dag mellem kl. 15 - 18 på
+                    <a href="#" class="onlinequiz-information-step-to-beskrivelse-link">
+                        Sporemagervej 2, NV KBH, 2400
+                    </a>
+                </p>
+                <p class="onlinequiz-information-step-to-beskrivelse-to">
+                    Den samlede pris, for deltagelse er 200kr. som skal betales ved afhentning.
+                </p>
+                <p class="onlinequiz-information-step-to-beskrivelse-tre">
+                    Vi accepterer: Kort, Mobilepay og Kontant.
+                </p>
+            </div>
+            <img src="./images/Component 43 – 1.png" alt="arrow horizontal" class="onlinequiz-information-img-desktop">
+            <img src="./images/arrow.png" alt="arrow" class="onlinequiz-information-img">
+            <div class="onlinequiz-information-step-tre">
+                <h2 class="onlinequiz-information-step-tre-title">
+                    3. Du logger på Zoom
+                </h2>
+                <p class="onlinequiz-information-step-tre-beskrivelse">
+                    Du finder et link til zoom, i din To Go' pakke.
+                </p>
+                <p class="onlinequiz-information-step-tre-beskrivelse-to">
+                    I tilfælde af at du mister linket tag kontakt til
+                    <a href="#" class="onlinequiz-information-step-tre-beskrivelse-to-link">
+                        baren
+                    </a>
+                </p>
+            </div>
+        </section>
+    </div>
+
     <section class="onlinequiz-tilmelding">
         <div class="onlinequiz-tilmelding-info">
             <h2 class="onlinequiz-tilmelding-info-title">
                 Tilmelding
             </h2>
             <p class="onlinequiz-tilmelding-info-tekst">
-                *Den samlet pris, for deltagelse er 200kr. som skal betales ved afhentning. Vi accepterer: Kort, Mobilepay og Kontant.
+                *Den samlet pris, for deltagelse er 200kr. som skal betales ved afhentning.
+            </p>
+            <p class="onlinequiz-tilmelding-info-tekst-to">
+                <br>Vi accepterer: Kort, Mobilepay og Kontant.
             </p>
         </div>
         <div class="onlinequiz-tilmelding-navn">
             <label class="onlinequiz-tilmelding-navn-label">
-                *Navn:
+                <span class="star">*</span>Navn:
             </label>
-            <input type="text" class="onlinequiz-tilmelding-navn-input">
+            <input type="text" class="onlinequiz-tilmelding-navn-input" placeholder="Morten Mortensen">
         </div>
         <div class="onlinequiz-tilmelding-telefon">
             <label class="onlinequiz-tilmelding-telefon-label">
-                *Telefon:
+                <span class="star">*</span>Telefon:
             </label>
-            <input type="tel" class="onlinequiz-tilmelding-telefon-input">
+            <input type="tel" class="onlinequiz-tilmelding-telefon-input" placeholder="+45 88888888">
         </div>
         <div class="onlinequiz-tilmelding-mail">
             <label class="onlinequiz-tilmelding-mail-label">
-                *Email:
+                <span class="star">*</span>Email:
             </label>
-            <input type="text" class="onlinequiz-tilmelding-mail-input">
+            <input type="text" class="onlinequiz-tilmelding-mail-input" placeholder="CoolEmail@email.dk">
         </div>
         <button class="onlinequiz-tilmelding-submit">
             Send
         </button>
     </section>
     <footer>
-        
+        <div class="footer-contact">
+            <div class="footer-contact-wrap">
+                <div class="footer-contact-wrap-left"></div>
+                <h3 class="footer-contact-wrap-title">
+                    Kontakt Information
+                </h3>
+                <div class="footer-contact-wrap-right"></div>
+            </div>
+            <div class="footer-contact-text">
+                <p class="footer-contact-text-address">
+                    Sporemagervej 2,
+                    2400 KBH Nordvest
+                </p>
+                <p class="footer-contact-text-mail">
+                    info@nordvestoelbar.dk
+                </p>
+            </div>
+        </div>
+        <div class="footer-some">
+            <div class="footer-some-wrap">
+                <div class="footer-some-wrap-left"></div>
+                <h3 class="footer-some-wrap-title">
+                    Sociale Medier
+                </h3>
+                <div class="footer-some-wrap-right"></div>
+            </div>
+            <div class="footer-some-links">
+                <a href="https://www.facebook.com/nordvestolbar" class="footer-some-links-fb">
+                    <img src="./images/facebook.png" class="footer-some-links-fb-icon">
+                </a>
+                <a href="https://www.instagram.com/nordvest_olbar/" class="footer-some-links-ig">
+                    <img src="./images/instagram.png" class="footer-some-links-ig-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-time">
+            <div class="footer-time-wrap">
+                <div class="footer-time-wrap-left"></div>
+                <h3 class="footer-time-wrap-title">
+                    Åbningstider
+                </h3>
+                <div class="footer-time-wrap-right"></div>
+            </div>
+            <div class="footer-time-text">
+                <p class="footer-time-text-one">
+                    Mandag: <br>
+                    Lukket
+                </p>
+                <p class="footer-time-text-two">
+                    Tirsdag - Lørdag: <br>
+                    15:00 - 23:00
+                </p>
+                <p class="footer-time-text-three">
+                    Søndag: <br>
+                    Lukket
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="./js/main.js"></script>
+
 </html>
