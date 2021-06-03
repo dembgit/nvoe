@@ -122,7 +122,6 @@ footer {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  width: 100vw;
   margin-bottom: 1.625em;
 }
 
@@ -1384,6 +1383,15 @@ footer {
 
 @media screen and (min-width: 1280px) {
 
+  /* Footer */
+
+  footer {
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+
+
   /* Forside MEDIA 1280 */
     .front-body {
     background-size: 100vw auto;
@@ -2007,7 +2015,7 @@ footer {
 /* Media Big Laptop */
 
 @media screen and (min-width: 1920px) {
-
+  
   .front-body {
     background-size: 100vw 100vh;
   }
