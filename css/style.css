@@ -63,6 +63,7 @@ body {
     font-family: var(--nvoe-titel-font);
     background-color: var(--nvoe-black);
     color: var(--nvoe-white);
+    scroll-behavior: smooth;
 }
 
 
@@ -74,6 +75,26 @@ header {
   position: absolute;
   z-index: 2;
   width: 100%;
+}
+
+a {
+  transition: 0.2s;
+}
+
+a:hover {
+  color: var(--nvoe-yellow);
+  border-color: var(--nvoe-yellow);
+}
+
+button {
+  transition: 0.2s;
+  border: 2px solid;
+}
+
+button:hover {
+  color: var(--nvoe-yellow);
+  border-color: var(--nvoe-yellow);
+  cursor: pointer;
 }
 
 .header-mobile-menu-button {
@@ -589,6 +610,10 @@ footer {
   padding-top: 2.5rem;
 }
 
+.togo-bestilling-antal {
+  width: 100%;
+}
+
 .togo-bestilling-antal-intro {
   font-family: var(--nvoe-titel-font);
   font-size: 1.25em;
@@ -598,10 +623,13 @@ footer {
 }
 
 .togo-bestilling-antal-selection {
-  width: 2.5rem;
+  display: block;
+  width: 3rem;
   height: 1.5rem;
   margin: 0 auto;
   margin-top: 0.5rem;
+  padding: 0;
+  border: 2px solid var(--nvoe-black);
 }
 
 .togo-bestilling-telefon {
@@ -613,10 +641,12 @@ footer {
 }
 
 .togo-bestilling-telefon-box {
-  width: 7rem;
+  margin: 0 auto;
+  width: 10rem;
   height: 1.5rem;
   text-align: center;
   margin-top: 1rem;
+  border: 2px solid var(--nvoe-black);
 }
 
 .togo-bestilling-dato {
@@ -628,10 +658,11 @@ footer {
 }
 
 .togo-bestilling-dato-box {
-  width: 7rem;
+  width: 10rem;
   height: 1.5rem;
   text-align: center;
   margin-top: 1rem;
+  border: 2px solid var(--nvoe-black);
 }
 
 .togo-bestilling-star-yellow-color {
@@ -788,11 +819,15 @@ footer {
 
 /*--- EVENTS ---*/
 
+.event-desktop-events-wrapper {
+  display: none;
+}
+
 .event-intro-section {
   background-image: url("/images/eventswall.JPG");
-  height: 80vh;
+  height: 90vh;
   background-size: cover;
-  background-position-x: 40%;
+  background-position-x: 33%;
 }
 
 .event-intro {
@@ -807,6 +842,110 @@ footer {
   font-family: var(--nvoe-titel-font);
   font-weight: 700;
   font-size: 1em;
+  text-align: center;
+}
+
+
+.carousel-container {
+  margin-top: 2.5rem;
+  width: 100%;
+  height: 68vh;
+  background-color: transparent;
+  overflow: hidden;
+}
+.carousel-content {
+  display: flex;
+  width: 200%;
+  height: 100%;
+  touch-action: pan-x;
+  overflow: hidden;
+}
+
+.carousel-items{
+  display: block;
+  width: 35%;
+  height: 100%;
+  background-color: var(--nvoe-blue);
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.carousel-buttons {
+  width: 7.5%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-button-item {
+  margin: 0 auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  color: var(--nvoe-white);
+}
+
+.button-item-image {
+  width: 100%;
+}
+
+.carousel-button1 {
+  display: none;
+}
+
+.carousel-item-image-container {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: var(--nvoe-white);
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.carousel-item-image {
+  width: 100%;
+}
+
+.carousel-item-title {
+  font-size: 1.25em;
+  font-family: var(--nvoe-titel-font);
+  font-weight: 700;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel-item-description {
+  font-size: 1em;
+  font-family: var(--nvoe-text-font);
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+.carousel-item-date {
+  font-size: 1em;
+  font-family: var(--nvoe-text-font);
+  width: 90%;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.carousel-item-link {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: var(--nvoe-white);
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+  font-style: normal;
+  border: 2px solid var(--nvoe-white);
+  border-radius: 3.125rem;
+  width: 8rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
   text-align: center;
 }
 
@@ -948,6 +1087,7 @@ footer {
 .quiz-tilmelding, .onlinequiz-tilmelding{
   margin-bottom: 0.813rem;
   margin-top: 2.125rem;
+  padding-bottom: 7.5rem;
 }
 .quiz-tilmelding-info-title, .onlinequiz-tilmelding-info-title{
   font-size: 1.25em;
@@ -1007,11 +1147,11 @@ footer {
   background-color: var(--nvoe-black);
   border-color: var(--nvoe-yellow);
   border-radius: 3.125rem;
+  width: 8.125rem;
+  height: 2.813rem;
   font-family: 'Kalam', cursive;
   font-weight: 400;
   font-size: 1.5em;
-  width: 8.125rem;
-  height: 2.813rem;
   margin: 3.625rem 7.188rem;
 }
 
@@ -1081,8 +1221,8 @@ footer {
 
 .onlinequiz-information-step-et-button{
   background: none;
+  border: 2px solid var(--nvoe-white);
   color: var(--nvoe-white);
-  border-color: var(--nvoe-white);
   border-radius: 3.125rem;
   font-family: 'Kalam', cursive;
   font-size: 1.5em;
@@ -1453,7 +1593,7 @@ footer {
 
 @media screen and (min-width: 1280px) {
 
-  /* Footer */
+  /* FOOTER MEDIA 1280 */
 
   footer {
     flex-direction: row;
@@ -1747,12 +1887,14 @@ header {
   }
 
   .togo-bestilling-antal-intro {
+      width: 15rem;
       font-family: var(--nvoe-titel-font);
       font-size: 1.5em;
       font-weight: bold;
       text-align: center;
       padding-top: 2.5rem;
       margin-left: 5rem;
+      text-align: start;
   }
 
   .togo-bestilling-telefon {
@@ -1777,35 +1919,55 @@ header {
       display: flex;
   }
 
+
+  
+.togo-bestilling-antal-selection-wrap {
+  margin: 0 auto;
+}
+
   .togo-bestilling-antal-selection {
       width: 3rem;
       height: 1.5rem;
-      margin-right: 7rem;
-      margin-top: 1.3rem;
+      margin-top: 2.5rem;
+      border: 2px solid var(--nvoe-black);
+      padding: 0;
   }
 
   .togo-bestilling-telefon {
       display: flex;
   }
 
+  .togo-bestilling-telefon-intro {
+    width: 15rem;
+    text-align: start;
+  }
+  
   .togo-bestilling-telefon-box {
-      width: 7rem;
+      width: 10rem;
       height: 1.5rem;
       text-align: center;
+      margin: 0;
       margin-top: -0.1rem;
-      margin-left: 6rem;
+      border: 2px solid var(--nvoe-black);
+      padding: 0;
   }
 
   .togo-bestilling-dato {
       display: flex;
   }
 
+  .togo-bestilling-dato-intro {
+      width: 15rem;
+      text-align: start;
+  }
+
   .togo-bestilling-dato-box {
-      width: 7rem;
+      width: 10rem;
       height: 1.5rem;
       text-align: center;
       margin-top: -0.1rem;
-      margin-left: 8.5rem;
+      border: 2px solid var(--nvoe-black);
+      padding: 0;
   }
 
   .togo-bestilling-button {
@@ -1921,6 +2083,98 @@ header {
 
   /* EVENTS MEDIA 1280 */
 
+  .event-desktop-events-wrapper {
+    display: flex;
+    min-width: 100%;
+    margin-top: 4rem;
+    height: 66%;
+  }
+
+  .event-desktop-events-quiz-container {
+    width: 50%;
+  }
+
+  .event-desktop-events-onlinequiz-container {
+    width: 50%;
+  }
+
+  .event-desktop-quiz {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 80%;
+    background-color: var(--nvoe-blue);
+    height: 75%;
+  }
+
+  .event-desktop-quiz-image-container {
+    width: 50%;
+    height: 100%;
+  }
+
+  .event-desktop-quiz-image {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--nvoe-white);
+    height: 55%;
+    margin-top: 30%;
+    margin-left: 15%;
+  }
+
+  .event-desktop-quiz-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 50%;
+  }
+
+  .event-desktop-quiz-title {
+    font-size: 1.75em;
+    font-family: var(--nvoe-titel-font);
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .event-desktop-onlinequiz-title {
+    font-size: 1.75em;
+    font-family: var(--nvoe-titel-font);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .event-desktop-quiz-description {
+    font-size: 1em;
+    font-family: var(--nvoe-text-font);
+    margin-bottom: 1.5rem;
+  }
+
+  .event-desktop-quiz-date {
+    font-size: 1em;
+    font-family: var(--nvoe-text-font);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .event-desktop-quiz-link {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--nvoe-white);
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid var(--nvoe-white);
+    border-radius: 3.125rem;
+    width: 8rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+  }
+
   .event-intro-section {
     padding-top: 4rem;
   }
@@ -1931,6 +2185,10 @@ header {
 
   .event-intro-h3 {
     font-size: 1.7em;
+  }
+
+  .carousel-container {
+    display: none;
   }
 
   .even-types-intro {
@@ -2409,7 +2667,6 @@ header {
       font-family: var(--nvoe-titel-font);
       font-size: 1.5em;
       font-weight: bold;
-      text-align: center;
       padding-top: 2.5rem;
       margin-left: 7rem;
   }
@@ -2418,7 +2675,6 @@ header {
       font-family: var(--nvoe-titel-font);
       font-size: 1.5em;
       font-weight: bold;
-      text-align: center;
       padding-top: 2.5rem;
       margin-left: 7rem;
   }
@@ -2439,8 +2695,8 @@ header {
   .togo-bestilling-antal-selection {
       width: 3rem;
       height: 1.5rem;
-      margin-right: 23rem;
-      margin-top: 1.3rem;
+      margin: 0 auto;
+      margin-top: 2.5rem;
   }
 
   .togo-bestilling-telefon {
@@ -2448,11 +2704,11 @@ header {
   }
 
   .togo-bestilling-telefon-box {
-      width: 7rem;
+      width: 10rem;
       height: 1.5rem;
       text-align: center;
+      margin: 0 auto;
       margin-top: -0.1rem;
-      margin-left: 6rem;
   }
 
   .togo-bestilling-dato {
@@ -2460,11 +2716,11 @@ header {
   }
 
   .togo-bestilling-dato-box {
-      width: 7rem;
+      width: 10rem;
       height: 1.5rem;
       text-align: center;
+      margin: 0 auto;
       margin-top: -0.1rem;
-      margin-left: 8.5rem;
   }
 
   .togo-bestilling-button {
@@ -2499,6 +2755,18 @@ header {
 
 
   /* EVENT MEDIA 1920 */
+
+  .event-desktop-quiz {
+    width: 65%;
+  }
+
+  .event-desktop-quiz-content {
+    margin-top: 10%;
+  }
+
+  .event-desktop-onlinequiz-title {
+    margin-top: 1.75rem;
+  }
 
   .event-intro-section {
     padding-top: 6rem;
@@ -2634,7 +2902,7 @@ font-family: 'Kalam', cursive;
 font-weight: 400;
 font-size: 1.5em;
 width: 10rem;
-height: 5rem;
+height: 4rem;
 display: block;
 margin: 0 auto;
 margin-top: 3.813rem;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Nordvest Ølbar</title>
 </head>
+
 <body>
-    
+
     <header>
         <button class="header-mobile-menu-button" onclick="menu()">
             <img class="header-mobile-menu-image" src="/images/menu_white_36dp.svg" alt="">
@@ -25,7 +27,8 @@
                 <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="index.html">Forside</a>
                 </li>
                 <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="udvalg.html">Udvalg</a></li>
-                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a active-page" href="events.html">Events</a></li>
+                <li class="header-nav-ul-li"><a class="header-nav-ul-li-a active-page" href="events.html">Events</a>
+                </li>
                 <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="ob.html">Om Baren</a></li>
                 <li class="header-nav-ul-li"><a class="header-nav-ul-li-a" href="booking.html">Booking</a></li>
             </ul>
@@ -35,50 +38,146 @@
     <section class="event-intro-section">
         <h1 class="event-intro">Events</h1>
         <h3 class="event-intro-h3">Kom til vores opkommende events</h3>
-        <div class="event-intro-carousel">
-            <!-- Skal nok laves i JS -->
+
+        <div class="carousel-container">
+            <div class="carousel-content">
+                <div class="carousel-buttons">
+                    <button class="carousel-button-item carousel-button1" onclick="back()">
+                        <img class="button-item-image" src="/images/arrowbuttonback.svg" alt="">
+                    </button>
+                </div>
+                <div class="carousel-items carousel-item-1">
+
+                    <div class="carousel-item-image-container">
+                        <img class="carousel-item-image" src="images/QuizLARGE.png" alt="">
+                    </div>
+
+                    <h2 class="carousel-item-title">
+                        Nordvest Ølbar Quizzen #24
+                    </h2>
+
+                    <p class="carousel-item-description">
+                        Fysisk quiz som afholdes på baren
+                    </p>
+
+                    <p class="carousel-item-date">Tirsdag d. 6/7 - 2021</p>
+
+                    <a class="carousel-item-link" href="quiz.html">Tilmeld</a>
+
+                </div>
+                <div class="carousel-buttons">
+                    <button class="carousel-button-item carousel-button2" onclick="next()">
+                        <img class="button-item-image" src="/images/arrowbuttonfw.svg" alt="pil fremad">
+                    </button>
+                </div>
+                <div class="carousel-items carousel-item-2">
+                    <div class="carousel-item-image-container">
+                        <img class="carousel-item-image" src="images/OnlineQuizLARGE.png" alt="quizbillede">
+                    </div>
+
+                    <h2 class="carousel-item-title">
+                        Online Quiz + TO GO'
+                    </h2>
+
+                    <p class="carousel-item-description">
+                        I prisen er der indkluderet: <br>
+                        Tilmelding til online quiz og To Go' øl tilbud. <br> <br>
+                        Samlet pris: 200kr.
+                    </p>
+
+                    <p class="carousel-item-date">Mandag d. 7/6 - 2021</p>
+
+                    <a class="carousel-item-link" href="onlinequiz.html">Tilmeld</a>
+
+                </div>
+            </div>
         </div>
+
+        <div class="event-desktop-events-wrapper">
+            <div class="event-desktop-events-quiz-container">
+                <div class="event-desktop-quiz">
+                    <div class="event-desktop-quiz-image-container">
+                        <img class="event-desktop-quiz-image" src="/images/QuizLARGE.png" alt="">
+                    </div>
+                    <div class="event-desktop-quiz-content">
+                        <h2 class="event-desktop-quiz-title">Nordvest Ølbar Quizzen #24</h2>
+                        <p class="event-desktop-quiz-description">Fysisk Quiz som afholdes på baren.</p>
+                        <p class="event-desktop-quiz-date">Tirsdag d. 6/7 - 2021</p>
+                        <a class="event-desktop-quiz-link" href="quiz.html">Tilmeld</a>
+                    </div>
+                </div>
+            </div>
+            <div class="event-desktop-events-onlinequiz-container">
+                <div class="event-desktop-quiz">
+                    <div class="event-desktop-quiz-image-container">
+                        <img class="event-desktop-quiz-image" src="/images/OnlineQuizLARGE.png" alt="">
+                    </div>
+                    <div class="event-desktop-quiz-content">
+                        <h2 class="event-desktop-onlinequiz-title">Online Quiz + To Go'</h2>
+                        <p class="event-desktop-quiz-description">I prisen er der indkluderet:
+                            Tilmelding til online quiz og To Go' øl tilbud <br> <br> Samlet pris: 200kr.</p>
+                        <p class="event-desktop-quiz-date">Tirsdag d. 6/7 - 2021</p>
+                        <a class="event-desktop-quiz-link" href="quiz.html">Tilmeld</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
+
+
 
     <section class="event-types-section">
         <h2 class="event-types-intro">
             Vi holder normalt 3 forskellige typer events på baren!
         </h2>
-    <div class="event-types-wrapper">
-        <div class="event-quiz">
-            <h2 class="event-quiz-intro">Quizzen</h2>
-            <p class="event-quiz-description">
-                <b>Fysisk Quiz</b>
-                <br>
-                <br>
-                Nordvest Ølbar holder quiz den første tirdag I måneden. Vores quizmaster Ben disker altid op med en masse svære og sjove spørgsmål.
-                <br>
-                <br>
-                Vi har plads til 10 hold af 2-6 spillere. 
-                Derfor anbefaler vi at du er hurtigt ude hvis du gerne vil være med.
-                <br>
-                <br>
-                <br>
-                <b>Online Quiz</b>
-                <br>
-                <br>
-                Grundet lockdown er der mulighed for online quiz. Dette foregår ved bestilling af To Go' tilbud, hvori et zoomlink til månedens quiz er indkluderet.</p>
+        <div class="event-types-wrapper">
+            <div class="event-quiz">
+                <h2 class="event-quiz-intro">Quizzen</h2>
+                <p class="event-quiz-description">
+                    <b>Fysisk Quiz</b>
+                    <br>
+                    <br>
+                    Nordvest Ølbar holder quiz den første tirdag I måneden. Vores quizmaster Ben disker altid op med en
+                    masse svære og sjove spørgsmål.
+                    <br>
+                    <br>
+                    Vi har plads til 10 hold af 2-6 spillere.
+                    Derfor anbefaler vi at du er hurtigt ude hvis du gerne vil være med.
+                    <br>
+                    <br>
+                    <br>
+                    <b>Online Quiz</b>
+                    <br>
+                    <br>
+                    Grundet lockdown er der mulighed for online quiz. Dette foregår ved bestilling af To Go' tilbud,
+                    hvori et zoomlink til månedens quiz er indkluderet.
+                </p>
+            </div>
+            <div class="event-bodega">
+                <h2 class="event-bodega-intro">Bodegatalk</h2>
+                <p class="event-bodega-description">Nordvest Ølbar ligger et par gange om året hus til BodegaTalk.
+                    Parnelet består af forskellige politikere, fra henholdsvis, Social Demokraterne, SF, Venstre,
+                    Radikale Venstre, Liberal Alliance osv.
+                    <br>
+                    <br>
+                    Dagsorden er skiftende og alt fra maskeringsforbuddet og omskæring af drengebørn er blevet
+                    debateret. Der er dog altid god stemning og folk har altid mulighed for at stille spørgsmål til
+                    parnelet.
+                </p>
+            </div>
+            <div class="event-fernisering">
+                <h2 class="event-fernisering-intro">Fernisering</h2>
+                <p class="event-fernisering-description">Lokale kunstnere får skiftevis mulighed for at holde udstilling
+                    hos Nordvest Ølbar. Derfor holder vi løbende fernisering for at hylde kunstneren, det er da også en
+                    god undskyldning for at drikke en kold øl.
+                    <br>
+                    <br>
+                    Vi holder fernisering et par gange om året, så hold øje på vores Facebook side, for at finde ud af
+                    hvornår vi holder det næste gang.
+                </p>
+            </div>
         </div>
-        <div class="event-bodega">
-            <h2 class="event-bodega-intro">Bodegatalk</h2>
-            <p class="event-bodega-description">Nordvest Ølbar ligger et par gange om året hus til BodegaTalk. Parnelet består af forskellige politikere, fra henholdsvis, Social Demokraterne, SF, Venstre, Radikale Venstre, Liberal Alliance osv.
-                <br>
-                <br>
-                Dagsorden er skiftende og alt fra maskeringsforbuddet og omskæring af drengebørn er blevet debateret. Der er dog altid god stemning og folk har altid mulighed for at stille spørgsmål til parnelet.</p>
-        </div>
-        <div class="event-fernisering">
-            <h2 class="event-fernisering-intro">Fernisering</h2>
-            <p class="event-fernisering-description">Lokale kunstnere får skiftevis mulighed for at holde udstilling hos Nordvest Ølbar. Derfor holder vi løbende fernisering for at hylde kunstneren, det er da også en god undskyldning for at drikke en kold øl.
-                <br>
-                <br>
-                Vi holder fernisering et par gange om året, så hold øje på vores Facebook side, for at finde ud af hvornår vi holder det næste gang.</p>
-        </div>
-    </div>
     </section>
 
     <footer>
@@ -144,4 +243,5 @@
 
 </body>
 <script src="./js/main.js"></script>
+
 </html>
