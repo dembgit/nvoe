@@ -43,7 +43,7 @@
         <h2 class="quiz-intro-description-title">Nordvest Ølbar Quizzen#24</h2>
         <h3 class="quiz-intro-date">Tirsdag d. 6/7-2021</h3>
         <p class="quiz-intro-info">Vi holder fysisk quiz den første tirsdag i måneden, hvor alle er velkomne - du kan deltage her!</p>
-        <button class="quiz-tilmelding-arrow">
+        <button class="quiz-tilmelding-arrow" onclick="scrollQuiz()">
             <img src="./images/arrow-button.png">
         </button>
     </section>
@@ -76,10 +76,28 @@
             </label>
             <input type="text" class="quiz-tilmelding-mail-input" placeholder="CoolEmail@email.dk">
         </div>
-        <button class="quiz-tilmelding-submit">
+        <button class="quiz-tilmelding-submit" onclick="sendQuiz()">
             Send
         </button>
     </section>
+
+    <!-- MODALS -->
+
+    <div class="quiz-modal-mobile">
+        <div class="quiz-modal-mobile-content">
+            <h3 class="quiz-modal-mobile-content-title">
+                Du er nu tilmeldt quizzen
+                d. 6/7 - 2021
+            </h3>
+            <img src="./images/QuizSMALL.png" class="quiz-modal-mobile-content-img">
+            <button onclick="closeQuiz()" class="quiz-modal-mobile-content-button">
+                Ok
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
     <footer>
         <div class="footer-contact">
             <div class="footer-contact-wrap">
@@ -142,4 +160,5 @@
     </footer>
 </body>
 <script src="./js/main.js"></script>
+<script src="./js/modals.js"></script>
 </html>

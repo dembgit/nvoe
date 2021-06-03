@@ -39,10 +39,10 @@
             <img class="front-intro-image" src="images/nv.logo.white.png" alt="nordvestlogo">
             <div class="front-intro-tilbud">
                 <h3 class="front-intro-tilbud-tekst">Vi kører i øjeblikket et To Go' Tilbud</h3>
-                <button class="front-info-tilbud-button" onclick="togoPopup()">Læs mere</button>
+                <button class="front-info-tilbud-button" onclick="togo()">Læs mere</button>
             </div>
         </div>
-        <button class="front-intro-scrolldown">
+        <button class="front-intro-scrolldown" onclick="scrollFront()" cursor="pointer">
             <img src="images/scrolldown.png" alt="scrolldown">
         </button>
     </section>
@@ -51,7 +51,7 @@
         <div class="front-info-event">
             <h2 class="front-info-event-intro">Næste event</h2>
             <h2 class="front-info-event-description">Nordvest Ølbar <br> Quizzen #24</h2>
-            <a class="front-info-event-link">Tilmeld</a>
+            <a href="events.html" class="front-info-event-link">Tilmeld</a>
 
         </div>
 
@@ -106,6 +106,24 @@
                 <img class="front-some-billede-3" src="images/menukort.jpg" alt="menukort">
             </div>
         </section>
+    </div>
+
+    <div class="front-modal-togo-section">
+        <div class="front-modal-togo-content-wrap">
+            <div class="front-modal-togo-content-wrap-desktop">
+                <h2 class="front-modal-togo-intro">To Go' Tilbud</h2>
+                    <p class="front-modal-togo-description">To Go' tilbuddet er til dig der vil have nogle af de gode øl vi tilbyder
+                    med hjem. Det er både oplagt til gæster eller til hvis du vil forkæle dig selv lidt. </p>
+                <div class="front-modal-togo-order">
+                    <h3 class="front-modal-togo-price">5 øl for 200kr.</h3>
+                    <a class="front-modal-togo-link" href="tilbud.html">Bestil</a>
+                    <button class="front-modal-togo-back" onclick="back()">
+                        Tilbage
+                    </button>
+                </div>
+            </div>
+            <img class="front-modal-togo-image" src="images/oeldaaser.png" alt="">
+        </div>
     </div>
 
     <footer>
@@ -170,5 +188,5 @@
     </footer>
 </body>
 <script src="./js/main.js"></script>
-
+<script src="./js/modals.js"></script>
 </html>
