@@ -1999,6 +1999,10 @@ header {
 
   /* OM BAREN MEDIA 1280 */
 
+  .ombaren-info-title {
+    padding-top: 7.5rem;
+  }
+
   .ombaren-info-wrapper {
     display: flex;
   }
