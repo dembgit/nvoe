@@ -1,5 +1,18 @@
+var frontSection = document.querySelector(".front-info-section");
 var tableSection = document.querySelector(".booking-table");
 var eventSection = document.querySelector(".booking-event");
+
+function togo(){
+    document.querySelector('.front-modal-togo-section').style.display = 'flex';  
+};
+
+function back(){
+    document.querySelector('.front-modal-togo-section').style.display = 'none';
+}
+
+function scrollFront() {
+    frontSection.scrollIntoView({behavior: "smooth"})
+}
 
 function scrollTable() {
     tableSection.scrollIntoView({behavior: "smooth"})
@@ -8,6 +21,7 @@ function scrollTable() {
 function scrollEvent() {
     eventSection.scrollIntoView({behavior: "smooth"})
 }
+
 
 function book(){
     document.querySelector('.booking-modal-mobile').style.display = 'flex';

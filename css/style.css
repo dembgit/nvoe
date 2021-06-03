@@ -304,6 +304,7 @@ footer {
 .front-info-tilbud-button:hover{
   border: solid 2px var(--nvoe-yellow);
   color: var(--nvoe-yellow);
+  cursor: pointer;
 }
 
 .front-intro-scrolldown {
@@ -506,6 +507,78 @@ footer {
 .front-some-billede-3 {
   width: 13.25em;
   height: 13.25em;
+}
+
+
+.front-modal-togo-intro {
+  font-family: var(--nvoe-titel-font);
+  font-size: 1.75em;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.front-modal-togo-description {
+  font-family: var(--nvoe-text-font);
+  font-size: 1em;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.front-modal-togo-price {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.front-modal-togo-link, .front-info-event-link {
+  display: block;
+  text-decoration: none;
+  width: 8.125rem;
+  height: 2.8125rem;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2.8125rem;
+  background-color: transparent;
+  border: solid 2px var(--nvoe-white);
+  border-radius: 3.125rem;
+  font-family: 'Kalam';
+  font-size: 1.5rem;
+  color: var(--nvoe-white);
+  margin-top: 2em;
+}
+
+.front-modal-togo-link:hover, .front-info-event-link:hover {
+  cursor: pointer;
+  border: solid 2px var(--nvoe-yellow);
+  color: var(--nvoe-yellow);
+}
+
+.front-modal-togo-back {
+  display: block;
+  text-decoration: none;
+  width: 6.125rem;
+  height: 2.125rem;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2.125rem;
+  background-color: transparent;
+  border: solid 2px var(--nvoe-white);
+  border-radius: 3.125rem;
+  font-family: 'Kalam';
+  font-size: 1rem;
+  color: var(--nvoe-white);
+  margin-top: 0.5em;
+}
+
+.front-modal-togo-back:hover {
+  cursor: pointer;
+  border: solid 2px var(--nvoe-yellow);
+  color: var(--nvoe-yellow);
+}
+
+.front-modal-togo-image {
+  width: 100%;
 }
 
 
@@ -1469,6 +1542,32 @@ footer {
 
 
 /* MODAL STYLING */
+
+.front-modal-togo-section {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  display: none;
+  top: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+
+}
+
+.front-modal-togo-content-wrap {
+  width: 90%;
+  height: 90%;
+  background-color: var(--nvoe-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .booking-modal-mobile {
   width: 100%;
   height: 100%;
@@ -1591,6 +1690,44 @@ header {
 /* MODAL 1280*/
 
 .booking-modal-mobile-content {
+  width: 40%;
+}
+
+.front-modal-togo-content {
+  width: 70%;
+}
+
+.front-modal-togo-content-wrap {
+  flex-direction: row-reverse;
+  width: 70%;
+  height: 60%;
+  justify-content: space-evenly;
+}
+
+.front-modal-togo-content-wrap-desktop {
+  width: 30%;
+}
+
+.front-modal-togo-order {
+  flex-direction: row;
+  text-align: center;
+}
+
+.front-modal-togo-description {
+  width: 100%;
+  line-height: 2.5em;
+}
+
+.front-modal-togo-price {
+  text-align: center;
+  margin-right: 0;
+}
+
+.front-modal-togo-link {
+  width: 40%;
+}
+
+.front-modal-togo-image {
   width: 40%;
 }
 
