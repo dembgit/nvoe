@@ -1593,47 +1593,36 @@ footer {
 
 .booking-table-amount-pick {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 0.5em;
   align-items: center;
   max-width: 13.75em;
-}  
-
-.booking-table-amount-upper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 14.125em;
-  margin: 0 1.375em 1.25em 1.375em;
 }
-
-.booking-table-amount-lower {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 10em;
+.booking-table-amount-pick-input {
+  display: none;
 }
-
-.booking-table-amount-pick-one, .booking-table-amount-pick-two, .booking-table-amount-pick-three, .booking-table-amount-pick-four, .booking-table-amount-pick-five, .booking-table-amount-pick-six, .booking-table-amount-pick-seven {
-  text-align: center;
-  margin: 0 0.625em;
-}
-
-.booking-table-amount-one-button, .booking-table-amount-two-button, .booking-table-amount-three-button, .booking-table-amount-four-button, .booking-table-amount-five-button, .booking-table-amount-six-button, .booking-table-amount-seven-button {
+.booking-table-amount-pick-label {
+  display: grid;
+  place-items: center;
   border: solid 2px var(--nvoe-white);
   border-radius: 100%;
   background-color: transparent;
   color: var(--nvoe-white);
-  width: 2.5em;
-  height: 2.5em;
+  width: 2em;
+  height: 2em;
   font-size: 1.25em;
   font-weight: 700;
+  cursor: pointer;
+}
+.booking-table-amount-pick-input:checked
+  + .booking-table-amount-pick-label
+  span {
+  color: var(--nvoe-yellow);
 }
 
-.booking-table-amount-one-button:hover, .booking-table-amount-two-button:hover, .booking-table-amount-three-button:hover, .booking-table-amount-four-button:hover, .booking-table-amount-five-button:hover, .booking-table-amount-six-button:hover, .booking-table-amount-seven-button:hover {
+.booking-table-amount-pick-input:checked + .booking-table-amount-pick-label {
   border: solid 2px var(--nvoe-yellow);
-  color: var(--nvoe-yellow);
-  cursor: pointer;
 }
 
 .booking-table-comment, .booking-event-comment {
