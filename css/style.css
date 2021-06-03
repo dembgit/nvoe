@@ -76,6 +76,25 @@ header {
   width: 100%;
 }
 
+a {
+  transition: 0.2s;
+}
+
+a:hover {
+  color: var(--nvoe-yellow);
+  border-color: var(--nvoe-yellow);
+}
+
+button {
+  transition: 0.2s;
+}
+
+button:hover {
+  color: var(--nvoe-yellow);
+  border-color: var(--nvoe-yellow);
+  cursor: pointer;
+}
+
 .header-mobile-menu-button {
 background-color: transparent;
 border: none;
@@ -589,6 +608,10 @@ footer {
   padding-top: 2.5rem;
 }
 
+.togo-bestilling-antal {
+  width: 100%;
+}
+
 .togo-bestilling-antal-intro {
   font-family: var(--nvoe-titel-font);
   font-size: 1.25em;
@@ -598,10 +621,13 @@ footer {
 }
 
 .togo-bestilling-antal-selection {
-  width: 2.5rem;
+  display: block;
+  width: 3rem;
   height: 1.5rem;
   margin: 0 auto;
   margin-top: 0.5rem;
+  padding: 0;
+  border: 2px solid var(--nvoe-black);
 }
 
 .togo-bestilling-telefon {
@@ -613,10 +639,12 @@ footer {
 }
 
 .togo-bestilling-telefon-box {
-  width: 7rem;
+  margin: 0 auto;
+  width: 10rem;
   height: 1.5rem;
   text-align: center;
   margin-top: 1rem;
+  border: 2px solid var(--nvoe-black);
 }
 
 .togo-bestilling-dato {
@@ -628,10 +656,11 @@ footer {
 }
 
 .togo-bestilling-dato-box {
-  width: 7rem;
+  width: 10rem;
   height: 1.5rem;
   text-align: center;
   margin-top: 1rem;
+  border: 2px solid var(--nvoe-black);
 }
 
 .togo-bestilling-star-yellow-color {
@@ -1747,12 +1776,14 @@ header {
   }
 
   .togo-bestilling-antal-intro {
+      width: 15rem;
       font-family: var(--nvoe-titel-font);
       font-size: 1.5em;
       font-weight: bold;
       text-align: center;
       padding-top: 2.5rem;
       margin-left: 5rem;
+      text-align: start;
   }
 
   .togo-bestilling-telefon {
@@ -1777,35 +1808,55 @@ header {
       display: flex;
   }
 
+
+  
+.togo-bestilling-antal-selection-wrap {
+  margin: 0 auto;
+}
+
   .togo-bestilling-antal-selection {
       width: 3rem;
       height: 1.5rem;
-      margin-right: 7rem;
-      margin-top: 1.3rem;
+      margin-top: 2.5rem;
+      border: 2px solid var(--nvoe-black);
+      padding: 0;
   }
 
   .togo-bestilling-telefon {
       display: flex;
   }
 
+  .togo-bestilling-telefon-intro {
+    width: 15rem;
+    text-align: start;
+  }
+  
   .togo-bestilling-telefon-box {
-      width: 7rem;
+      width: 10rem;
       height: 1.5rem;
       text-align: center;
+      margin: 0;
       margin-top: -0.1rem;
-      margin-left: 6rem;
+      border: 2px solid var(--nvoe-black);
+      padding: 0;
   }
 
   .togo-bestilling-dato {
       display: flex;
   }
 
+  .togo-bestilling-dato-intro {
+      width: 15rem;
+      text-align: start;
+  }
+
   .togo-bestilling-dato-box {
-      width: 7rem;
+      width: 10rem;
       height: 1.5rem;
       text-align: center;
       margin-top: -0.1rem;
-      margin-left: 8.5rem;
+      border: 2px solid var(--nvoe-black);
+      padding: 0;
   }
 
   .togo-bestilling-button {
@@ -2409,7 +2460,6 @@ header {
       font-family: var(--nvoe-titel-font);
       font-size: 1.5em;
       font-weight: bold;
-      text-align: center;
       padding-top: 2.5rem;
       margin-left: 7rem;
   }
@@ -2418,7 +2468,6 @@ header {
       font-family: var(--nvoe-titel-font);
       font-size: 1.5em;
       font-weight: bold;
-      text-align: center;
       padding-top: 2.5rem;
       margin-left: 7rem;
   }
@@ -2439,8 +2488,8 @@ header {
   .togo-bestilling-antal-selection {
       width: 3rem;
       height: 1.5rem;
-      margin-right: 23rem;
-      margin-top: 1.3rem;
+      margin: 0 auto;
+      margin-top: 2.5rem;
   }
 
   .togo-bestilling-telefon {
@@ -2448,11 +2497,11 @@ header {
   }
 
   .togo-bestilling-telefon-box {
-      width: 7rem;
+      width: 10rem;
       height: 1.5rem;
       text-align: center;
+      margin: 0 auto;
       margin-top: -0.1rem;
-      margin-left: 6rem;
   }
 
   .togo-bestilling-dato {
@@ -2460,11 +2509,11 @@ header {
   }
 
   .togo-bestilling-dato-box {
-      width: 7rem;
+      width: 10rem;
       height: 1.5rem;
       text-align: center;
+      margin: 0 auto;
       margin-top: -0.1rem;
-      margin-left: 8.5rem;
   }
 
   .togo-bestilling-button {
