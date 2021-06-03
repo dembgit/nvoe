@@ -70,23 +70,63 @@ body {
 
 header {
   display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.header-mobile-menu-button {
+background-color: transparent;
+border: none;
+margin-right: 0.25rem;
+margin-top: 0.25rem;
+width: 2.75rem;
+height: 2.75rem;
+padding: 0rem;
+}
+
+
+.header-mobile-menu-image {
+  width: 100%;
 }
 
 .header-image {
-  width: 10%;
+  width: 7%;
+  display: none;
 }
 
 .header-nav {
-  padding-right: 10%;
-  margin: 0 auto;
-  width: 50%;
+  position: absolute;
+  background-color: var(--nvoe-black);
+  width: 0%;
+  z-index: 2;
+  height: 100vh;
+  transition: 0.35s;
+}
+
+.header-nav-exit {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  background-color:transparent;
+  border: none;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
 }
 
 .header-nav-ul {
-  display: flex;
+  display: none;
+  flex-direction: column;
   list-style: none;
-  justify-content: space-evenly;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
+  margin-left: 3rem;
+  height: 50vh;
+}
+
+.header-nav-ul-li {
+  margin-top: 3rem;
 }
 
 .header-nav-ul-li-a {
@@ -114,8 +154,9 @@ header {
 
 .front-body {
   background-image: url("/images/forsidewall.jpg");
-  background-size: cover;
-  background-position-x: 40%;
+  background-size: auto 55vh;
+  background-position-x:45%;
+  background-position-y: 0%;
   background-repeat: no-repeat;
 }
 
@@ -293,6 +334,19 @@ header {
   margin-top: 1rem;
   margin-bottom: 6rem;
 }
+
+.mapouter {
+  width: 18rem;
+  height: 18rem;
+  padding: 1rem;
+  padding-top: 0rem;
+  margin: 0 auto;
+}
+.gmap_canvas {
+  width: 100%;
+  height: 100%;
+}
+
 
 .front-some {
   background-color: var(--nvoe-blue);
@@ -1305,6 +1359,54 @@ header {
 
 @media screen and (min-width: 1280px) {
 
+  /* HEADER MEDIA 1280 */
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.header-mobile-menu-button {
+  display: none;
+}
+
+
+.header-mobile-menu-image {
+  display: none;
+}
+
+.header-image {
+  width: 7%;
+  display: block;
+}
+
+.header-nav {
+  position: relative;
+  background-color: transparent;
+  width: 60%;
+  z-index: 2;
+  height: 10vh;
+  margin: 0 auto;
+  padding-right: 7%;
+}
+
+
+.header-nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0;
+  margin-left: 0;
+  height: 10vh;
+}
+
+.header-nav-ul-li {
+  margin-top: 2.5rem;
+}
+
   /* Forside MEDIA 1280 */
     .front-body {
     background-size: 100vw auto;
@@ -1929,11 +2031,21 @@ header {
 
 @media screen and (min-width: 1920px) {
 
+  /* HEADER MEDIA 1920 */
+
+  .header-nav-ul-li {
+    margin-top: 3.5rem;
+  }
+
+
+
+
+  /* FORSIDE MEDIA 1920 */
+
   .front-body {
     background-size: 100vw 100vh;
   }
 
-  /* Forside styling mediaqueries */
   .front-intro-section {
     height: 100vh;
 }
@@ -1942,7 +2054,7 @@ header {
     height: 35%;
     display: block;
     margin: 0 auto;
-    padding-top: 0rem;
+    padding-top: 5rem;
     padding-left: 22.5rem;
 }
 .front-intro-scrolldown {
@@ -2095,6 +2207,10 @@ header {
 }
 
 
+
+
+/* TOGO MEDIA !920 */
+
   .togo-intro-section {
       height: 100vh;
       background-position-x: 40%;
@@ -2218,6 +2334,26 @@ header {
   }
 
 
+
+
+  /* UDVALG MEDIA 1920 */
+
+  .udvalg-togo-section {
+    width: 45%;
+  }
+
+  .udvalg-togo-image {
+    width:45%;
+  }
+
+  .udvalg-togo-intro {
+    margin-top: 6rem;
+  }
+
+  .udvalg-togo-description {
+    width: 85%;
+    margin: 0 auto;
+  }
 
 
   /* EVENT MEDIA 1920 */
