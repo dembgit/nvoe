@@ -108,6 +108,85 @@ header {
 }
 
 
+/* Footer Styling */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-contact-wrap, .footer-some-wrap, .footer-time-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  margin-bottom: 1.625em;
+}
+
+.footer-contact-wrap-title, .footer-some-wrap-title, .footer-time-wrap-title {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.footer-contact-wrap-left, .footer-contact-wrap-right, .footer-some-wrap-left, .footer-some-wrap-right, .footer-time-wrap-left, .footer-time-wrap-right {
+  background-color: var(--nvoe-white);
+  height: 0.125em;
+  margin: 0.625em 0.625em;
+}
+
+.footer-contact-wrap-left, .footer-contact-wrap-right {
+  width: 3.75em;
+}
+
+.footer-some-wrap-left, .footer-some-wrap-right {
+  width: 5.125em;
+}
+
+.footer-time-wrap-left, .footer-time-wrap-right {
+  width: 5.875em;
+}
+
+/* Footer Contact & Time */
+
+.footer-contact-text, .footer-time-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 0.875em;
+  font-family: var(--nvoe-text-font);
+  margin-bottom: 1.625em;
+}
+
+.footer-contact-text-address {
+  width: 8.1875em;
+  height: 2.5625em;
+}
+
+.footer-contact-text-mail {
+  width: 10.4375em;
+  text-align: center;
+  margin-top: 0.6em;
+}
+
+.footer-some-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1.625em;
+}
+
+.footer-some-links-fb-icon, .footer-some-links-ig-icon {
+  width: 3.125em;
+  height: 3.125em;
+  margin: 0 2.34375em 0 2.34375em;
+}
+
+.footer-time-text {
+  margin-bottom: 5.625em;
+}
 
 
 /* Forside styling */
