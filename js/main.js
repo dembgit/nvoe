@@ -32,14 +32,14 @@ var slideitem2 = document.querySelector(".carousel-item-2");
 var button1 = document.querySelector(".carousel-button1");
 var button2 = document.querySelector(".carousel-button2");
 
-function next() {
+function carouselnext() {
     sildeitem1.style.transform = "translateX(-85vw)";
     slideitem2.style.transform = "translateX(-85vw)";
     button1.style.display = "block";
     button2.style.display = "none";
 }
 
-function back() {
+function carouselback() {
     button1.style.display = "none";
     button2.style.display = "block";
     sildeitem1.style.transform = "translateX(0)";
