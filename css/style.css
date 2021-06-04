@@ -271,7 +271,7 @@ footer {
 /* Forside styling */
 
 .front-body {
-  background-image: url("/images/forsidewall.jpg");
+  background-image: url("../images/forsidewall.jpg");
   background-size: auto 55vh;
   background-position-x:45%;
   background-position-y: 0%;
@@ -613,7 +613,7 @@ footer {
 /* TO-GO Tilbud styling */
 
 .togo-intro-section {
-  background-image: url("/images/tavle.jpeg");
+  background-image: url("../images/tavle.jpeg");
   height: 110vh;
   background-size: cover;
   background-position-x: 40%;
@@ -766,7 +766,7 @@ footer {
 
 /* --- UDVALG --- */
 .udvalg-body {
-    background-image: url("/images/udvalgintrowall.jpg");
+    background-image: url("../images/udvalgintrowall.jpg");
     background-size: auto 55vh; 
     background-repeat: no-repeat;
     background-position-x: 40%;
@@ -812,7 +812,7 @@ footer {
 .udvalg-bryggerier {
   width: 72%;
   margin: 0 auto;
-  background-image: url("/images/tavle.jpg");
+  background-image: url("../images/tavle.jpg");
   background-size: cover;
   background-position-x: 100%;
 }
@@ -904,7 +904,7 @@ footer {
 }
 
 .event-intro-section {
-  background-image: url("/images/eventswall.JPG");
+  background-image: url("../images/eventswall.jpg");
   height: 90vh;
   background-size: cover;
   background-position-x: 33%;
@@ -1117,7 +1117,7 @@ footer {
 
 /*Background Image top of the page*/
 .quiz-intro-section{
-  background-image: url(/images/quizintrowall.jpg);
+  background-image: url("../images/quizintrowall.jpg");
   height: 50vh;
   background-size: cover;
   background-position-x: 30%;
@@ -1238,7 +1238,7 @@ footer {
 
 /*Styling online quiz page - mobile*/
 .onlinequiz-intro-section{
-  background-image: url(/images/quizintrowall.jpg);
+  background-image: url("../images/quizintrowall.jpg");
   height: 50vh;
   background-size: cover;
   background-position-x: 60%;
@@ -1353,7 +1353,7 @@ footer {
 /* --- Om baren --- */ 
 
 .ombaren-info {
-  background-image: url("/images/ombarentavle.jpg");
+  background-image: url("../images/ombarentavle.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
 
@@ -1420,7 +1420,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("/images/Booking_background.png");
+  background-image: url("../images/Booking_background.png");
   background-size: auto 85vh;
   background-repeat: no-repeat;
   background-position-x: 50%;
@@ -2699,7 +2699,7 @@ header {
   }
 
   .onlinequiz-desktop{
-    background-image: url(/images/quizintrowall.jpg);
+    background-image: url("../images/quizintrowall.jpg");
     background-size: auto 100vh;
     height: 100vh;
     background-position-y: 75%;
@@ -2762,7 +2762,7 @@ header {
   }
 
   .ombaren-info {
-    background-image: url("/images/ombarentavle.jpg");
+    background-image: url("../images/ombarentavle.jpg");
     background-size: auto;
     background-repeat: no-repeat;
     }
@@ -3373,7 +3373,7 @@ background-image: none;
 }
 
 .onlinequiz-desktop{
-background-image: url(/images/quizintrowall.jpg);
+background-image: url("../images/quizintrowall.jpg");
 height: 100vh;
 background-size: cover;
 background-position-y: 100%;
@@ -3432,7 +3432,7 @@ text-align: center;
 }
 
 .ombaren-info {
-  background-image: url("/images/ombarentavle.jpg");
+  background-image: url("../images/ombarentavle.jpg");
   background-size: auto;
   background-repeat: no-repeat;
   }
