@@ -77,6 +77,10 @@ header {
   width: 100%;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
 a {
   transition: 0.2s;
 }
