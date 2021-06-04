@@ -77,6 +77,10 @@ header {
   width: 100%;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
 a {
   transition: 0.2s;
 }
@@ -141,13 +145,13 @@ padding: 0rem;
   display: none;
   flex-direction: column;
   list-style: none;
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   margin-left: 3rem;
   height: 50vh;
 }
 
 .header-nav-ul-li {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .header-nav-ul-li-selection {
@@ -1181,7 +1185,6 @@ footer {
   text-align: center;
   margin: 2.125rem 3.188rem 4.688rem 3.188rem;
   padding: 2.125rem;
-  width: 18rem;
 }
 
 .quiz-tilmelding-navn, .quiz-tilmelding-telefon, .quiz-tilmelding-mail, .onlinequiz-tilmelding-navn, .onlinequiz-tilmelding-telefon, .onlinequiz-tilmelding-mail{
@@ -3367,10 +3370,6 @@ cursor: pointer;
 
 .onlinequiz-intro-section{
 background-image: none;
-}
-
-.onlinequiz-intro {
-  padding-top: 0;
 }
 
 .onlinequiz-desktop{
